@@ -18,27 +18,21 @@ class Node
   end
 end
 
-
-
 class Search
-  attr_accessor :my_words, :chars
+  attr_accessor :chars
   def initialize(str)
-    self.my_words   = str
-    self.chars      = Hash.new { |h, k| h[k] = Node.new(k) }
-  end
+    self.chars = Hash.new { |h, k| h[k] = Node.new(k) }
     
-  def buildMap
-    (0...self.my_words.length).each do |i|
-      c, l, r = self.my_words[i], self.my_words[i - 1], self.my_words[i + 1]
+    (0...str.length).each do |i|
+      c, l, r = str[i], str[i - 1], str[i + 1]
       self.chars[c].insert(i, self.chars[l], self.chars[r])
     end
   end
     
   def searchNode(node, location, str)
-    return nil          if str.empty?
-    return nil          if node[location].last.char != str[1]
-    return location + 1 if str.length == 2
-    searchNode(node[location].last, location + 1, str[1..-1])
+    return nil if str.empty?
+    return nil if node[location].last.char != str[1]
+    str.length == 2 ? location + 1 : searchNode(node[location].last, location + 1, str[1..-1])
   end
     
   def search(str)
@@ -48,7 +42,6 @@ class Search
   end
 end
 
-# s = Search.new("abc abc def abc")
-# s.buildMap
-# puts s.search(" ").join(", ")
+s = Search.new("abc abc def abc ")
+puts s.search("abc ").join(", ")
     
