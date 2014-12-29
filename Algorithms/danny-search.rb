@@ -30,7 +30,6 @@ class Search
   end
     
   def searchNode(node, location, str)
-    return nil if str.empty?
     return nil if node[location].last.char != str[1]
     str.length == 2 ? location + 1 : searchNode(node[location].last, location + 1, str[1..-1])
   end
@@ -38,10 +37,13 @@ class Search
   def search(str)
     node  = self.chars[str[0]]
     return node.occurances if str.length == 1
-    (node.occurances.map { |l| searchNode(node, l, str) } - [nil]).map { |x| x - str.length + 1 }
+    node.occurances
+      .map { |l| searchNode(node, l, str) }
+      .compact
+      .map { |x| x - str.length + 1 }
   end
 end
 
-s = Search.new("abc abc def abc ")
-puts s.search("abc ").join(", ")
+# s = Search.new("abc abc def abc ")
+# puts s.search(" ").join(", ")
     
