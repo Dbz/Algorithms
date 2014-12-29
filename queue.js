@@ -16,8 +16,8 @@ Queue.prototype.push = function(value) {
 		this.last.prevNode	= node;
 		this.last						= node;
 	} else {
-		this.last		= node;
-		this.first	= node;
+		this.last						= node;
+		this.first					= node;
 	}
 	this.length++;
 }
@@ -25,7 +25,7 @@ Queue.prototype.push = function(value) {
 Queue.prototype.pop = function() {
 	if(this.length === 0)
 		return null;
-	else if(this.length == 1) {
+	else if(this.length === 1) {
 		var node		= this.first;
 		this.first	= null;
 		this.last		= null;
@@ -33,8 +33,8 @@ Queue.prototype.pop = function() {
 		return node.value;
 	}
 	
-	var node = this.first;
-	this.first = this.first.prevNode;
+	var node			= this.first;
+	this.first		= this.first.prevNode;
 	this.length--;
 	return node.value;
 }
