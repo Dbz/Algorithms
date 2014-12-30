@@ -4,11 +4,12 @@ var Node = function(value, nextNode) {
 }
 
 var Stack = function() {
-  this.head = new Node(null, null);
+  this.clear();
 }
 
 Stack.prototype.push = function(value) {
   this.head = new Node(value, this.head);
+  this.length++;
 }
 
 Stack.prototype.pop = function() {
@@ -17,7 +18,17 @@ Stack.prototype.pop = function() {
   
   var node = this.head;
   this.head = this.head.nextNode;
+  this.length--;
   return node.value;
+}
+
+Stack.prototype.peek = function() {
+  return this.head.value;
+}
+
+Stack.prototype.clear = function() {
+  this.head   = new Node(null, null);
+  this.length = 0;
 }
 
 // Using Array
