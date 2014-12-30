@@ -10,7 +10,7 @@ function Palindrome(str){
 
   while (stack.length() !== 0){
     rWord += stack.pop();
-	}
+  }
 
   return str === rWord;
 }
