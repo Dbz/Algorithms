@@ -11,3 +11,5 @@ Data Structures
 Algorithms
 -----
 * Danny-Search
+* Balanced Params
+* Palindrome
