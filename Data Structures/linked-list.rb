@@ -1,8 +1,8 @@
 class Node
   attr_accessor :value, :next_node
   
-  def initialize(options = {})
-    self.value = options[value]
+  def initialize(value = nil)
+    self.value = value
   end
   
   def next
@@ -53,7 +53,7 @@ class LinkedList
   
   def each &block
     current_node = self.head
-    (0..length).each do |x| 
+    (0...self.length).each do |x| 
       block.call(current_node.value)
       current_node = current_node.next
     end
@@ -61,5 +61,9 @@ class LinkedList
 end
 
 # l = LinkedList.new
+# l[1] = 10
 # l[4] = 55
-# p l[4]
+#
+# l.each do |value|
+#   puts value
+# end
