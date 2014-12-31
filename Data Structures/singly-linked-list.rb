@@ -37,6 +37,9 @@ class LinkedList
   end
   
   def []=(index, value)
+    # creates missing nodes
+    return if index < 0
+    
     i = 0
     current_node = self.head
     while i < index
