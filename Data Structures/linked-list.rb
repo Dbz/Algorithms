@@ -2,13 +2,17 @@ def Node
   attr_accessor :value
   attr_reader :next_node
   
-  def initialize(value, next_node = nil)
-    self.value      = value
-    self.next_node  = next_node
+  def initialize(options = {})
+    self.value      = options.value
+    self.next_node  = options.next_node
   end
   
   def next
     self.next_node
+  end
+  
+  def next(node)
+    self.next_node = node
   end
 end
 
@@ -17,7 +21,7 @@ def LinkedList
   attr_accessor :head, :length
   
   def initialize
-    self.head   = Node.new(nil, nil)
+    self.head   = Node.new
     self.length = 0
   end
   
@@ -35,6 +39,18 @@ def LinkedList
   end
   
   def []=(index, value)
+    i = 1
+    current_node = self.head
+    while i <= index
+      if i >= length
+        node = Node.new
+        current_node.next(node)
+        length += 1
+      end
+      current_node = current_node.next
+      i += 1
+    end
+    current_node.value = value
   end
   
   def each &block
