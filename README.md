@@ -8,6 +8,7 @@ Data Structures
 * Stack
 * Queue
 * Singly Linked List
+* Doubly Linked List
 
 Algorithms
 -----
