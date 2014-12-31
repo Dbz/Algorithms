@@ -27,7 +27,7 @@ def LinkedList
     index = 0;
     current_node = self.head
     
-    while index < length
+    while index <= pos
       current_node = current_node.next
       index += 1
     end
