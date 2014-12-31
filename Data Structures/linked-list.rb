@@ -1,37 +1,35 @@
-def Node
-  attr_accessor :value
-  attr_reader :next_node
+class Node
+  attr_accessor :value, :next_node
   
   def initialize(options = {})
-    self.value      = options.value
-    self.next_node  = options.next_node
+    self.value = options[value]
   end
   
   def next
     self.next_node
   end
   
-  def next(node)
+  def set_next_node(node)
     self.next_node = node
   end
 end
 
-def LinkedList
+class LinkedList
   include Enumerable
   attr_accessor :head, :length
   
   def initialize
     self.head   = Node.new
-    self.length = 0
+    self.length = 1
   end
   
   def [](pos)
-    return if pos < length
+    return if pos >= length
 
     index = 0;
     current_node = self.head
     
-    while index <= pos
+    while index < pos
       current_node = current_node.next
       index += 1
     end
@@ -39,13 +37,13 @@ def LinkedList
   end
   
   def []=(index, value)
-    i = 1
+    i = 0
     current_node = self.head
-    while i <= index
-      if i >= length
+    while i < index
+      if i == self.length - 1
         node = Node.new
-        current_node.next(node)
-        length += 1
+        current_node.set_next_node(node)
+        self.length += 1
       end
       current_node = current_node.next
       i += 1
@@ -61,4 +59,7 @@ def LinkedList
     end
   end
 end
-    
+
+# l = LinkedList.new
+# l[4] = 55
+# p l[4]
