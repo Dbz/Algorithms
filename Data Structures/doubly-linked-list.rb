@@ -1,4 +1,3 @@
-require 'byebug'
 class Node
   attr_accessor :value, :next_node, :previous_node
   
@@ -30,8 +29,8 @@ class LinkedList
     return if pos >= length || pos < 0  # bounds check
     delta = pos > self.index ? 1 : -1   # set direction
     until self.index == pos             # traverse
-      self.current = delta != -1 ? self.current.next : self.current.previous
-      self.index += delta
+      self.current = delta == 1 ? self.current.next : self.current.previous
+      self.index  += delta
     end
     self.current.value
   end
@@ -50,7 +49,7 @@ class LinkedList
         self.length            += 1
       end
       
-      self.current = delta != -1 ? self.current.next : self.current.previous
+      self.current = delta == 1 ? self.current.next : self.current.previous
       self.index  += delta
     end
 

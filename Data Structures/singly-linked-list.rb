@@ -8,10 +8,6 @@ class Node
   def next
     self.next_node
   end
-  
-  def set_next_node(node)
-    self.next_node = node
-  end
 end
 
 class LinkedList
@@ -24,10 +20,10 @@ class LinkedList
   end
   
   def [](pos)
-    return if pos >= length
+    return if pos >= length || pos < 0  # bounds check
 
-    index = 0;
-    current_node = self.head
+    index         = 0;
+    current_node  = self.head
     
     while index < pos
       current_node = current_node.next
@@ -40,16 +36,16 @@ class LinkedList
     # creates missing nodes
     return if index < 0
     
-    i = 0
-    current_node = self.head
+    i             = 0
+    current_node  = self.head
     while i < index
       if i == self.length - 1
         node = Node.new
-        current_node.set_next_node(node)
+        current_node.next_node = node
         self.length += 1
       end
       current_node = current_node.next
-      i += 1
+      i           += 1
     end
     current_node.value = value
   end
