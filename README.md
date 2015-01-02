@@ -9,6 +9,7 @@ Data Structures
 * Queue
 * Singly Linked List
 * Doubly Linked List
+* Heap
 
 Algorithms
 -----
