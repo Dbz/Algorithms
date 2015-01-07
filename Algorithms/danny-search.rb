@@ -29,21 +29,21 @@ class Search
     end
   end
     
-  def searchNode(node, location, str)
-    return nil if node[location].last.char != str[1]
-    str.length == 2 ? location + 1 : searchNode(node[location].last, location + 1, str[1..-1])
+  def searchNode(node, location, str, index)
+    # location is the location in the text
+    # index is the location in the string
+    return nil if node[location].last.char != str[index + 1]
+    str.length == index + 2 ? location - str.length + 2 : searchNode(node[location].last, location + 1, str, index + 1)
   end
     
   def search(str)
     node  = self.chars[str[0]]
     return node.occurances if str.length == 1
     node.occurances
-      .map { |l| searchNode(node, l, str) }
+      .map { |l| searchNode(node, l, str, 0) }
       .compact
-      .map { |x| x - str.length + 1 }
   end
 end
 
-# s = Search.new("abc abc def abc ")
-# puts s.search(" ").join(", ")
-    
+s = Search.new("abc abc def abc ")
+puts s.search("abc").join(", ")
