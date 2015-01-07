@@ -33,7 +33,7 @@ class Search
     # location is the location in the text
     # index is the location in the string
     return nil if node[location].last.char != str[index + 1]
-    str.length == index + 2 ? location + 1 : searchNode(node[location].last, location + 1, str, index + 1)
+    str.length == index + 2 ? location - str.length + 2 : searchNode(node[location].last, location + 1, str, index + 1)
   end
     
   def search(str)
@@ -42,7 +42,6 @@ class Search
     node.occurances
       .map { |l| searchNode(node, l, str, 0) }
       .compact
-      .map { |x| x - str.length + 1 }
   end
 end
 
