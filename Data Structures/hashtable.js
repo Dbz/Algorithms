@@ -1,4 +1,4 @@
-#Generating a hash table with string keys
+// Generating a hash table with string keys
 
 function HashTable(){
   this.table = new Array(137);
