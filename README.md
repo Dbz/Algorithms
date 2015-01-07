@@ -10,6 +10,7 @@ Data Structures
 * Singly Linked List
 * Doubly Linked List
 * Heap
+* Hash Table
 
 Algorithms
 -----
