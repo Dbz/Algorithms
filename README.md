@@ -11,6 +11,7 @@ Data Structures
 * Doubly Linked List
 * Heap
 * Hash Table
+* Trie
 
 Algorithms
 -----
