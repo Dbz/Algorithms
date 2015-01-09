@@ -55,3 +55,7 @@ Trie.prototype.valid = function(str) { // Returns an array with two elements. If
     return [true, node.isWord];
   return [false, false];
 }
+
+// var t = new Trie();
+// t.addWord("hello");
+// console.log("Is hello a word?: " + t.valid[1]);
