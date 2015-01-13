@@ -14,3 +14,4 @@ function Palindrome(str){
 
   return str === rWord;
 }
+
