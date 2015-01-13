@@ -42,3 +42,11 @@ Tree.prototype.removeFromParent = function(){
 	this.parent.removeChild(this.value);
 };
 
+Tree.prototype.isLeaf = function(){
+	return this.children.length === 0;
+};
+
+Tree.prototype.isRoot = function(){
+	return this.parent === null;
+};
+
