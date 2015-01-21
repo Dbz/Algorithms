@@ -18,3 +18,5 @@ Algorithms
 * Danny-Search
 * Balanced Params
 * Palindrome
+* DFS
+* Quicksort
