@@ -12,6 +12,7 @@ Data Structures
 * Heap
 * Hash Table
 * Trie
+* Tree
 
 Algorithms
 -----
