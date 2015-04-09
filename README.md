@@ -21,3 +21,5 @@ Algorithms
 * Palindrome
 * DFS
 * Quicksort
+* Stock Prices
+* Condense Ranges
