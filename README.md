@@ -23,3 +23,4 @@ Algorithms
 * Quicksort
 * Stock Prices
 * Condense Ranges
+* Highest Product of 3
