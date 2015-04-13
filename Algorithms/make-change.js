@@ -10,8 +10,8 @@ function makeChange(amount, coins){
 	waysOfDoingNCents[0] = 1;
 
 	for (var coin = 0; coin < coins.length; coin++){
-		for (var higherAmt = coin; higherAmt < amount + 1; higherAmt++){
-			higherAmtRemainder = higherAmt - coin;
+		for (var higherAmt = coins[coin]; higherAmt < amount + 1; higherAmt++){
+			higherAmtRemainder = higherAmt - coins[coin];
 			waysOfDoingNCents[higherAmt] += waysOfDoingNCents[higherAmtRemainder] 
 		}
 	}
