@@ -13,6 +13,7 @@ Data Structures
 * Hash Table
 * Trie
 * Tree
+* Binary Tree
 
 Algorithms
 -----
@@ -23,5 +24,7 @@ Algorithms
 * Quicksort
 * Stock Prices
 * Condense Ranges
+* Permutation Palindrome
 * Highest Product of 3
 * Product of All Ints Except @ Index
+* Make Change
