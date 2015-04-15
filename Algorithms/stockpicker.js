@@ -5,13 +5,13 @@ function stockPrices(arr){
 	}
 
 	var min = arr[0], 
-	maxDiff = arr[1] - arr[0];
+	maxProfit = arr[1] - arr[0];
 
 	for (var i = 1; i < arr.length; i++){
 		var potentialProfit = arr[i] - min;
-		maxDiff = Math.max(maxDiff, potentialProfit);
+		maxProfit = Math.max(maxProfit, potentialProfit);
 		min = Math.min(min, arr[i]);
 	}
 
-	return maxDiff;
+	return maxProfit;
 }

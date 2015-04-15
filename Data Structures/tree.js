@@ -49,4 +49,3 @@ Tree.prototype.isLeaf = function(){
 Tree.prototype.isRoot = function(){
 	return this.parent === null;
 };
-
