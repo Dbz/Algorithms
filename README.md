@@ -24,7 +24,7 @@ Algorithms
 * [Quicksort](/Algorithms/quicksort.js)
 * [Stock Prices](/Algorithms/stock-picker.js)
 * [Reverse Linked List](/Algorithms/reverse-linked-list.js)
-* [Permutation Palindrome[](/Algorithms/permutation-palindrome.js)
+* [Permutation Palindrome](/Algorithms/permutation-palindrome.js)
 * [Highest Product of 3](/Algorithms/highest-product-of-three.js)
 * [Product of All Ints Except @ Index](/Algorithms/product-of-ints.js)
 * [Make Change](/Algorithms/make-change.js)
