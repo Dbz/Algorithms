@@ -55,10 +55,20 @@ class LinkedList
   end
 end
 
-# l = LinkedList.new
-# l[1] = 10
-# l[4] = 55
-#
-# l.each do |value|
-#   puts value
-# end
+def bfs(root)
+  return unless root
+  result = []
+  queue = [root, 0]
+
+  while queue.length > 0
+    node, depth = queue.shift
+    if !result[depth] 
+      result[depth] = LinkedList.new
+    end
+    result[depth].push(node)
+    queue.push([node.left, depth + 1]) if node.left
+    queue.push([node.right, depth + 1]) if node.right
+  end
+
+  return result
+end

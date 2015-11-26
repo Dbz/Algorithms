@@ -37,7 +37,6 @@ class LinkedList
   
   def []=(pos, value)
     
-    
     return if pos < 0                   # bounds check
     delta = pos > self.index ? 1 : -1   # set direction
     
@@ -62,6 +61,15 @@ class LinkedList
     end
   end
 end
+
+describe Zombie do
+  it 'includes a tweet' do
+    tweet = Tweet.new
+    zombie = Zombie.new(tweets: [tweet])
+    zombie.tweets.should include(tweet)
+  end
+end
+
 
 # l = LinkedList.new
 # l[0] = "me"
