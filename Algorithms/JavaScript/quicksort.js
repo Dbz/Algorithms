@@ -5,10 +5,8 @@ var quickSort = function(array){
        more = [],
        less = [];
   
-  array.forEach(function(el, i){
-    if (i > 0){
+  array.slice(1).forEach(function(el){
       (el > pivot) ? more.push(el) : less.push(el);
-    }
   });
   
   return (quickSort(less)).concat([pivot], quickSort(more));

@@ -18,7 +18,7 @@ function getSecondLargest(rootNode){
 	}
 
 	if (rootNode.right && !rootNode.left && !rootNode.right.right){
-		return rootNode.right.value;
+		return rootNode.value;
 	}
 
 	return getSecondLargest(rootNode.right);
