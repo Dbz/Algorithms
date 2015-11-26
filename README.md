@@ -78,4 +78,7 @@ Algorithms
 * Valid Binary Tree
 * String is Substring
 * Remove Duplicates from LL
+* LL Palindrome
+* Queue with Two Stacks
+* Stack with Two Queues
 
