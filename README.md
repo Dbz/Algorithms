@@ -5,7 +5,6 @@ This is repository of algorithms written mainly in Javascript and Ruby
 
 Data Structures
 -----
-<<<<<<< HEAD
 * Stack
 * Queue
 * Singly Linked List
@@ -15,11 +14,13 @@ Data Structures
 * Trie
 * Tree
 * Binary Tree
+* Graph
 
 Algorithms
 -----
-* Danny-Search
-* Balanced Params
+JavaScript:
+
+* Balanced Parens
 * Palindrome
 * DFS
 * Quicksort
@@ -30,7 +31,52 @@ Algorithms
 * Product of All Ints Except @ Index
 * Make Change
 * Second Largest Val in Binary Tree
-=======
+* Tree Has Path Sum
+* Balanced Binary Tree
+* Delete Node in LL
+* Digital Root
+* Fibonacci
+* Merge Meeting Times
+* Power of 2
+* Max Depth Binary Tree
+* Merge Two Sorted Lists
+* Reverse Linked List
+* Roman Numeral -> Integer
+* Symmetric Binary Tree
+
+Ruby:
+
+* Maximum Contigious Subsequence
+* Add Reverse Linked List Digits
+* Basic String Compression
+* Graph DFS
+* Graph BFS
+* Tree BFS
+* Create BST from Sorted Arr
+* Danny Search
+* Delete Kth to Last Node in LL
+* Encode URL
+* Find LL Cycle
+* LL Palindrome?
+* Isomorphic Strings
+* Linked List Tree Depths
+* Longest Common Prefix
+* Merge Sorted Arrays
+* Min Change Sum
+* Next Node in BST
+* One Edit Away
+* Partition Linked List
+* Path Between Two Nodes
+* Permutation Palindrome
+* Permutation Strings
+* Reverse Chars and String
+* Rotate Array
+* Seive of Erastenous
+* Shuffle Array in Place
+* Traverse Spiral Matrix
+* Unique Characters
+* Valid Binary Tree
+
 * [Stack](/Data%20Structures/stack.js)
 * [Queue](/Data%20Structures/queue.js)
 * [Singly Linked List](/Data%20Structures/singly-linked-list.rb)
@@ -55,4 +101,3 @@ Algorithms
 * [Product of All Ints Except @ Index](/Algorithms/product-of-ints.js)
 * [Make Change](/Algorithms/make-change.js)
 * [Second Largest Val in Binary Tree](/Algorithms/second-largest-binary-tree.js)
->>>>>>> b926252fd389afe06a3b59712638c6ad23727c7c
