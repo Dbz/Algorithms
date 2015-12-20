@@ -1,25 +1,25 @@
 //Write a function to find the 2nd largest element in a binary search tree ↴ .
 
 function largest(rootNode){
-	if (rootNode.right){
-		return largest(rootNode.right)
-	};
+  if (rootNode.right){
+    return largest(rootNode.right)
+  };
 
-	return rootNode.value;
+  return rootNode.value;
 };
 
 function getSecondLargest(rootNode){
-	if (!rootNode.value){
-		return;
-	}
+  if (!rootNode.value){
+    return;
+  }
 
-	if (rootNode.left && !rootNode.right){
-		return largest(rootNode.left);
-	}
+  if (rootNode.left && !rootNode.right){
+    return largest(rootNode.left);
+  }
 
-	if (rootNode.right && !rootNode.left && !rootNode.right.right){
-		return rootNode.value;
-	}
+  if (rootNode.right && !rootNode.left && !rootNode.right.right){
+    return rootNode.value;
+  }
 
-	return getSecondLargest(rootNode.right);
+  return getSecondLargest(rootNode.right);
 };
