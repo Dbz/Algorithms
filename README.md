@@ -8,15 +8,20 @@ This is repository of data structures and algorithms written in Javascript and R
 Data Structures
 -----
 
-* [Stack](/Data%20Structures/stack.js)
-* [Queue](/Data%20Structures/queue.js)
-* [Singly Linked List](/Data%20Structures/singly-linked-list.rb)
-* [Doubly Linked List](/Data%20Structures/doubly-linked-list.rb)
-* [Hash Table](/Data%20Structures/hashtable.js)
-* [Trie](/Data%20Structures/trie.js)
-* [Tree](/Data%20Structures/tree.js)
-* [Binary Tree](/Data%20Structures/binary-tree.js)
-* [Weighted Graph](/Data%20Structures/weighted-graph.rb)
+###Javascript:
+
+* [Binary Tree](/Data%20Structures/JavaScript/binary-tree.js)
+* [Hash Table](/Data%20Structures/JavaScript/hash-table.js)
+* [Queue](/Data%20Structures/JavaScript/queue.js)
+* [Stack](/Data%20Structures/JavaScript/stack.js)
+* [Tree](/Data%20Structures/JavaScript/tree.js)
+* [Trie](/Data%20Structures/JavaScript/trie.js)
+
+###Ruby:
+
+* [Binary Tree](/Data%20Structures/Ruby/binary-tree.rb)
+* [Doubly Linked List](/Data%20Structures/Ruby/doubly-linked-list.rb)
+* [Singly Linked List](/Data%20Structures/Ruby/singly-linked-list.rb)
 
 Algorithms
 -----
