@@ -49,7 +49,7 @@ Algorithms
 * [Danny Search](/Algorithms/Ruby/danny-search.rb)
 * [Delete Kth Node in Linked List](/Algorithms/Ruby/delete-kth-node.rb)
 * [Graph Breadth First Search](/Algorithms/Ruby/graph-breadth-first-search.rb)
-* [Graph Depth First Search](/Algorithms/Ruby/graph-depth-search-search.rb)
+* [Graph Depth First Search](/Algorithms/Ruby/graph-depth-first-search.rb)
 * [Isomorphic Strings](/Algorithms/Ruby/isomorphic-strings.rb)
 * [Linked List](/Algorithms/Ruby/linked-list.rb)
 * [Linked Stack](/Algorithms/Ruby/linked-stack.rb)
