@@ -9,7 +9,6 @@ Data Structures
 * [Queue](/Data%20Structures/queue.js)
 * [Singly Linked List](/Data%20Structures/singly-linked-list.rb)
 * [Doubly Linked List](/Data%20Structures/doubly-linked-list.rb)
-* [Heap](/Data%20Structures/heap.rb)
 * [Hash Table](/Data%20Structures/hashtable.js)
 * [Trie](/Data%20Structures/trie.js)
 * [Tree](/Data%20Structures/tree.js)
@@ -45,39 +44,24 @@ Algorithms
 
 ###Ruby:
 
-* Maximum Contigious Subsequence
-* Add Reverse Linked List Digits
-* Basic String Compression
-* Graph DFS
-* Graph BFS
-* Tree BFS
-* Create BST from Sorted Arr
-* Danny Search
-* Delete Kth to Last Node in LL
-* Encode URL
-* Find LL Cycle
-* LL Palindrome?
-* Isomorphic Strings
-* Linked List Tree Depths
-* Longest Common Prefix
-* Merge Sorted Arrays
-* Min Change Sum
-* Next Node in BST
-* One Edit Away
-* Partition Linked List
-* Path Between Two Nodes
-* Permutation Palindrome
-* Permutation Strings
-* Reverse Chars and String
-* Rotate Array
-* Seive of Erastenous
-* Shuffle Array in Place
-* Traverse Spiral Matrix
-* Unique Characters
-* Valid Binary Tree
-* String is Substring
-* Remove Duplicates from LL
-* LL Palindrome
-* Queue with Two Stacks
-* Stack with Two Queues
+* [Balanced Binary Tree](/Algorithms/Ruby/balanced-binary-tree.rb)
+* [Create Binary Search Tree From Array](/Algorithms/Ruby/binary-search-tree-from-array.rb)
+* [Danny Search](/Algorithms/Ruby/danny-search.rb)
+* [Delete Kth Node in Linked List](/Algorithms/Ruby/delete-kth-node.rb)
+* [Graph Breadth First Search](/Algorithms/Ruby/graph-breadth-first-search.rb)
+* [Graph Depth First Search](/Algorithms/Ruby/graph-depth-search-search.rb)
+* [Isomorphic Strings](/Algorithms/Ruby/isomorphic-strings.rb)
+* [Linked List](/Algorithms/Ruby/linked-list.rb)
+* [Linked Stack](/Algorithms/Ruby/linked-stack.rb)
+* [Longest Common Prefix](/Algorithms/Ruby/longest-common-prefix.rb)
+* [Merge Sorted Arrays](/Algorithms/Ruby/merge-sorted-arrays.rb)
+* [Min Change Sum](/Algorithms/Ruby/min-change-sum.rb)
+* [Palindrome Linked List](/Algorithms/Ruby/palindrome-linked-list.rb)
+* [Permutation Palindrome](/Algorithms/Ruby/permutation-palindrome.rb)
+* [Rotate Array](/Algorithms/Ruby/rotate-array.rb)
+* [Seive of Erastenous](/Algorithms/Ruby/seive-of-erastenous.rb)
+* [Shuffle Array in Place](/Algorithms/Ruby/shuffle-array-in-place.rb)
+* [Traverse Spiral Matrix](/Algorithms/Ruby/traverse-spiral-matrix.rb)
+* [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
+* [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 

@@ -1,167 +1,75 @@
-require 'minitest/autorun'
-
-class LinkedStack
-  class ElementNotFound < RuntimeError; end
-
-  attr_reader :head
-
-  def empty?
-    @head == nil
+# needs refactoring
+class Node
+  attr_accessor :value, :next
+  
+  def initialize(value = nil)
+    self.value = value
   end
+end
 
-  def push data
-    pushed = Item.new(data)
-    pushed.next = @head
-    @head = pushed
+class LinkedList
+  include Enumerable
+  attr_accessor :head, :length
+  
+  def initialize
+    self.head   = Node.new
+    self.length = 1
   end
+  
+  def [](pos)
+    return if pos >= length || pos < 0  # bounds check
 
-  def pop
-    return nil if empty?
-    popped = @head
-    @head = @head.next
-    popped.data
-  end
-
-  def tail
-    return nil if empty?
-    @head.tail.data
-  end
-
-  def delete data
-    return nil if empty?
-    if @head.data == data
-      deleted = @head
-      @head = @head.next
-    else
-      before = @head.find_before(data)
-      return nil if before.nil?
-      deleted = before.next
-      before.next = deleted.next
+    index         = 0;
+    current_node  = self.head
+    
+    while index < pos
+      current_node = current_node.next
+      index += 1
     end
-    deleted.data
+    current_node.value
   end
-
-  def insert_after after, data
-    return push data if after.nil?
-    raise ElementNotFound.new if empty?
-    after_item = @head.find(after)
-    raise ElementNotFound.new if after_item.nil?
-    after_item.next = Item.new(data)
+  
+  def []=(index, value)
+    # creates missing nodes
+    return if index < 0
+    
+    i             = 0
+    current_node  = self.head
+    while i < index
+      if i == self.length - 1
+        node = Node.new
+        current_node.next_node = node
+        self.length += 1
+      end
+      current_node = current_node.next
+      i           += 1
+    end
+    current_node.value = value
   end
-
-  class Item
-    attr_reader :data
-    attr_accessor :next
-
-    def initialize data
-      @data = data
-    end
-
-    def tail
-      @next ? @next.tail : self
-    end
-
-    def find_before data
-      return nil if @next.nil?
-      return self if (@next.data == data)
-      @next.find_before data
-    end
-
-    def find data
-      return self if @data == data
-      return nil if @next.nil?
-      @next.find data
+  
+  def each &block
+    current_node = self.head
+    (0...self.length).each do |x| 
+      block.call(current_node.value)
+      current_node = current_node.next
     end
   end
 end
 
-describe LinkedStack do
-  let(:stack) { LinkedStack.new }
+def bfs(root)
+  return unless root
+  result = []
+  queue = [root, 0]
 
-  describe "#head" do
-    it "should be nil with an empty list" do
-      stack.head.must_equal nil
+  while queue.length > 0
+    node, depth = queue.shift
+    if !result[depth] 
+      result[depth] = LinkedList.new
     end
+    result[depth].push(node)
+    queue.push([node.left, depth + 1]) if node.left
+    queue.push([node.right, depth + 1]) if node.right
   end
 
-  describe "#push" do
-    it "should push an item onto the top of the stack" do
-      stack.push "Hi"
-      stack.head.data.must_equal "Hi"
-    end
-  end
-
-  describe "#pop" do
-    it "should remove an item from the top of the stack and return the item" do
-      stack.push "Hi"
-      stack.push "World"
-      stack.pop.must_equal "World"
-      stack.pop.must_equal "Hi"
-    end
-
-    it "should return nil once the stack is empty" do
-      stack.pop.must_equal nil
-      stack.push "Hi"
-      stack.pop
-      stack.pop.must_equal nil
-      stack.pop.must_equal nil
-    end
-  end
-
-  describe "#tail" do
-    it "should return nil for an empty stack" do
-      stack.tail.must_equal nil
-    end
-
-    it "should return the first item pushed onto the stack" do
-      stack.push "Hi"
-      stack.push "There"
-      stack.push "Buddy"
-      stack.tail.must_equal "Hi"
-    end
-  end
-
-  describe "#delete" do
-    it "should remove an item from the tail of the stack" do
-      stack.push "Hi"
-      stack.push "There"
-      stack.push "Bob"
-      deleted = stack.delete "Hi"
-      deleted.must_equal "Hi"
-      stack.tail.must_equal "There"
-    end
-
-    it "should remove an item from the head of the stack" do
-      stack.push "Hi"
-      deleted = stack.delete "Hi"
-      deleted.must_equal "Hi"
-      stack.head.must_equal nil
-    end
-
-    it "should return nil if the item is not in the stack" do
-      stack.push "Hi"
-      deleted = stack.delete "Bob"
-      deleted.must_equal nil
-    end
-  end
-
-  describe "#insert_after" do
-    it "should insert at the beginning of the list when the after param is nil" do
-      stack.push "Hi"
-      stack.insert_after nil, "Hello"
-      stack.head.data.must_equal "Hello"
-    end
-
-    it "should raise an exception when the after param is not found" do
-      assert_raises(LinkedStack::ElementNotFound) { stack.insert_after "Hi", "hello" }
-      stack.push "Whee"
-      assert_raises(LinkedStack::ElementNotFound) { stack.insert_after "Hi", "hello" }
-    end
-
-    it "should insert at the end of the list when the after param is the tail" do
-      stack.push "Hi"
-      stack.insert_after "Hi", "Hello"
-      stack.tail.must_equal "Hello"
-    end
-  end
+  return result
 end
