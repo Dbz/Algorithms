@@ -95,12 +95,12 @@ Cracking the Coding Interview
 * [Path Between Two Nodes](/Algorithms/Cracking%20the%20Coding%20Interview/path-between-two-nodes.rb)
 * [Permutation Strings](/Algorithms/Cracking%20the%20Coding%20Interview/permutations-strings.rb)
 * [Remove Duplicates from Linked List](/Algorithms/Cracking%20the%20Coding%20Interview/remove-duplicates-from-linked-list.rb)
-* [Reverse Characters and String](/Algorithms/Cracking%20the%20Coding%20Interview/reverse-chracters-and-string.rb)
+* [Reverse Characters and String](/Algorithms/Cracking%20the%20Coding%20Interview/reverse-characters-and-string.rb)
 * [String is Substring](/Algorithms/Cracking%20the%20Coding%20Interview/string-is-substring.rb)
 * [Tree Path Equals Sum](/Algorithms/Cracking%20the%20Coding%20Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking%20the%20Coding%20Interview/unique-characters.rb)
 
 ####Dynamic Programming:
 
-* [Maxiumum Subsequence](/Algorithms/Cracking%20the%20Coding%20Interview/Dynamic%20Programming/max-subsequence.rb)
-* [Minimum Change Sum](/Algorithms/Cracking%20the%20Coding%20Interview/Dynamic%20Programming/min-change-sum.rb)
+* [Maxiumum Subsequence](/Algorithms/Dynamic%20Programming/max-subsequence.rb)
+* [Minimum Change Sum](/Algorithms/Dynamic%20Programming/min-change-sum.rb)
