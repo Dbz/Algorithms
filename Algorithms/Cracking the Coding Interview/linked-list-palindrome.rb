@@ -16,6 +16,7 @@ def is_palindrome(head)
     temp = stack.pop
     return false if slow_runner.val != temp
     slow_runner = slow_runner.next
-  end
+  end
+
   true
 end
