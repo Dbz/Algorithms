@@ -20,29 +20,28 @@ Algorithms
 -----
 ###JavaScript:
 
-* Balanced Parens
-* Palindrome
-* DFS
-* Quicksort
-* Stock Prices
-* Condense Ranges
-* Permutation Palindrome
-* Highest Product of 3
-* Product of All Ints Except @ Index
-* Make Change
-* Second Largest Val in Binary Tree
-* Tree Has Path Sum
-* Balanced Binary Tree
-* Delete Node in LL
-* Digital Root
-* Fibonacci
-* Merge Meeting Times
-* Power of 2
-* Max Depth Binary Tree
-* Merge Two Sorted Lists
-* Reverse Linked List
-* Roman Numeral -> Integer
-* Symmetric Binary Tree
+* [Balanced Parens](/Algorithms/Javascript/balanced-parens.js)
+* [Breadth First Search](/Algorithms/Javascript/breadth-first-search.js)
+* [Delete Node in linked list](/Algorithms/Javascript/delete-node-in-linked-list.js)
+* [Depth First Search](/Algorithms/Javascript/depth-first-search.js)
+* [Digital Root](/Algorithms/Javascript/digital-root.js)
+* [Fibonacci Number](/Algorithms/Javascript/fibonacci-number.js)
+* [HiCal](/Algorithms/Javascript/hical.js)
+* [Highest Product of 3](/Algorithms/Javascript/highest-product-of-three.js)
+* [Invert Binary Tree](/Algorithms/Javascript/invert-binary-tree.js)
+* [Make Change](/Algorithms/Javascript/make-change.js)
+* [Max Depth Binary Tree](/Algorithms/Javascript/max-depth-binary-tree.js)
+* [Merge Two Sorted Lists](/Algorithms/Javascript/merge-two-sorted-lists.js)
+* [Palindrome](/Algorithms/Javascript/palindrome.js)
+* [Permutation Palindrome](/Algorithms/Javascript/permutation-palindrome.js)
+* [Power of 2](/Algorithms/Javascript/power-of-two.js)
+* [Product of All Ints Except @ Index](/Algorithms/Javascript/product-of-ints.js)
+* [Quicksort](/Algorithms/Javascript/quicksort.js)
+* [Reverse Linked List](/Algorithms/Javascript/reverse-linked-list.js)
+* [Roman Numeral -> Integer](/Algorithms/Javascript/roman-numeral-to-int.js)
+* [Second Largest Val in Binary Tree](/Algorithms/Javascript/second-largest-binary-tree.js)
+* [Stock Picker](/Algorithms/Javascript/stock-picker.js)
+* [Symmetric Binary Tree](/Algorithms/Javascript/symmetric-binary-tree.js)
 
 ###Ruby:
 

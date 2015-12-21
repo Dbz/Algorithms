@@ -4,4 +4,3 @@ function fib(n){
   return fib(n-1) + fib(n-2)
 }
 
-1 1 2 3 4
