@@ -43,20 +43,20 @@ Stack.prototype.empty = function() {
 // Wrapper class for Queue. Uses simple list operations
 var Queue = function() {
     this.lst = [];
-};
+}
 
 Queue.prototype.enqueue = function(x) {
     this.lst.push(x);
-};
+}
 
 Queue.prototype.dequeue = function() {
     return this.lst.shift();
-};
+}
 
 Queue.prototype.length = function() {
     return this.lst.length;
-};
+}
 
 Queue.prototype.top = function() {
     return this.lst[0];
-};
+}

@@ -1,9 +1,7 @@
-# requires refactoring
 require 'minitest/autorun'
 
 class LinkedStack
-  class ElementNotFound < RuntimeError
-  end
+  class ElementNotFound < RuntimeError; end
 
   attr_reader :head
 

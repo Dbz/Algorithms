@@ -1,4 +1,6 @@
 # Refactor/rewrite this file
+require 'byebug'
+
 class Node
 
   attr_accessor :value, :next
