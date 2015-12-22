@@ -2,24 +2,24 @@ class Node
   attr_accessor :value, :next
   
   def initialize(value = nil)
-    self.value = value
+    @value = value
   end
 end
 
 class LinkedList
   include Enumerable
-  attr_accessor :head, :length
+  attr_accessor :length
   
   def initialize
-    self.head   = Node.new
-    self.length = 1
+    @head   = Node.new
+    @length = 1
   end
   
   def [](pos)
-    return if pos >= length || pos < 0  # bounds check
+    return if pos >= @length || pos < 0  # bounds check
 
-    index         = 0;
-    current_node  = self.head
+    index         = 0
+    current_node  = @head
     
     while index < pos
       current_node = current_node.next
@@ -33,12 +33,12 @@ class LinkedList
     return if index < 0
     
     i             = 0
-    current_node  = self.head
+    current_node  = @head
     while i < index
-      if i == self.length - 1
-        node = Node.new
-        current_node.next_node = node
-        self.length += 1
+      if i == @length - 1
+        node              = Node.new
+        current_node.next = node
+        @length          += 1
       end
       current_node = current_node.next
       i           += 1
@@ -47,18 +47,10 @@ class LinkedList
   end
   
   def each &block
-    current_node = self.head
-    (0...self.length).each do |x| 
+    current_node = @head
+    (0...@length).each do |x|
       block.call(current_node.value)
       current_node = current_node.next
     end
   end
 end
-
-# l = LinkedList.new
-# l[1] = 10
-# l[4] = 55
-#
-# l.each do |value|
-#   puts value
-# end

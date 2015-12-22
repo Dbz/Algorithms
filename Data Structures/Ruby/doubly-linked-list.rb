@@ -2,80 +2,62 @@ class Node
   attr_accessor :value, :next_node, :previous_node
   
   def initialize(value = nil)
-    self.value = value
+    @value = value
   end
   
   def next
-    self.next_node
+    @next_node
   end
   
   def previous
-    self.previous_node
+    @previous_node
   end
   
 end
 
 class LinkedList
   include Enumerable
-  attr_accessor :current, :length, :index
+  attr_accessor :length, :index
   
   def initialize
-    self.current  = Node.new
-    self.length   = 1
-    self.index    = 0
+    @current  = Node.new
+    @length   = 1
+    @index    = 0
   end
   
   def [](pos)
     return if pos >= length || pos < 0  # bounds check
-    delta = pos > self.index ? 1 : -1   # set direction
-    until self.index == pos             # traverse
-      self.current = delta == 1 ? self.current.next : self.current.previous
-      self.index  += delta
+    delta = pos > @index ? 1 : -1       # set direction
+    until @index == pos                 # traverse
+      @current = delta == 1 ? @current.next : @current.previous
+      @index  += delta
     end
-    self.current.value
+    @current.value
   end
   
   def []=(pos, value)
     
-    return if pos < 0                   # bounds check
-    delta = pos > self.index ? 1 : -1   # set direction
+    return if pos < 0               # bounds check
+    delta = pos > @index ? 1 : -1   # set direction
     
-    until self.index == pos             # traverse
-      if self.index == self.length - 1  # create missing nodes
+    until @index == pos             # traverse
+      if @index == @length - 1      # create missing nodes
         node = Node.new
-        node.previous_node      = self.current
-        self.current.next_node  = node
-        self.length            += 1
+        node.previous_node  = @current
+        @current.next_node  = node
+        @length            += 1
       end
       
-      self.current = delta == 1 ? self.current.next : self.current.previous
-      self.index  += delta
+      @current = delta == 1 ? @current.next : @current.previous
+      @index  += delta
     end
 
-    self.current.value = value
+    @current.value = value
   end
   
   def each &block
-    (0...self.length).each do |x|
+    (0...@length).each do |x|
       block.call(self[x])
     end
   end
 end
-
-describe Zombie do
-  it 'includes a tweet' do
-    tweet = Tweet.new
-    zombie = Zombie.new(tweets: [tweet])
-    zombie.tweets.should include(tweet)
-  end
-end
-
-
-# l = LinkedList.new
-# l[0] = "me"
-# l[1] = 10
-# l[4] = 55
-#
-# l.each do |value|
-#   puts value
-# end
