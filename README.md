@@ -1,4 +1,4 @@
-Algorithms
+Data Structures & Algorithms Repository
 ==========
 
 This is repository of data structures and algorithms written in Javascript and Ruby. Some of the algorithms are from
@@ -6,7 +6,6 @@ This is repository of data structures and algorithms written in Javascript and R
  book. 
 
 #Data Structures
------
 
 ###Javascript:
 
@@ -25,7 +24,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Linked List](/Data%20Structures/Ruby/linked-list.rb)
 * [Linked Stack](/Data%20Structures/Ruby/linked-stack.rb)
 
-##Cracking the Coding Interview:
+###Cracking the Coding Interview Data Structures:
 
 ###JavaScript:
 
@@ -33,7 +32,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Stack with Two Queues](/Data%20Structures/Cracking%20the%20Coding%20Interview/stack-with-two-queues.js)
 
 #Algorithms
------
 
 ###JavaScript:
 
@@ -81,7 +79,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 
-##Cracking the Coding Interview:
+###Cracking the Coding Interview Algorithms:
 
 ###Ruby:
 
