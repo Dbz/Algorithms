@@ -3,7 +3,12 @@ Data Structures & Algorithms Repository
 
 This is repository of data structures and algorithms written in Javascript and Ruby. Some of the algorithms are from
 [Cracking the Coding Interview](http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
- book. 
+ book.
+ 
+#Contributing
+ 
+ To contribute create a pull request. You must add a short descriptive link to your code in the readme. Please add tests
+ for your code in the appropriate specs folder. We're working on adding missing tests.
 
 #Data Structures
 
