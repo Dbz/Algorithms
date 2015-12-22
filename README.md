@@ -5,7 +5,7 @@ This is repository of data structures and algorithms written in Javascript and R
 [Cracking the Coding Interview](http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
  book. 
 
-Data Structures
+#Data Structures
 -----
 
 ###Javascript:
@@ -25,15 +25,14 @@ Data Structures
 * [Linked List](/Data%20Structures/Ruby/linked-list.rb)
 * [Linked Stack](/Data%20Structures/Ruby/linked-stack.rb)
 
-Cracking the Coding Interview
------
+##Cracking the Coding Interview:
 
 ###JavaScript:
 
 * [Queue with Two Stacks](/Data%20Structures/Cracking%20the%20Coding%20Interview/queue-with-two-stacks.js)
 * [Stack with Two Queues](/Data%20Structures/Cracking%20the%20Coding%20Interview/stack-with-two-queues.js)
 
-Algorithms
+#Algorithms
 -----
 
 ###JavaScript:
@@ -82,8 +81,7 @@ Algorithms
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 
-Cracking the Coding Interview
------
+##Cracking the Coding Interview:
 
 ###Ruby:
 
