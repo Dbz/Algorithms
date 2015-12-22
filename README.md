@@ -26,7 +26,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Binary Tree](/Data%20Structures/Ruby/binary-tree.rb)
 * [Doubly Linked List](/Data%20Structures/Ruby/doubly-linked-list.rb)
 * [Singly Linked List](/Data%20Structures/Ruby/singly-linked-list.rb)
-* [Linked List](/Data%20Structures/Ruby/linked-list.rb)
 * [Linked Stack](/Data%20Structures/Ruby/linked-stack.rb)
 
 ###Cracking the Coding Interview Data Structures:
