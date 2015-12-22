@@ -22,6 +22,16 @@ Data Structures
 * [Binary Tree](/Data%20Structures/Ruby/binary-tree.rb)
 * [Doubly Linked List](/Data%20Structures/Ruby/doubly-linked-list.rb)
 * [Singly Linked List](/Data%20Structures/Ruby/singly-linked-list.rb)
+* [Linked List](/Data%20Structures/Ruby/linked-list.rb)
+* [Linked Stack](/Data%20Structures/Ruby/linked-stack.rb)
+
+Cracking the Coding Interview
+-----
+
+###JavaScript:
+
+* [Queue with Two Stacks](/Data%20Structures/Cracking%20the%20Coding%20Interview/queue-with-two-stacks.js)
+* [Stack with Two Queues](/Data%20Structures/Cracking%20the%20Coding%20Interview/stack-with-two-queues.js)
 
 Algorithms
 -----
@@ -60,8 +70,6 @@ Algorithms
 * [Graph Breadth First Search](/Algorithms/Ruby/graph-breadth-first-search.rb)
 * [Graph Depth First Search](/Algorithms/Ruby/graph-depth-first-search.rb)
 * [Isomorphic Strings](/Algorithms/Ruby/isomorphic-strings.rb)
-* [Linked List](/Algorithms/Ruby/linked-list.rb)
-* [Linked Stack](/Algorithms/Ruby/linked-stack.rb)
 * [Longest Common Prefix](/Algorithms/Ruby/longest-common-prefix.rb)
 * [Merge Sorted Arrays](/Algorithms/Ruby/merge-sorted-arrays.rb)
 * [Min Change Sum](/Algorithms/Ruby/min-change-sum.rb)
@@ -76,11 +84,6 @@ Algorithms
 
 Cracking the Coding Interview
 -----
-
-###JavaScript:
-
-* [Queue with Two Stacks](/Algorithms/Cracking%20the%20Coding%20Interview/queue-with-two-stacks.js)
-* [Stack with Two Queues](/Algorithms/Cracking%20the%20Coding%20Interview/stack-with-two-queues.js)
 
 ###Ruby:
 
