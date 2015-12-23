@@ -1,22 +1,15 @@
-class Node
-  attr_accessor :value, :next
-  
-  def initialize(value = nil)
-    @value = value
-  end
-end
+require_relative 'node.rb'
 
 class LinkedList
   include Enumerable
-  attr_accessor :length
+  attr_accessor :head, :tail, :length
   
   def initialize
-    @head   = Node.new
-    @length = 1
+    @length = 0
   end
   
   def [](pos)
-    return if pos >= @length || pos < 0  # bounds check
+    return nil if pos >= @length || pos < 0  # bounds check
 
     index         = 0
     current_node  = @head
@@ -25,32 +18,43 @@ class LinkedList
       current_node = current_node.next
       index += 1
     end
-    current_node.value
+    current_node.data
   end
   
-  def []=(index, value)
-    # creates missing nodes
+  def []=(index, data)
     return if index < 0
-    
+    create_head if @head.nil?
+
     i             = 0
     current_node  = @head
     while i < index
-      if i == @length - 1
-        node              = Node.new
-        current_node.next = node
-        @length          += 1
-      end
+      create_next_node if i == @length - 1
       current_node = current_node.next
       i           += 1
     end
-    current_node.value = value
+    current_node.data = data
   end
-  
+
   def each &block
     current_node = @head
     (0...@length).each do |x|
-      block.call(current_node.value)
+      block.call(current_node.data)
       current_node = current_node.next
     end
   end
+
+  private
+
+  def create_head
+    @head = Node.new
+    @tail = @head
+    @length = 1
+  end
+
+  def create_next_node
+    @tail.next = Node.new
+    @tail      = @tail.next
+    @length   += 1
+  end
+
 end
