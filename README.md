@@ -7,8 +7,17 @@ This is repository of data structures and algorithms written in Javascript and R
  
 #Contributing
  
- To contribute create a pull request. You must add a short descriptive link to your code in the readme. Please add tests
- for your code in the appropriate specs folder. We're working on adding missing tests.
+ To contribute, fork this repo and create a pull request. Please include a short descriptive link to the code in the
+ readme. If your code requires further explanation, you can include a more detailed explanation in the Data Structures
+ or Algorithms subfolder's readme. Tests are optional.
+ 
+ If you're looking for inspiration:
+ 
+ + [Sorting Algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms)
+ + [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
+ + [Knuth-Morris-Pratt Algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
+ + [Heap](https://en.wikipedia.org/wiki/Heap_\(data_structure\))
+ + [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
 
 #Data Structures
 
