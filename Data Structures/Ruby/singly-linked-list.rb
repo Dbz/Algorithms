@@ -37,7 +37,7 @@ class LinkedList
 
   def each &block
     current_node = @head
-    (0...@length).each do |x|
+    (0...@length).each do
       block.call(current_node.data)
       current_node = current_node.next
     end
