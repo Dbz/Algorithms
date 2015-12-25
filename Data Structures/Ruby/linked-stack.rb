@@ -2,7 +2,7 @@ require_relative 'singly-linked-list'
 
 class LinkedStack < LinkedList
 
-  attr_reader :head, :tail, :length
+  attr_reader :length
 
   def empty?
     @length == 0
@@ -24,6 +24,6 @@ class LinkedStack < LinkedList
   end
 
   def peek
-    self.[](0)
+    self[0]
   end
 end

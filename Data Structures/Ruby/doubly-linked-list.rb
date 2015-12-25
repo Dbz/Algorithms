@@ -2,7 +2,7 @@ require_relative 'node.rb'
 
 class LinkedList
   include Enumerable
-  attr_accessor :head, :tail, :length, :index
+  attr_accessor :length
   
   def initialize
     @length = 0
@@ -39,6 +39,14 @@ class LinkedList
     (0...@length).each do |x|
       block.call(self[x])
     end
+  end
+
+  def first
+    @head.data
+  end
+
+  def last
+    @tail.data
   end
 
   private
