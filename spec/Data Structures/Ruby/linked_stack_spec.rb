@@ -1,4 +1,3 @@
-require 'rspec'
 require_relative '../../../Data Structures/Ruby/linked-stack'
 
 describe LinkedStack do

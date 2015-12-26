@@ -6,49 +6,54 @@ class Node
 end
 
 class BinaryTree
-  def initialize
-    @root = Node.new
-    @latest_nodes = [@root]
-  end
+  attr_accessor :length
 
   def insert data
+    return create_root(data) if @root.nil?
     new_node = Node.new(data)
-    parent = @latest_nodes.shift
+    parent = @leaf_nodes.first
 
     if parent.left.nil?
       parent.left = new_node
-      @latest_nodes.unshift parent
     elsif parent.right.nil?
       parent.right = new_node
-    else
-      @latest_nodes.first.left = new_node
-      @latest_nodes << new_node
+      @leaf_nodes.shift
     end
+
+    @leaf_nodes << new_node
+    @length += 1
   end
 
   def delete data
-    traverse_dfs { |node| node.data = nil if node.data == data }
+    dfs(@root).each do |node|
+      if node.data == data
+        @length -= 1
+        node.data = nil
+      end
+    end
   end
 
   def traverse_dfs &block
-    ([@root] + dfs(@root)).map(&:data).compact.each do |data|
-        block.call(data)
-    end
+    dfs(@root).map(&:data).compact.each { |data| block.call(data) }
   end
 
   def traverse_bfs &block
-    bfs.map(&:data).compact.each do |data|
-      block.call(data)
-    end
+    bfs.map(&:data).compact.each { |data| block.call(data) }
   end
 
   private
+
+  def create_root data
+    @root       = Node.new(data)
+    @length     = 1
+    @leaf_nodes = [@root]
+  end
 
   def dfs node
     nodes = []
     nodes << node.left if node.left
     nodes << node.right if node.right
-    nodes + node.flat_map { |child| dfs child }
+    [node] + nodes.flat_map { |child| dfs child }
   end
 
   def bfs
@@ -57,7 +62,8 @@ class BinaryTree
     while queue.length > 0
       node = queue.shift
       all_nodes << node
-      queue << node.left << node.right
+      queue << node.left if node.left
+      queue << node.right if node.right
     end
     all_nodes
   end
