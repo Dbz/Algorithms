@@ -2,8 +2,6 @@ require_relative 'singly-linked-list'
 
 class LinkedStack < LinkedList
 
-  attr_reader :length
-
   def empty?
     @length == 0
   end
