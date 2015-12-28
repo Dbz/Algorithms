@@ -80,7 +80,9 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Min Depth Binary Tree](/Algorithms/JavaScript/min-depth-binary-tree.js)
 * [Climbing Stairs](/Algorithms/JavaScript/climbing-stairs.js)
 * [All Anagrams](/Algorithms/JavaScript/all-anagrams.js)
-
+* [Subsets](/Algorithms/JavaScript/subsets.js)
+* [Substrings](/Algorithms/JavaScript/substrings.js)
+* [Transpose](/Algorithms/JavaScript/transpose.js)
 
 ###Ruby:
 
@@ -112,6 +114,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Max Depth Binary Tree](/Algorithms/Ruby/max-depth-binary-tree.rb)
 * [Invert Binary Tree](/Algorithms/Ruby/invert-binary-tree.rb)
 * [All Anagrams](/Algorithms/Ruby/all-anagrams.rb)
+* [Two Sum](/Algorithms/Ruby/two-sum.rb)
 
 #Cracking the Coding Interview
 

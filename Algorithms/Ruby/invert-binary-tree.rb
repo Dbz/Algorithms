@@ -6,6 +6,9 @@
 #         @left, @right = nil, nil
 #     end
 # end
+#
+# @param {TreeNode} root
+# @return {TreeNode}
 
 def invert_binary_tree(root)
   return unless root
