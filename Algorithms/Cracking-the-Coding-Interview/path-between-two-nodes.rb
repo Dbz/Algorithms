@@ -1,3 +1,4 @@
+# needs refactoring
 class BFS
 
   def initialize(graph, s)

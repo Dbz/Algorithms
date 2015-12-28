@@ -1,5 +1,3 @@
-require 'byebug'
-
 class Node
 
   attr_accessor :value, :next
