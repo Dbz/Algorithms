@@ -93,6 +93,11 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Traverse Spiral Matrix](/Algorithms/Ruby/traverse-spiral-matrix.rb)
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
+* [Remove Duplicates from Str](/Algorithms/Ruby/remove_duplicates.rb)
+* [Rate Limiter Class](/Algorithms/Ruby/rate_limiter.rb)
+* [Pascal's Triangle](/Algorithms/Ruby/pascals_triangle.rb)
+* [Caeser Cipher](/Algorithms/Ruby/caesar-cipher.rb)
+
 
 #Cracking the Coding Interview
 
@@ -122,6 +127,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [String is Substring](/Algorithms/Cracking-the-Coding-Interview/string-is-substring.rb)
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
+* [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/lca.rb)
 
 ###Dynamic Programming:
 
