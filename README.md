@@ -46,13 +46,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Singly Linked List](/Data-Structures/Ruby/singly-linked-list.rb)
 * [Linked Stack](/Data-Structures/Ruby/linked-stack.rb)
 
-###Cracking the Coding Interview Data Structures:
-
-###JavaScript:
-
-* [Queue with Two Stacks](/Data-Structures/Cracking-the-Coding-Interview/queue-with-two-stacks.js)
-* [Stack with Two Queues](/Data-Structures/Cracking-the-Coding-Interview/stack-with-two-queues.js)
-
 #Algorithms
 
 ###JavaScript:
@@ -101,7 +94,16 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 
-###Cracking the Coding Interview Algorithms:
+#Cracking the Coding Interview
+
+##Data Structures:
+
+###JavaScript:
+
+* [Queue with Two Stacks](/Data-Structures/Cracking-the-Coding-Interview/queue-with-two-stacks.js)
+* [Stack with Two Queues](/Data-Structures/Cracking-the-Coding-Interview/stack-with-two-queues.js)
+
+##Algorithms:
 
 ###Ruby:
 
@@ -121,7 +123,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
 
-####Dynamic Programming:
+###Dynamic Programming:
 
 * [Maxiumum Subsequence](/Algorithms/Dynamic-Programming/max-subsequence.rb)
 * [Minimum Change Sum](/Algorithms/Dynamic-Programming/min-change-sum.rb)
