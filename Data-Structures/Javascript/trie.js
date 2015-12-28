@@ -2,11 +2,11 @@ var Node = function(key) { // Trie Nodes
   this.key      = key;
   this.isWord   = false;
   this.children = {};
-}
+};
 
 Node.prototype.addChild = function(str) {
   this.children[str] = new Node(str);
-}
+};
 
 Node.prototype.hasChild = function(str) {
   var result = false;
@@ -15,11 +15,11 @@ Node.prototype.hasChild = function(str) {
       result = true;
   });
   return result;
-}
+};
 
 var Trie = function() {
   this.head = new Node();
-}
+};
 
 Trie.prototype.addWord = function(word) {
   var len         = word.length;
@@ -33,7 +33,7 @@ Trie.prototype.addWord = function(word) {
     currentNode = currentNode.children[substring];
   }
   currentNode.isWord = true;
-}
+};
 
 Trie.prototype.findNode = function(str) { // Returns the node or false if not found
   var len         = str.length;
@@ -47,15 +47,11 @@ Trie.prototype.findNode = function(str) { // Returns the node or false if not fo
     currentNode = currentNode.children[substring];
   }
   return currentNode;
-}
+};
 
 Trie.prototype.valid = function(str) { // Returns an array with two elements. If the node exists, and if str is a word
   var node = this.findNode(str);
   if(node)
     return [true, node.isWord];
   return [false, false];
-}
-
-// var t = new Trie();
-// t.addWord("hello");
-// console.log("Is hello a word?: " + t.valid[1]);
+};

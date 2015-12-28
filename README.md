@@ -23,26 +23,26 @@ This is repository of data structures and algorithms written in Javascript and R
 
 ###Javascript:
 
-* [Binary Tree](/Data%20Structures/JavaScript/binary-tree.js)
-* [Hash Table](/Data%20Structures/JavaScript/hash-table.js)
-* [Queue](/Data%20Structures/JavaScript/queue.js)
-* [Stack](/Data%20Structures/JavaScript/stack.js)
-* [Tree](/Data%20Structures/JavaScript/tree.js)
-* [Trie](/Data%20Structures/JavaScript/trie.js)
+* [Binary Tree](/Data-Structures/JavaScript/binary-tree.js)
+* [Hash Table](/Data-Structures/JavaScript/hash-table.js)
+* [Queue](/Data-Structures/JavaScript/queue.js)
+* [Stack](/Data-Structures/JavaScript/stack.js)
+* [Tree](/Data-Structures/JavaScript/tree.js)
+* [Trie](/Data-Structures/JavaScript/trie.js)
 
 ###Ruby:
 
-* [Binary Tree](/Data%20Structures/Ruby/binary-tree.rb)
-* [Doubly Linked List](/Data%20Structures/Ruby/doubly-linked-list.rb)
-* [Singly Linked List](/Data%20Structures/Ruby/singly-linked-list.rb)
-* [Linked Stack](/Data%20Structures/Ruby/linked-stack.rb)
+* [Binary Tree](/Data-Structures/Ruby/binary-tree.rb)
+* [Doubly Linked List](/Data-Structures/Ruby/doubly-linked-list.rb)
+* [Singly Linked List](/Data-Structures/Ruby/singly-linked-list.rb)
+* [Linked Stack](/Data-Structures/Ruby/linked-stack.rb)
 
 ###Cracking the Coding Interview Data Structures:
 
 ###JavaScript:
 
-* [Queue with Two Stacks](/Data%20Structures/Cracking%20the%20Coding%20Interview/queue-with-two-stacks.js)
-* [Stack with Two Queues](/Data%20Structures/Cracking%20the%20Coding%20Interview/stack-with-two-queues.js)
+* [Queue with Two Stacks](/Data-Structures/Cracking-the-Coding-Interview/queue-with-two-stacks.js)
+* [Stack with Two Queues](/Data-Structures/Cracking-the-Coding-Interview/stack-with-two-queues.js)
 
 #Algorithms
 
@@ -96,23 +96,23 @@ This is repository of data structures and algorithms written in Javascript and R
 
 ###Ruby:
 
-* [Add Reverse Linked List Digits](/Algorithms/Cracking%20the%20Coding%20Interview/add-reversed-linked-list-digits.rb)
-* [Basic String Compression](/Algorithms/Cracking%20the%20Coding%20Interview/basic-string-compression.rb)
-* [Encode URL](/Algorithms/Cracking%20the%20Coding%20Interview/encode-url.rb)
-* [Find Linked List Cycle](/Algorithms/Cracking%20the%20Coding%20Interview/find-linked-list-cycle.rb)
-* [Linked List Palindrome](/Algorithms/Cracking%20the%20Coding%20Interview/linked-list-palindrome.rb)
-* [Make Change](/Algorithms/Cracking%20the%20Coding%20Interview/make-change.rb)
-* [One Edit Away](/Algorithms/Cracking%20the%20Coding%20Interview/one-edit-away.rb)
-* [Partition Linked List](/Algorithms/Cracking%20the%20Coding%20Interview/partition-linked-list.rb)
-* [Path Between Two Nodes](/Algorithms/Cracking%20the%20Coding%20Interview/path-between-two-nodes.rb)
-* [Permutation Strings](/Algorithms/Cracking%20the%20Coding%20Interview/permutations-strings.rb)
-* [Remove Duplicates from Linked List](/Algorithms/Cracking%20the%20Coding%20Interview/remove-duplicates-from-linked-list.rb)
-* [Reverse Characters and String](/Algorithms/Cracking%20the%20Coding%20Interview/reverse-characters-and-string.rb)
-* [String is Substring](/Algorithms/Cracking%20the%20Coding%20Interview/string-is-substring.rb)
-* [Tree Path Equals Sum](/Algorithms/Cracking%20the%20Coding%20Interview/tree-path-equals-sum.rb)
-* [Unique Characters](/Algorithms/Cracking%20the%20Coding%20Interview/unique-characters.rb)
+* [Add Reverse Linked List Digits](/Algorithms/Cracking-the-Coding-Interview/add-reversed-linked-list-digits.rb)
+* [Basic String Compression](/Algorithms/Cracking-the-Coding-Interview/basic-string-compression.rb)
+* [Encode URL](/Algorithms/Cracking-the-Coding-Interview/encode-url.rb)
+* [Find Linked List Cycle](/Algorithms/Cracking-the-Coding-Interview/find-linked-list-cycle.rb)
+* [Linked List Palindrome](/Algorithms/Cracking-the-Coding-Interview/linked-list-palindrome.rb)
+* [Make Change](/Algorithms/Cracking-the-Coding-Interview/make-change.rb)
+* [One Edit Away](/Algorithms/Cracking-the-Coding-Interview/one-edit-away.rb)
+* [Partition Linked List](/Algorithms/Cracking-the-Coding-Interview/partition-linked-list.rb)
+* [Path Between Two Nodes](/Algorithms/Cracking-the-Coding-Interview/path-between-two-nodes.rb)
+* [Permutation Strings](/Algorithms/Cracking-the-Coding-Interview/permutations-strings.rb)
+* [Remove Duplicates from Linked List](/Algorithms/Cracking-the-Coding-Interview/remove-duplicates-from-linked-list.rb)
+* [Reverse Characters and String](/Algorithms/Cracking-the-Coding-Interview/reverse-characters-and-string.rb)
+* [String is Substring](/Algorithms/Cracking-the-Coding-Interview/string-is-substring.rb)
+* [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
+* [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
 
 ####Dynamic Programming:
 
-* [Maxiumum Subsequence](/Algorithms/Dynamic%20Programming/max-subsequence.rb)
-* [Minimum Change Sum](/Algorithms/Dynamic%20Programming/min-change-sum.rb)
+* [Maxiumum Subsequence](/Algorithms/Dynamic-Programming/max-subsequence.rb)
+* [Minimum Change Sum](/Algorithms/Dynamic-Programming/min-change-sum.rb)

@@ -1,3 +1,4 @@
+# needs refactoring
 def one_edit_away(str1, str2)
   return true if str1 == str2
   str1, str2 = str1.chars, str2.chars
@@ -50,10 +51,10 @@ end
 def is_delete(str1, str2)
  i = 0
  for char in str2
-  if i == str1.length
-    str2.delete_at(i)
-    return true
-  elsif char != str1[i]
+   if i == str1.length
+     str2.delete_at(i)
+     return true
+   elsif char != str1[i]
     str2.delete_at(i)
     if str1 == str2
       return true
@@ -61,5 +62,6 @@ def is_delete(str1, str2)
       return false
     end
     i += 1
+   end
   end
 end
