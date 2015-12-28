@@ -18,6 +18,15 @@ This is repository of data structures and algorithms written in Javascript and R
  + [Knuth-Morris-Pratt Algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
  + [Heap](https://en.wikipedia.org/wiki/Heap_\(data_structure\))
  + [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
+ 
+##Ruby instructions:
+ 
+ To run Ruby specs, execute the `rspec` command in the terminal
+ 
+##Javascript Instructions
+ 
+ To run Javascript specs, execute the `rake jasmine` command in the terminal. Then open the browser to
+ http://localhost:8888/
 
 #Data Structures
 
