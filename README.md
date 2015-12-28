@@ -79,6 +79,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 * [Min Depth Binary Tree](/Algorithms/JavaScript/min-depth-binary-tree.js)
 * [Climbing Stairs](/Algorithms/JavaScript/climbing-stairs.js)
+* [All Anagrams](/Algorithms/JavaScript/all-anagrams.js)
 
 
 ###Ruby:
@@ -109,6 +110,8 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Find Single Number](/Algorithms/Ruby/find-single-number.rb)
 * [Min Depth Binary Tree](/Algorithms/Ruby/min-depth-binary-tree.rb)
 * [Max Depth Binary Tree](/Algorithms/Ruby/max-depth-binary-tree.rb)
+* [Invert Binary Tree](/Algorithms/Ruby/invert-binary-tree.rb)
+* [All Anagrams](/Algorithms/Ruby/all-anagrams.rb)
 
 #Cracking the Coding Interview
 
