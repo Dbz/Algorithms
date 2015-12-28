@@ -71,7 +71,12 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Roman Numeral -> Integer](/Algorithms/JavaScript/roman-numeral-to-int.js)
 * [Second Largest Val in Binary Tree](/Algorithms/JavaScript/second-largest-binary-tree.js)
 * [Stock Picker](/Algorithms/JavaScript/stock-picker.js)
-* [Symmetric Binary Tree](/Algorithms/JavaScript/symmetric-binary-tree.js)
+* [Symmetric Binary Tree](/Algorithms/JavaScript/contains-duplicate.js)
+* [Hamming Weight](/Algorithms/JavaScript/hamming-weight.js)
+* [Is Same Tree](/Algorithms/JavaScript/is-same-tree.js)
+* [Majority Element](/Algorithms/JavaScript/majority-element.js)
+* [Remove Value](/Algorithms/JavaScript/remove-value.js)
+* [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 
 ###Ruby:
 
