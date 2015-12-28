@@ -26,7 +26,7 @@ Trie.prototype.addWord = function(word) {
   var substring   = "";
   var currentNode = this.head;
   
-  for(var x = 1; x < len; x++) { // Traverse the Trie
+  for(var x = 1; x <= len; x++) { // Traverse the Trie
     substring = word.substring(0, x);
     if(!currentNode.hasChild(substring)) // Create node if it doesn't exist
       currentNode.addChild(substring);
