@@ -25,7 +25,7 @@ class BinaryTree
   end
 
   def delete data
-    dfs(@root).each do |node|
+    dfs.each do |node|
       if node.data == data
         @length -= 1
         node.data = nil
@@ -33,12 +33,20 @@ class BinaryTree
     end
   end
 
-  def traverse_dfs &block
-    dfs(@root).map(&:data).compact.each { |data| block.call(data) }
+  def traverse_dfs(node = @root, &block)
+    block.call(node.data) unless node.data.nil?
+    traverse_dfs(node.left, &block) if node.left
+    traverse_dfs(node.right, &block) if node.right
   end
 
   def traverse_bfs &block
-    bfs.map(&:data).compact.each { |data| block.call(data) }
+    queue = [@root]
+    while queue.length > 0
+      node = queue.shift
+      block.call(node.data) if node.data
+      queue << node.left if node.left
+      queue << node.right if node.right
+    end
   end
 
   private
@@ -49,22 +57,11 @@ class BinaryTree
     @leaf_nodes = [@root]
   end
 
-  def dfs node
+  def dfs node = @root
     nodes = []
-    nodes << node.left if node.left
-    nodes << node.right if node.right
-    [node] + nodes.flat_map { |child| dfs child }
-  end
-
-  def bfs
-    all_nodes = []
-    queue = [@root]
-    while queue.length > 0
-      node = queue.shift
-      all_nodes << node
-      queue << node.left if node.left
-      queue << node.right if node.right
-    end
-    all_nodes
+    nodes << node unless node.data.nil?
+    nodes += dfs(node.left) if node.left
+    nodes += dfs(node.right) if node.right
+    nodes
   end
 end
