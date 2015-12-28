@@ -6,7 +6,7 @@ var quickSort = function(array){
        less = [];
   
   array.slice(1).forEach(function(el){
-      (el > pivot) ? more.push(el) : less.push(el);
+    (el > pivot) ? more.push(el) : less.push(el);
   });
   
   return (quickSort(less)).concat([pivot], quickSort(more));

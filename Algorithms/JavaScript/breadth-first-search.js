@@ -1,15 +1,15 @@
 /* A Queue object for queue-like functionality over JavaScript arrays. */
 var Queue = function() {
-    this.items = [];
+  this.items = [];
 };
 Queue.prototype.enqueue = function(obj) {
-    this.items.push(obj);
+  this.items.push(obj);
 };
 Queue.prototype.dequeue = function() {
-    return this.items.shift();
+  return this.items.shift();
 };
 Queue.prototype.isEmpty = function() {
-    return this.items.length === 0;
+  return this.items.length === 0;
 };
 
 /*
@@ -24,8 +24,9 @@ var doBFS = function(graph, source) {
 
     for (var i = 0; i < graph.length; i++) {
       bfsInfo[i] = {
-          distance: null,
-          predecessor: null };
+        distance: null,
+        predecessor: null 
+      };
     }
 
     bfsInfo[source].distance = 0;
@@ -34,16 +35,16 @@ var doBFS = function(graph, source) {
     queue.enqueue(source);
 
     while(!queue.isEmpty()){
-        var node = queue.dequeue();
-        for (var i = 0; i < graph[node].length; i++){
-            var neighbor = graph[node][i];
-            if (bfsInfo[neighbor].distance === null){
-                bfsInfo[neighbor].distance = bfsInfo[node].distance + 1;
-                bfsInfo[neighbor].predecessor = node;
-                queue.enqueue(neighbor);
-            }
+      var node = queue.dequeue();
+      for (var i = 0; i < graph[node].length; i++){
+        var neighbor = graph[node][i];
+        if (bfsInfo[neighbor].distance === null){
+          bfsInfo[neighbor].distance = bfsInfo[node].distance + 1;
+          bfsInfo[neighbor].predecessor = node;
+          queue.enqueue(neighbor);
         }
+      }
     }
     
-    return bfsInfo;
+  return bfsInfo;
 };

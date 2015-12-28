@@ -13,14 +13,14 @@
  * @return {boolean}
  */
 var isSameTree = function(p, q) {
- if (p == null && q == null){
-     return true;
- } else if (p == null || q == null){
-     return false;
- }
+  if (p == null && q == null){
+    return true;
+  } else if (p == null || q == null){
+    return false;
+  }
+   
+  var left = isSameTree(p.left, q.left);
+  var right = isSameTree(p.right, q.right);
  
- var left = isSameTree(p.left, q.left);
- var right = isSameTree(p.right, q.right);
- 
- return p.val == q.val && left && right;
+  return p.val == q.val && left && right;
 };

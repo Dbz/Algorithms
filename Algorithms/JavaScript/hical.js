@@ -15,14 +15,15 @@ function hiCal(times){
     mergedTimes = [];
 
   for (var i = 1; i < times.length; i++){
-      if (times[i][0] <= prevEnd){
-          prevEnd = times[i][1];
-      } else {
-          mergedTimes.push([prevStart, prevEnd]);
-          prevStart = times[i][0];
-          prevEnd = times[i][1];
-      }
+    if (times[i][0] <= prevEnd){
+        prevEnd = times[i][1];
+    } else {
+        mergedTimes.push([prevStart, prevEnd]);
+        prevStart = times[i][0];
+        prevEnd = times[i][1];
+    }
   }
+  
   mergedTimes.push([prevStart, prevEnd]);
   return mergedTimes
 }
