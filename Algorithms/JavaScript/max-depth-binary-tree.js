@@ -4,8 +4,7 @@
  *     this.val = val;
  *     this.left = this.right = null;
  * }
- */
-/**
+ * 
  * @param {TreeNode} root
  * @return {number}
  */

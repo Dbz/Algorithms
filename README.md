@@ -107,6 +107,8 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Caeser Cipher](/Algorithms/Ruby/caesar-cipher.rb)
 * [Add Binary](/Algorithms/Ruby/add-binary.rb)
 * [Find Single Number](/Algorithms/Ruby/find-single-number.rb)
+* [Min Depth Binary Tree](/Algorithms/Ruby/min-depth-binary-tree.rb)
+* [Max Depth Binary Tree](/Algorithms/Ruby/max-depth-binary-tree.rb)
 
 #Cracking the Coding Interview
 
