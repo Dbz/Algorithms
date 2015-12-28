@@ -77,6 +77,9 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Majority Element](/Algorithms/JavaScript/majority-element.js)
 * [Remove Value](/Algorithms/JavaScript/remove-value.js)
 * [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
+* [Min Depth Binary Tree](/Algorithms/JavaScript/min-depth-binary-tree.js)
+* [Climbing Stairs](/Algorithms/JavaScript/climbing-stairs.js)
+
 
 ###Ruby:
 
@@ -102,7 +105,8 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Rate Limiter Class](/Algorithms/Ruby/rate_limiter.rb)
 * [Pascal's Triangle](/Algorithms/Ruby/pascals_triangle.rb)
 * [Caeser Cipher](/Algorithms/Ruby/caesar-cipher.rb)
-
+* [Add Binary](/Algorithms/Ruby/add-binary.rb)
+* [Find Single Number](/Algorithms/Ruby/find-single-number.rb)
 
 #Cracking the Coding Interview
 
