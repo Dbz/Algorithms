@@ -23,7 +23,7 @@ class LinkedList
     while current.next != nil
         current = current.next
     end 
-    current.next = Node.new(value,nil)
+    current.next = Node.new(value, nil)
     self
   end
 
