@@ -14,7 +14,7 @@
 
 var allAnagrams = function(string) {
 
-  if (typeof(string) !== 'string') { return; }
+  if (typeof(string) !== 'string') return;
 
   if (string.length === 1) {
     return [string];

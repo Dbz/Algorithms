@@ -8,7 +8,9 @@
 times = [[0, 1], [3, 5], [4, 8], [10, 12], [9, 10]]
 //  [(0, 1), (3, 8), (9, 12)]
 function hiCal(times) {
-  times = times.sort(function(a,b) { return a[0] - b[0]; });
+  times = times.sort(function(a,b) {
+    return a[0] - b[0];
+  });
   
   var prevStart = times[0][0],
         prevEnd = times[0][1],
