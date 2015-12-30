@@ -3,12 +3,12 @@
 // Ex. IV => 4 = 1 5 = - 1 + 5
  
 /**
- * @param {string} s
+ * @param {string} romanNumeral
  * @return {number}
  */
  
-var romanToInt = function(s) {
-  var romanhash = {
+var romanNumberalToInteger = function(romanNumeral) {
+  var romanNumerals = {
       I: 1,
       V: 5,
       X: 10,
@@ -20,11 +20,11 @@ var romanToInt = function(s) {
 
   var result = 0;
 
-  for (var i = 0; i < s.length; i++) {
-    if (romanhash[s[i]] < romanhash[s[i+1]]) {
-      result -= romanhash[s[i]];
+  for (var i = 0; i < romanNumeral.length; i++) {
+    if (romanNumerals[romanNumeral[i]] < romanNumerals[romanNumeral[i+1]]) {
+      result -= romanNumerals[romanNumeral[i]];
     } else {
-      result += romanhash[s[i]];
+      result += romanNumerals[romanNumeral[i]];
     }
   }
 

@@ -7,19 +7,19 @@
  *     this.left = this.right = null;
  * }
  *
- * @param {TreeNode} p
- * @param {TreeNode} q
+ * @param {TreeNode} leftNode
+ * @param {TreeNode} rightNode
  * @return {boolean}
  */
-var isSameTree = function(p, q) {
-  if (p == null && q == null) {
+var isSameTree = function(leftNode, rightNode) {
+  if (leftNode == null && rightNode == null) {
     return true;
-  } else if (p == null || q == null) {
+  } else if (leftNode == null || rightNode == null) {
     return false;
   }
    
-  var left = isSameTree(p.left, q.left);
-  var right = isSameTree(p.right, q.right);
+  var left = isSameTree(leftNode.left, rightNode.left);
+  var right = isSameTree(leftNode.right, rightNode.right);
  
-  return p.val == q.val && left && right;
+  return leftNode.val == rightNode.val && left && right;
 };

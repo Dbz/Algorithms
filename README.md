@@ -144,7 +144,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [String is Substring](/Algorithms/Cracking-the-Coding-Interview/string-is-substring.rb)
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
-* [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/lca.rb)
+* [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/least-common-ancestor.rb)
 
 ###Dynamic Programming:
 
