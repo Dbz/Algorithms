@@ -4,7 +4,9 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-  nums = nums.sort(function(a,b){return a-b;});
+  nums = nums.sort(function(a,b) {
+    return a-b;
+  });
   var midpoint = Math.floor(nums.length / 2);
   return nums[midpoint];
 };

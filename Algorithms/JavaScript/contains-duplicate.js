@@ -5,8 +5,8 @@
  */
 var containsDuplicate = function(nums) {
   var hashMap = {};
-  for (var i = 0; i < nums.length; i++){
-    if (hashMap[nums[i]]){
+  for (var i = 0; i < nums.length; i++) {
+    if (hashMap[nums[i]]) {
         return true;
     } else {
         hashMap[nums[i]] = 1;

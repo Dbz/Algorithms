@@ -1,6 +1,6 @@
 //Balanced Parens: Write a function that takes an arithmetic expression as an argument and returns true or false for an expression where a parenthesis is missing. 
 
-function balancedParens(input){
+function balancedParens(input) {
   var stack = new Stack();
 
   for (var i = 0; i < input.length; i++) {

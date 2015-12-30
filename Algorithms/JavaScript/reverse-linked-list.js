@@ -1,9 +1,9 @@
-function reverseLinkedList(head){
+function reverseLinkedList(head) {
   var current = head,
       next = null,
       prev = null;
 
-  while (current){
+  while (current) {
     next = current.next;
 
     current.next = prev;

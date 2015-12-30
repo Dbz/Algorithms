@@ -24,12 +24,12 @@ var allAnagrams = function(string) {
         current,
         others;
 
-    for (var i = 0; i < string.length; i++){
+    for (var i = 0; i < string.length; i++) {
       current = string[i];
       others = allAnagrams(string.substring(0, i) + string.substring(i + 1))
-      for (var j = 0; j < others.length; j++){
+      for (var j = 0; j < others.length; j++) {
         var concatenated = current.concat(others[j]);
-        if (!dict.hasOwnProperty(concatenated)){
+        if (!dict.hasOwnProperty(concatenated)) {
           dict[concatenated] = true;
           anagrams.push(concatenated);
         }

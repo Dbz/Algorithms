@@ -20,8 +20,8 @@ var romanToInt = function(s) {
 
   var result = 0;
 
-  for (var i = 0; i < s.length; i++){
-    if (romanhash[s[i]] < romanhash[s[i+1]]){
+  for (var i = 0; i < s.length; i++) {
+    if (romanhash[s[i]] < romanhash[s[i+1]]) {
       result -= romanhash[s[i]];
     } else {
       result += romanhash[s[i]];

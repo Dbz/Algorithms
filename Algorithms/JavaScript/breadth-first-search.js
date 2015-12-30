@@ -34,11 +34,11 @@ var doBFS = function(graph, source) {
     var queue = new Queue();
     queue.enqueue(source);
 
-    while(!queue.isEmpty()){
+    while(!queue.isEmpty()) {
       var node = queue.dequeue();
-      for (var i = 0; i < graph[node].length; i++){
+      for (var i = 0; i < graph[node].length; i++) {
         var neighbor = graph[node][i];
-        if (bfsInfo[neighbor].distance === null){
+        if (bfsInfo[neighbor].distance === null) {
           bfsInfo[neighbor].distance = bfsInfo[node].distance + 1;
           bfsInfo[neighbor].predecessor = node;
           queue.enqueue(neighbor);

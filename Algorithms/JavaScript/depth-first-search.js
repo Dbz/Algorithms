@@ -1,7 +1,7 @@
-var DFS = function(node, func){
+var DFS = function(node, func) {
   if (func) func(node);
 
-  node.children.forEach(function (child){
+  node.children.forEach(function (child) {
     DFS(child, func);
   });
 };

@@ -26,12 +26,12 @@ def traverse_spiral(matrix)
     end
 
     if dir == 2
-      (r).downto(l){ |right_index| puts matrix[b][right_index] }
+      (r).downto(l) { |right_index| puts matrix[b][right_index] }
       b -= 1
     end
 
     if dir == 3
-      (b).downto(t){ |bot_col_index| puts matrix[bot_col_index][l] }
+      (b).downto(t) { |bot_col_index| puts matrix[bot_col_index][l] }
       l += 1
     end
 

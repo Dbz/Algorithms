@@ -12,8 +12,8 @@ var isAnagram = function(s, t) {
   s = s.split("").sort();
   t = t.split("").sort();
   
-  for (var i = 0; i < slen; i++){
-    if (s[i] !== t[i]){
+  for (var i = 0; i < slen; i++) {
+    if (s[i] !== t[i]) {
       return false;
     }
   }

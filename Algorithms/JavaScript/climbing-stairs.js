@@ -8,7 +8,7 @@
  
 var climbStairs = function(n) {
   var combinations = [0, 1, 2, 3, 5, 8, 13, 21]
-  for (var i = 7; i <= n; i++){
+  for (var i = 7; i <= n; i++) {
       combinations[i] = combinations[i-1] + combinations[i-2];
   }
   return combinations[n];

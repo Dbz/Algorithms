@@ -10,7 +10,7 @@
  * @return {boolean}
  */
  
-var isSymSubtree = function(left, right){
+var isSymSubtree = function(left, right) {
   if (left === null) return right === null;
   if (right === null) return false;
   return (left.val == right.val) && isSymSubtree(left.left, right.right) && isSymSubtree(left.right, right.left);
