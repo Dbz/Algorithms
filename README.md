@@ -78,11 +78,11 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Is Same Tree](/Algorithms/JavaScript/is-same-tree.js)
 * [Majority Element](/Algorithms/JavaScript/majority-element.js)
 * [Remove Value](/Algorithms/JavaScript/remove-value.js)
-* [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 * [Min Depth Binary Tree](/Algorithms/JavaScript/min-depth-binary-tree.js)
 * [Subsets](/Algorithms/JavaScript/subsets.js)
 * [Substrings](/Algorithms/JavaScript/substrings.js)
 * [Transpose](/Algorithms/JavaScript/transpose.js)
+* [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 
 ###Ruby:
 
