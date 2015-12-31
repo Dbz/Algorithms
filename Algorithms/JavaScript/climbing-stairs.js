@@ -5,11 +5,11 @@
  * @param {number} n
  * @return {number}
  */
- 
-var climbStairs = function(n) {
-  var combinations = [0, 1, 2, 3, 5, 8, 13, 21]
-  for (var i = 7; i <= n; i++) {
-      combinations[i] = combinations[i-1] + combinations[i-2];
+
+var climbStairs = function(number) {
+  var stairCombinations = [0, 1, 2];
+  for(var i = 3; i <= number; i++) {
+    stairCombinations[i] = stairCombinations[i - 1] + stairCombinations[i - 2];
   }
-  return combinations[n];
+  return stairCombinations[number];
 };
