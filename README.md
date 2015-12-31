@@ -50,6 +50,7 @@ This is repository of data structures and algorithms written in Javascript and R
 
 ###JavaScript:
 
+* [Anagrams](/Algorithms/JavaScript/anagrams.js)
 * [Balanced Parens](/Algorithms/JavaScript/balanced-parens.js)
 * [Breadth First Search](/Algorithms/JavaScript/breadth-first-search.js)
 * [Delete Node in linked list](/Algorithms/JavaScript/delete-node-in-linked-list.js)
@@ -79,7 +80,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 * [Min Depth Binary Tree](/Algorithms/JavaScript/min-depth-binary-tree.js)
 * [Climbing Stairs](/Algorithms/JavaScript/climbing-stairs.js)
-* [All Anagrams](/Algorithms/JavaScript/all-anagrams.js)
 * [Subsets](/Algorithms/JavaScript/subsets.js)
 * [Substrings](/Algorithms/JavaScript/substrings.js)
 * [Transpose](/Algorithms/JavaScript/transpose.js)

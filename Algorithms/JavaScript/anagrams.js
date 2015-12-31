@@ -8,35 +8,35 @@
 
 /**
   * example usage:
-  * var anagrams = allAnagrams('abc');
+  * var anagrams = anagrams('abc');
   * console.log(anagrams); // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
   */
 
-var allAnagrams = function(string) {
+var anagrams = function(word) {
 
-  if (typeof(string) !== 'string') return;
+  if (typeof(word) !== 'string') return;
 
-  if (string.length === 1) {
-    return [string];
+  if (word.length === 1) {
+    return [word];
   } else {
-    var anagrams = [],
+    var allAnagrams = [],
         dict = {},
         current,
         others;
 
-    for (var i = 0; i < string.length; i++) {
-      current = string[i];
-      others = allAnagrams(string.substring(0, i) + string.substring(i + 1))
+    for (var i = 0; i < word.length; i++) {
+      current = word[i];
+      others = anagrams(word.substring(0, i) + word.substring(i + 1));
       for (var j = 0; j < others.length; j++) {
         var concatenated = current.concat(others[j]);
         if (!dict.hasOwnProperty(concatenated)) {
           dict[concatenated] = true;
-          anagrams.push(concatenated);
+          allAnagrams.push(concatenated);
         }
       }    
     }
 
-    return anagrams;
+    return allAnagrams;
   }
 
 };
