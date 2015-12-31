@@ -90,6 +90,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Create Binary Search Tree From Array](/Algorithms/Ruby/binary-search-tree-from-array.rb)
 * [Danny Search](/Algorithms/Ruby/danny-search.rb)
 * [Delete Kth Node in Linked List](/Algorithms/Ruby/delete-kth-node.rb)
+* [Difference Between Arrays](/Algorithms/Ruby/difference-between-arrays.rb)
 * [Graph Breadth First Search](/Algorithms/Ruby/graph-breadth-first-search.rb)
 * [Graph Depth First Search](/Algorithms/Ruby/graph-depth-first-search.rb)
 * [Isomorphic Strings](/Algorithms/Ruby/isomorphic-strings.rb)
