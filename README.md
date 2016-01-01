@@ -86,6 +86,7 @@ This is repository of data structures and algorithms written in Javascript and R
 
 ###Ruby:
 
+* [Anagrams](/Algorithms/Ruby/anagrams.rb)
 * [Balanced Binary Tree](/Algorithms/Ruby/balanced-binary-tree.rb)
 * [Create Binary Search Tree From Array](/Algorithms/Ruby/binary-search-tree-from-array.rb)
 * [Danny Search](/Algorithms/Ruby/danny-search.rb)
@@ -114,7 +115,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Min Depth Binary Tree](/Algorithms/Ruby/min-depth-binary-tree.rb)
 * [Max Depth Binary Tree](/Algorithms/Ruby/max-depth-binary-tree.rb)
 * [Invert Binary Tree](/Algorithms/Ruby/invert-binary-tree.rb)
-* [All Anagrams](/Algorithms/Ruby/all-anagrams.rb)
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 
 #Cracking the Coding Interview

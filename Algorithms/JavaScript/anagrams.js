@@ -6,12 +6,6 @@
  * Extra credit: Deduplicate your return array without using uniq().
  */
 
-/**
-  * example usage:
-  * var anagrams = anagrams('abc');
-  * console.log(anagrams); // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
-  */
-
 var anagrams = function(word) {
 
   if (typeof(word) !== 'string') return;
@@ -19,24 +13,24 @@ var anagrams = function(word) {
   if (word.length === 1) {
     return [word];
   } else {
-    var allAnagrams = [],
-        dict = {},
-        current,
-        others;
+    var allAnagrams   = [],
+      visitedAnagrams = {},
+      currentLetter,
+      partialAnagrams,
+      fullAnagram;
 
     for (var i = 0; i < word.length; i++) {
-      current = word[i];
-      others = anagrams(word.substring(0, i) + word.substring(i + 1));
-      for (var j = 0; j < others.length; j++) {
-        var concatenated = current.concat(others[j]);
-        if (!dict.hasOwnProperty(concatenated)) {
-          dict[concatenated] = true;
-          allAnagrams.push(concatenated);
+      currentLetter = word[i];
+      partialAnagrams = anagrams(word.substring(0, i) + word.substring(i + 1));
+      for (var j = 0; j < partialAnagrams.length; j++) {
+        fullAnagram = currentLetter.concat(partialAnagrams[j]);
+        if (!visitedAnagrams.hasOwnProperty(fullAnagram)) {
+          visitedAnagrams[fullAnagram] = true;
+          allAnagrams.push(fullAnagram);
         }
       }    
     }
 
     return allAnagrams;
   }
-
 };
