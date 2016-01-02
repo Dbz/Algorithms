@@ -107,7 +107,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Palindrome Linked List](/Algorithms/Ruby/palindrome-linked-list.rb)
 * [Pascal's Triangle](/Algorithms/Ruby/pascals_triangle.rb)
 * [Permutation Palindrome](/Algorithms/Ruby/permutation-palindrome.rb)
-* [Rate Limiter Class](/Algorithms/Ruby/rate_limiter.rb)
+* [Rate Limiter](/Algorithms/Ruby/rate-limiter.rb)
 * [Remove Duplicates in Text](/Algorithms/Ruby/remove-duplicates.rb)
 * [Rotate Array](/Algorithms/Ruby/rotate-array.rb)
 * [Seive of Erastenous](/Algorithms/Ruby/seive-of-erastenous.rb)
