@@ -105,7 +105,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Min Change Sum](/Algorithms/Ruby/min-change-sum.rb)
 * [Min Depth Binary Tree](/Algorithms/Ruby/min-depth-binary-tree.rb)
 * [Palindrome Linked List](/Algorithms/Ruby/palindrome-linked-list.rb)
-* [Pascal's Triangle](/Algorithms/Ruby/pascals_triangle.rb)
+* [Pascal's Triangle](/Algorithms/Ruby/pascals-triangle.rb)
 * [Permutation Palindrome](/Algorithms/Ruby/permutation-palindrome.rb)
 * [Rate Limiter](/Algorithms/Ruby/rate-limiter.rb)
 * [Remove Duplicates in Text](/Algorithms/Ruby/remove-duplicates.rb)
