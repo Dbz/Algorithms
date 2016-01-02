@@ -2,8 +2,8 @@
 # @param {Integer[]} nums
 # @return {Integer}
 
-def single_number(nums)
-  nums.reduce(:^)
+def single_number(numbers)
+  numbers.reduce(:^)
 end
 
 # Uses XOR operator to flip bits of the digit that only appears one time.
