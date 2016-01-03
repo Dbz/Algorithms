@@ -1,17 +1,17 @@
 /**
  * Given an array and a value, remove all instances of that value in place and return the new length.
  *
- * @param {number[]} nums
- * @param {number} val
+ * @param {number[]} numbers
+ * @param {number} value
  * @return {number}
  */
 
-var removeElement = function(nums, val) {
-  for (var i = 0; i < nums.length; i++) {
-    if (nums[i] === val) {
-      nums.splice(i, 1);
+var removeValue = function(numbers, value) {
+  for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] === value) {
+      numbers.splice(i, 1);
       i--;
     }
   }
-  return nums.length;
+  return numbers.length;
 };
