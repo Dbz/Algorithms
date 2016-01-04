@@ -1,16 +1,10 @@
-def unique_string(str)
-  return false if str.length > 128
-  str_map = {}
+def unique_characters(text)
+  visited_characters = Set.new
 
-  (0...str.length).each do |i|
-    if str_map[str[i].ord] != true
-      str_map[str[i].ord] = true
-    else
-      return false
-    end
+  text.each_char do |character|
+    return false if visited_characters.include? character
+    visited_characters << character
   end
-  return true
+
+  true
 end
-
-
-unique_string("hello my name is isis")
