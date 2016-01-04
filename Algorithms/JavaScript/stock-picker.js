@@ -1,7 +1,9 @@
-//Find the maximum difference in stock prices you can buy/sell from values in arr. The buy value must always come before the sell value.
+// Find the maximum difference in stock prices you can buy/sell from values in arr.
+// The buy value must always come before the sell value.
+
 function stockPrices(arr) {
   if (arr.length < 2) {
-    return false
+    return false;
   }
 
   var min = arr[0], 

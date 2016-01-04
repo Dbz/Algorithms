@@ -14,5 +14,3 @@ def min_change_sum(coins, total)
 
   totals[total]
 end
-
-puts min_change_sum([1,3,5], 11)

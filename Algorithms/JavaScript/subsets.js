@@ -14,5 +14,3 @@ function subsets(array) {
 
   return subSubsets.concat(newSubsets);
 }
-
-console.log("subsets([1, 3, 5]) = " + JSON.stringify(subsets([1, 3, 5])));

@@ -13,7 +13,6 @@ def traverse_spiral(matrix)
 
   # loop until top bound equals bottom bounds and left bounds equals right
   while (t <= b && l <= r)
-    puts "HERE IS THE DIR #{dir}"
 
     if dir == 0
       (l..r).each{ |left_index| puts matrix[t][left_index] }
@@ -38,10 +37,3 @@ def traverse_spiral(matrix)
     dir = (dir + 1) % 4
   end
 end
-
-matrix = [[1, 2, 3, 4], 
-          [5, 6, 7, 8], 
-          [9,10,11,12],
-          [13,14,15,16]]
-
-traverse_spiral(matrix)

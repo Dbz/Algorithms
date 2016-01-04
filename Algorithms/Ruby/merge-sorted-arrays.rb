@@ -14,8 +14,3 @@ def merge(nums1, m, nums2, n)
     n -= 1
   end
 end
-
-x = [1, 3, 5, 6, 7]
-y = [3, 4, 5, 8]
-
-merge(x, 5, y, 4)

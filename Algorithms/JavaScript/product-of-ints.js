@@ -15,7 +15,7 @@ function productOfInts(arr) {
   while (i >= 0) {
     productOfAllExceptIndex[i] *= productSoFar;
     productSoFar *= arr[i];
-    i--;A
+    i--;
   }
 
   return productOfAllExceptIndex;

@@ -5,5 +5,3 @@
 def single_number(numbers)
   numbers.reduce(:^)
 end
-
-# Uses XOR operator to flip bits of the digit that only appears one time.
