@@ -20,4 +20,3 @@ def bfs_binary_tree(node)
     queue.push(n.right) if n.right
   end
 end
-

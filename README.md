@@ -117,6 +117,15 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
+* [Convert Binary Tree to DLL](/Algorithms/Ruby/binary-tree-to-ll.rb)
+* [Count Primes](/Algorithms/Ruby/count-primes.rb)
+* [Dijkstras](/Algorithms/Ruby/dijkstras.rb)
+* [First Bad Version](/Algorithms/Ruby/first-bad-version.rb)
+* [BST Inorder Traversal](/Algorithms/Ruby/inorder-traversal.rb)
+* [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
+* [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
+* [Summary Ranges](/Algorithms/Ruby/summary-ranges.rb)
+* [Topological Sort](/Algorithms/Ruby/topological_sort.rb)
 
 #Cracking the Coding Interview
 
@@ -147,6 +156,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
 * [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/least-common-ancestor.rb)
+* [Missing Number](/Algorithms/Cracking-the-Coding-Interview/missing-number.rb)
 
 ###Dynamic Programming:
 
