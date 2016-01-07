@@ -12,20 +12,16 @@
 # @param {TreeNode} root
 # @return {String[]}
 
-def convert_bst(root)
-  queue = [root]
-   prev = nil
+def binary_tree_to_linked_list(root)
+  queue             = [root.left, root.right]
+  current_node      = root
+  current_node.left = nil
 
   while queue.length > 0
-    node = queue.unshift
-    queue.push(node.left) if node.left
-    node.left = prev
-    queue.push(node.right) if node.right
-    node.right = queue.first
-    prev = node
+    next_node = queue.shift
+    queue << next_node.left if next_node.left
+    queue << next_node.right if next_node.right
+    current_node.right, next_node.left = next_node, current_node
+    current_node = next_node
   end
 end
-
-
-# in-order traversal, pointing the left pointer to the previous 
-# node and right pointer to next in queue.
