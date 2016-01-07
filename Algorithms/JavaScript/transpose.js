@@ -1,7 +1,9 @@
 // Write a function on the Array prototype that will transpose a 2-D nested array matrix.
 Array.prototype.transpose = function () {
   var columns = [];
-  for (var i = 0; i < this[0].length; i++) {
+  var length  = this[0].length;
+
+  while(length--) {
     columns.push([]);
   }
 
