@@ -16,10 +16,10 @@ class LinkedList
       @current = delta == 1 ? @current.next : @current.previous
       @index  += delta
     end
-    @current.value
+    @current.data
   end
   
-  def []=(pos, value)
+  def []=(pos, data)
     
     return if pos < 0               # bounds check
     create_head if index == -1
@@ -32,7 +32,11 @@ class LinkedList
       @index  += delta
     end
 
-    @current.value = value
+    @current.data = data
+  end
+
+  def <<(value)
+    self[self.length] = value
   end
   
   def each &block
