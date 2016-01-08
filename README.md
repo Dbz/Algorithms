@@ -146,6 +146,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Find Linked List Cycle](/Algorithms/Cracking-the-Coding-Interview/find-linked-list-cycle.rb)
 * [Linked List Palindrome](/Algorithms/Cracking-the-Coding-Interview/linked-list-palindrome.rb)
 * [Make Change](/Algorithms/Cracking-the-Coding-Interview/make-change.rb)
+* [Missing Number](/Algorithms/Cracking-the-Coding-Interview/missing-number.rb)
 * [One Edit Away](/Algorithms/Cracking-the-Coding-Interview/one-edit-away.rb)
 * [Partition Linked List](/Algorithms/Cracking-the-Coding-Interview/partition-linked-list.rb)
 * [Path Between Two Nodes](/Algorithms/Cracking-the-Coding-Interview/path-between-two-nodes.rb)
@@ -156,7 +157,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
 * [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/least-common-ancestor.rb)
-* [Missing Number](/Algorithms/Cracking-the-Coding-Interview/missing-number.rb)
 
 ###Dynamic Programming:
 
