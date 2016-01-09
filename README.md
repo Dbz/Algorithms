@@ -2,14 +2,16 @@ Data Structures & Algorithms Repository
 ==========
 
 This is repository of data structures and algorithms written in Javascript and Ruby. Some of the algorithms are from
-[Cracking the Coding Interview by Gayle Laakmann McDowell](http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
+[Cracking the Coding Interview by Gayle Laakmann McDowell]
+(http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
 .
  
 #Contributing
  
  To contribute, fork this repo and create a pull request. Please include a short descriptive link to the code in the
- readme. If your code requires further explanation, you can include a more detailed explanation in the Data Structures
- or Algorithms subfolder's readme. Tests are optional.
+ readme. The readme links are ordered alphpabetically by file name. If your code requires further explanation,
+ you can include a more detailed explanation in the Data Structures or Algorithms subfolder's readme.
+ Tests are optional.
  
  If you're looking for inspiration:
  
