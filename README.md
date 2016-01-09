@@ -116,6 +116,7 @@ This is repository of data structures and algorithms written in Javascript and R
 * [Rotate Array](/Algorithms/Ruby/rotate-array.rb)
 * [Seive of Erastenous](/Algorithms/Ruby/seive-of-erastenous.rb)
 * [Shuffle Array in Place](/Algorithms/Ruby/shuffle-array-in-place.rb)
+* [Summary Ranges](/Algorithms/Ruby/summary-ranges.rb)
 * [Traverse Spiral Matrix](/Algorithms/Ruby/traverse-spiral-matrix.rb)
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
@@ -125,7 +126,6 @@ This is repository of data structures and algorithms written in Javascript and R
 * [First Bad Version](/Algorithms/Ruby/first-bad-version.rb)
 * [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
 * [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
-* [Summary Ranges](/Algorithms/Ruby/summary-ranges.rb)
 * [Topological Sort](/Algorithms/Ruby/topological_sort.rb)
 
 #Cracking the Coding Interview

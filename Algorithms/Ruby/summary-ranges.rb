@@ -1,28 +1,25 @@
-# Given a sorted integer array without duplicates, return the summary of its ranges.
+# Given a sorted integer array without duplicates, return the summary of its ranges.#
+# example: [0,1,2,4,5,7], return ["0->2","4->5","7"].
 #
-# @param {Integer[]} nums
+# @param {Integer[]} numbers
 # @return {String[]}
 
-def summary_ranges(nums)
-  return [] unless nums
-  return ["#{nums[0]}"] if nums.length == 1
-  result = []
-  start, finish = nums[0], nil
+def summary_ranges(numbers)
+  ranges = []
+  last_number = numbers.shift
+  current_range = [last_number]
 
-  (0...nums.length).each do |i|
-    unless nums[i+1] == nums[i] + 1
-      finish = nums[i]
-      if start == finish
-        result << "#{start}"
-      else
-        result << "#{start.to_s + '->' + finish.to_s}"
-      end
-      start = nums[i+1]
+  (0..numbers.length).each do |index|
+    if last_number + 1 == numbers[index]
+      current_range << numbers[index]
+    elsif current_range.length == 1
+      ranges += current_range
+      current_range = [numbers[index]]
+    else
+      ranges << "#{current_range.first}->#{current_range.last}"
+      current_range = [numbers[index]]
     end
+    last_number = numbers[index]
   end
-  result
+  ranges
 end
-
-#walk down nums
-# test if nums[i+1] == nums[i] + 1, continue
-# else, nums[i] = end, push start, end, nums[i + 1] = start, p
