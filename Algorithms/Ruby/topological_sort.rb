@@ -1,31 +1,36 @@
-# Topological sort works only for DAGs (Directed acyclic graphs).
-# The objective of this sort is print the postorder sequence of DFS nodes.
+# Topological ordering of a directed graph is a linear ordering of its vertices such that for every
+# directed edge uv from vertex u to vertex v, u comes before v in the ordering.
 
-class TopologicalSort
-  attr_accessor :post_order
+class Dag
+  attr_accessor :nodes
 
-  def initialize(graph, s)
-    @post_order = []
-    @visited = []
-    @graph = graph
-    @source = s
+  def topologicalSort
+    # Tarjan's algorithm
 
-    dfs
+    @sorted_nodes   = []
+    @unmarked_nodes = self.nodes.dup
+
+    visit(@unmarked_nodes.sample) while @unmarked_nodes.count > 0
+
+    @sorted_nodes
   end
 
-  private
-  def dfs(node)
-    stack = [@source]
+  def visit(node)
+    # Depth First Search
 
-    while stack.length > 0
-      node = stack.pop
-      @graph[node].each do |child_node|
-        unless @visited.include?(child_node)
-          stack.push(child_node)
-          visited.push(child_node)
-        end
-        @post_order << node
-      end
+    unless @unmarked_nodes.include? node
+      node.neighbors.each { |neighbor| visit(neighbor) }
+
+      @unmarked_nodes.delete(node)
+      @sorted_nodes.unshift node
     end
+  end
+end
+
+class Node
+  attr_accessor :neighbors
+
+  def initialize(neighbors)
+    @neighbors = neighbors
   end
 end
