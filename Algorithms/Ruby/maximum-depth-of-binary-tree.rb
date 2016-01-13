@@ -10,10 +10,6 @@
 # @param {TreeNode} root
 # @return {Integer}
 
-def max_depth_binary_tree(root)
-  return 0 unless root
-  left = max_depth_binary_tree(root.left)
-  right = max_depth_binary_tree(root.right)
-
-  left > right ? left + 1 : right + 1
+def maximum_depth_of_binary_tree(treeNode)
+  treeNode.nil? ? 0 : 1 + [maximum_depth_of_binary_tree(treeNode.left), maximum_depth_of_binary_tree(treeNode.right)].max
 end
