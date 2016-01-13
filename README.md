@@ -1,17 +1,19 @@
 Data Structures & Algorithms Repository
 ==========
 
-This is repository of data structures and algorithms written in Javascript and Ruby. Some of the algorithms are from
+This is repository of data structures and algorithms written in JavaScript and Ruby. Some of the algorithms are from
 [Cracking the Coding Interview by Gayle Laakmann McDowell]
 (http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
 .
  
 #Contributing
  
- To contribute, fork this repo and create a pull request. Please include a short descriptive link to the code in the
- readme. The readme links are ordered alphpabetically by file name. If your code requires further explanation,
- you can include a more detailed explanation in the Data Structures or Algorithms subfolder's readme.
- Tests are optional.
+If you're interested in contributing, fork this repo and create a pull request. Please include a short descriptive link
+to your code in the readme, and order the link alphpabetically by file name. Include a description of each
+data structure or algorithm at the top of the file, and if you feel that your code needs further explanation,
+you can include a more detailed summary in the Data Structures or Algorithms subfolder's readme.
+Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
+[JavaScript](https://github.com/airbnb/javascript) Style Guides. Tests are recommended, but optional.
  
  If you're looking for inspiration:
  
@@ -25,14 +27,14 @@ This is repository of data structures and algorithms written in Javascript and R
  
  To run Ruby specs, execute the `rspec` command in the terminal
  
-##Javascript Instructions
+##JavaScript Instructions
  
- To run Javascript specs, execute the `rake jasmine` command in the terminal. Then open the browser to
+ To run JavaScript specs, execute the `rake jasmine` command in the terminal. Then open a web browser to
  http://localhost:8888/
 
 #Data Structures
 
-###Javascript:
+###JavaScript:
 
 * [Binary Tree](/Data-Structures/JavaScript/binary-tree.js)
 * [Hash Table](/Data-Structures/JavaScript/hash-table.js)
