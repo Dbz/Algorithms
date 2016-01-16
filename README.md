@@ -17,6 +17,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
  
  If you're looking for inspiration:
  
+ + [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
  + [Sorting Algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms)
  + [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
  + [Knuth-Morris-Pratt Algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
@@ -102,6 +103,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Danny Search](/Algorithms/Ruby/danny-search.rb)
 * [Delete Kth Node in Linked List](/Algorithms/Ruby/delete-kth-node.rb)
 * [Difference Between Arrays](/Algorithms/Ruby/difference-between-arrays.rb)
+* [Dijkstras](/Algorithms/Ruby/dijkstras.rb)
 * [Find Single Number](/Algorithms/Ruby/find-single-number.rb)
 * [First Bad Version](/Algorithms/Ruby/first-bad-version.rb)
 * [Graph Breadth First Search](/Algorithms/Ruby/graph-breadth-first-search.rb)
@@ -128,7 +130,6 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 * [Count Primes](/Algorithms/Ruby/count-primes.rb)
-* [Dijkstras](/Algorithms/Ruby/dijkstras.rb)
 * [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
 * [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
 
