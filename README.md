@@ -25,11 +25,11 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
  + [Heap](https://en.wikipedia.org/wiki/Heap_\(data_structure\))
  + [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
  
-##Ruby instructions:
+##Ruby Instructions:
  
  To run Ruby specs, execute the `rspec` command in the terminal
  
-##JavaScript Instructions
+##JavaScript Instructions:
  
  To run JavaScript specs, execute the `rake jasmine` command in the terminal. Then open a web browser to
  http://localhost:8888/
@@ -152,6 +152,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Encode URL](/Algorithms/Cracking-the-Coding-Interview/encode-url.rb)
 * [Find Linked List Cycle](/Algorithms/Cracking-the-Coding-Interview/find-linked-list-cycle.rb)
 * [Linked List Palindrome](/Algorithms/Cracking-the-Coding-Interview/linked-list-palindrome.rb)
+* [Lowest Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/lowest-common-ancestor.rb)
 * [Make Change](/Algorithms/Cracking-the-Coding-Interview/make-change.rb)
 * [Missing Number](/Algorithms/Cracking-the-Coding-Interview/missing-number.rb)
 * [One Edit Away](/Algorithms/Cracking-the-Coding-Interview/one-edit-away.rb)
@@ -163,7 +164,6 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [String is Substring](/Algorithms/Cracking-the-Coding-Interview/string-is-substring.rb)
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree-path-equals-sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique-characters.rb)
-* [Least Common Ancestor in BST](/Algorithms/Cracking-the-Coding-Interview/least-common-ancestor.rb)
 
 ###Dynamic Programming:
 
