@@ -1,21 +1,10 @@
-def caesar_cipher(str, shift)
-  result = ''
-  str.chars.each do |char|
-    ord = char.ord
-    if ord >= 65 && ord <= 90
-      new_ord = ord + shift
-      if new_ord > 90
-        new_ord = (new_ord % 26) + 64
-      end
-    elsif ord >= 97 && ord <= 122
-      new_ord = ord + shift
-      if new_ord > 122
-        new_ord = (new_ord % 26) + 96
-      end
-    else
-      new_ord = ord
-    end
-    result += new_ord.chr
+LOWER_Z = 122
+
+def caesar_cipher(text, shift)
+  ciphered_text = ""
+  shift = shift % LOWER_Z
+  text.each_char do |letter|
+    ciphered_text += letter.ord + shift > LOWER_Z ? (letter.ord + shift - LOWER_Z).chr : (letter.ord + shift).chr
   end
-  result
+  ciphered_text
 end
