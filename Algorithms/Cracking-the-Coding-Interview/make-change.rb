@@ -14,7 +14,7 @@ def make_change(amount, coins)
 end
 
 # recursive version: 
-def make_change(target, coins = [25, 10, 5, 1])
+def make_change2(target, coins = [25, 10, 5, 1])
   return [] if target == 0
   return nil if coins.none? { |coin| coin <= target }
 
@@ -38,7 +38,7 @@ def make_change(target, coins = [25, 10, 5, 1])
     # coins first*. This is what `coins.drop(index)` enforces; if we
     # use a smaller coin, we can never go back to using larger coins
     # later.
-    best_remainder = make_change(remainder, coins.drop(index))
+    best_remainder = make_change2(remainder, coins.drop(index))
 
     # We may not be able to make the remaining amount of change (e.g.,
     # if coins doesn't have a 1cent piece), in which case we shouldn't
