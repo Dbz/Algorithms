@@ -12,25 +12,11 @@
 # @param {TreeNode} root
 # @return {String[]}
 
-def binary_tree_paths(root)
-  trace_path(root, '', [])
-end
+def root_to_leaf_paths(root, current_path)
+  paths = []
 
-def trace_path(node, path, result)
-  return [] unless node
-  path += node.val.to_s
+  paths << root.left.nil? ? current_path : root_to_leaf_paths(root.left, current_path + "->#{root.left.val}")
+  paths << root.right.nil? ? current_path : root_to_leaf_paths(root.right, current_path + "->#{root.right.val}")
 
-  if !node.left && !node.right
-    return result.push(path)
-  else
-    path += '->'
-  end
-
-  if node.left
-    trace_path(node.left, path, result)
-  end
-
-  if node.right
-    trace_path(node.right, path, result)
-  end
+  paths
 end

@@ -122,6 +122,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Permutation Palindrome](/Algorithms/Ruby/permutation-palindrome.rb)
 * [Rate Limiter](/Algorithms/Ruby/rate-limiter.rb)
 * [Remove Duplicates in Text](/Algorithms/Ruby/remove-duplicates.rb)
+* [Root to Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
 * [Rotate Array](/Algorithms/Ruby/rotate-array.rb)
 * [Seive of Erastenous](/Algorithms/Ruby/seive-of-erastenous.rb)
 * [Shuffle Array in Place](/Algorithms/Ruby/shuffle-array-in-place.rb)
@@ -132,7 +133,6 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
 * [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
-* [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
 
 #Cracking the Coding Interview
 
