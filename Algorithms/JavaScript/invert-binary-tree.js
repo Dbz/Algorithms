@@ -8,11 +8,13 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var invertTree = function(root) {
+
+var invertBinaryTree = function(root) {
   if (root == null) return null;
+
   var temp = root.left;
-  root.left = invertTree(root.right)
-  root.right = invertTree(temp)
+  root.left = invertTree(root.right);
+  root.right = invertTree(temp);
   
   return root;
 };

@@ -11,9 +11,7 @@
 # @return {TreeNode}
 
 def invert_binary_tree(root)
-  return unless root
-  temp = root.right
-  root.right = invert_binary_tree(root.left)
-  root.left = invert_binary_tree(root.right)
+  root.right, root.left = invert_binary_tree(root.left), invert_binary_tree(root.right) unless root.nil?
   root
 end
+
