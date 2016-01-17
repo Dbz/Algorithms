@@ -101,6 +101,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Binary Tree to Linked List](/Algorithms/Ruby/binary-tree-to-linked-list.rb)
 * [Create Binary Search Tree From Array](/Algorithms/Ruby/binary-search-tree-from-array.rb)
 * [Caeser Cipher](/Algorithms/Ruby/caesar-cipher.rb)
+* [Count Primes](/Algorithms/Ruby/count-primes.rb)
 * [Danny Search](/Algorithms/Ruby/danny-search.rb)
 * [Delete Kth Node in Linked List](/Algorithms/Ruby/delete-kth-node.rb)
 * [Difference Between Arrays](/Algorithms/Ruby/difference-between-arrays.rb)
@@ -130,7 +131,6 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
-* [Count Primes](/Algorithms/Ruby/count-primes.rb)
 * [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
 * [Draw BST Root->Leaf Paths](/Algorithms/Ruby/root-to-leaf-paths.rb)
 
