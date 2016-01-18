@@ -8,5 +8,3 @@ def shuffle_array_in_place(arr)
 
   arr
 end
-
-puts shuffle_array_in_place([1,2,3,4,5,6])

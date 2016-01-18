@@ -1,4 +1,4 @@
-function Stack(){
+function Stack() {
   this.dataStore = [];
   this.top = 0;
   this.push = push;
@@ -8,27 +8,27 @@ function Stack(){
   this.clear = clear;
 };
 
-function push(val){
+function push(val) {
   this.dataStore[this.top++] = val;
 };
 
-function pop(){
+function pop() {
   return this.dataStore[--this.top];
 };
 
-function peek(){
+function peek() {
   return this.dataStore[this.top-1];
 };
 
-function length(){
+function length() {
   return this.top;
 };
 
-function clear(){
+function clear() {
   this.top = 0;
 };
 
-function Queue(){
+function Queue() {
   this.inStack = new Stack();
   this.outStack = new Stack();
   this.enqueue = enqueue;
@@ -38,28 +38,28 @@ function Queue(){
   this.length = 0;
 }
 
-function empty(){
+function empty() {
   this.inStack.clear();
   this.outStack.clear();
 };
 
-function peek(){
-  if (this.outStack.length() > 1){
+function peek() {
+  if (this.outStack.length() > 1) {
     return this.outStack.dataStore[length-1];
   } else {
     return this.inStack.dataStore[0];
   }
 };
 
-function enqueue(val){
+function enqueue(val) {
   this.inStack.push(val);
   this.length ++;
 }
 
-function dequeue(){
+function dequeue() {
   var val;
-  if (this.outStack.length() === 0){
-    while (this.inStack.length() > 0){
+  if (this.outStack.length() === 0) {
+    while (this.inStack.length() > 0) {
      val = this.inStack.pop();
      this.outStack.push(val);
     } 

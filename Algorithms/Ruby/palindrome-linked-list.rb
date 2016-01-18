@@ -1,13 +1,12 @@
 # Refactor/rewrite this file
-require 'byebug'
 
 class Node
 
   attr_accessor :value, :next
 
   def initialize(val,next_in_line)
-      @value = val
-      @next = next_in_line
+    @value = val
+    @next = next_in_line
   end
 end
 

@@ -33,7 +33,7 @@ Stack.prototype.clear = function() {
 
 // Using Array
 
-function Stack(){
+function Stack() {
   this.dataStore = [];
   this.top = 0;
   this.push = push;
@@ -43,22 +43,22 @@ function Stack(){
   this.clear = clear;
 };
 
-function push(val){
+function push(val) {
   this.dataStore[this.top++] = val;
 };
 
-function pop(){
+function pop() {
   return this.dataStore[--this.top];
 };
 
-function peek(){
+function peek() {
   return this.dataStore[this.top-1];
 };
 
-function length(){
+function length() {
   return this.top;
 };
 
-function clear(){
+function clear() {
   this.top = 0;
 };
