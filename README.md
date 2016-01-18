@@ -112,6 +112,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Graph Depth First Search](/Algorithms/Ruby/graph-depth-first-search.rb)
 * [Invert Binary Tree](/Algorithms/Ruby/invert-binary-tree.rb)
 * [Isomorphic Strings](/Algorithms/Ruby/isomorphic-strings.rb)
+* [Largest Internal Binary Search Tree](/Algorithms/Ruby/largest-internal-binary-search-tree.rb)
 * [Longest Common Prefix](/Algorithms/Ruby/longest-common-prefix.rb)
 * [Maximum Depth of Binary Tree](/Algorithms/Ruby/maximum-depth-of-binary-tree.rb)
 * [Merge Sorted Arrays](/Algorithms/Ruby/merge-sorted-arrays.rb)
@@ -132,7 +133,6 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
 * [Tree Breadth First Search](/Algorithms/Ruby/tree-breadth-first-search.rb)
 * [Two Sum](/Algorithms/Ruby/two-sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid-binary-tree.rb)
-* [Largest BST in BT](/Algorithms/Ruby/largest-bst-in-bt.rb)
 
 #Cracking the Coding Interview
 

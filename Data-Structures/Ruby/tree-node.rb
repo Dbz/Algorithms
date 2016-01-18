@@ -6,7 +6,7 @@ class Node
   end
 
   def to_s
-    "(Left: #{@left&.data}) : (Right: #{@right&.data})"
+    "(Data: #{@data}) : (Left: #{@left&.data}) : (Right: #{@right&.data})"
   end
 
   def ==(node)
