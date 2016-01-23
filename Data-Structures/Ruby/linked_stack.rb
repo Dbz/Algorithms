@@ -1,12 +1,11 @@
-require_relative 'singly-linked-list'
+require_relative 'singly_linked_list'
 
 class LinkedStack < LinkedList
-
   def empty?
     @length == 0
   end
 
-  def push data
+  def push(data)
     new_head      = Node.new(data)
     new_head.next = @head
     @length      += 1

@@ -1,7 +1,7 @@
 def encode_url(str)
   res = []
   str = str.strip
-  for char in str.chars
+  str.each_char do |char|
     if char == ' '
       res << '%20'
     else
@@ -9,5 +9,5 @@ def encode_url(str)
     end
   end
 
-  return res.join("")
+  res.join("")
 end

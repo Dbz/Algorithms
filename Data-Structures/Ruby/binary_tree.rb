@@ -1,17 +1,20 @@
 class Node
   attr_accessor :parent, :left, :right, :data
   def initialize(data = nil, parent = nil, left = nil, right = nil)
-    @parent, @left, @right, @data = parent, left, right, data
+    @parent = parent
+    @left   = left
+    @right  = right
+    @data   = data
   end
 end
 
 class BinaryTree
   attr_accessor :length
 
-  def insert data
+  def insert(data)
     return create_root(data) if @root.nil?
     new_node = Node.new(data)
-    parent = @leaf_nodes.first
+    parent   = @leaf_nodes.first
 
     if parent.left.nil?
       parent.left = new_node
@@ -24,7 +27,7 @@ class BinaryTree
     @length += 1
   end
 
-  def delete data
+  def delete(data)
     dfs.each do |node|
       if node.data == data
         @length -= 1
@@ -39,11 +42,11 @@ class BinaryTree
     traverse_dfs(node.right, &block) if node.right
   end
 
-  def traverse_bfs &block
+  def traverse_bfs
     queue = [@root]
     while queue.length > 0
       node = queue.shift
-      block.call(node.data) if node.data
+      yield node.data if node.data
       queue << node.left if node.left
       queue << node.right if node.right
     end
@@ -51,13 +54,13 @@ class BinaryTree
 
   private
 
-  def create_root data
+  def create_root(data)
     @root       = Node.new(data)
     @length     = 1
     @leaf_nodes = [@root]
   end
 
-  def dfs node = @root
+  def dfs(node = @root)
     nodes = []
     nodes << node unless node.data.nil?
     nodes += dfs(node.left) if node.left

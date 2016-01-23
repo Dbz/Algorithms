@@ -3,13 +3,13 @@ require_relative 'node.rb'
 class LinkedList
   include Enumerable
   attr_accessor :length
-  
+
   def initialize
     @length = 0
   end
-  
+
   def [](pos)
-    return nil if pos >= @length || pos < 0  # bounds check
+    return nil if pos >= @length || pos < 0 # bounds check
 
     index         = 0
     current_node  = @head
@@ -20,7 +20,7 @@ class LinkedList
     end
     current_node.data
   end
-  
+
   def []=(index, data)
     return if index < 0
     create_head if @head.nil?
@@ -35,10 +35,10 @@ class LinkedList
     current_node.data = data
   end
 
-  def each &block
+  def each
     current_node = @head
     (0...@length).each do
-      block.call(current_node.data)
+      yield current_node.data
       current_node = current_node.next
     end
   end
@@ -64,5 +64,4 @@ class LinkedList
     @tail      = @tail.next
     @length   += 1
   end
-
 end
