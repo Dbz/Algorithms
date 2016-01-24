@@ -17,6 +17,7 @@ Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and
  
  If you're looking for inspiration:
  
+ + [Refactor one of these files!](/REFACTOR.md)
  + [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
  + [Valid Sudoku Board](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
  + [Sorting Algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms)
