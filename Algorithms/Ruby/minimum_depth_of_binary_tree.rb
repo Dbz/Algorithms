@@ -10,6 +10,8 @@
 # @param {TreeNode} treeNode
 # @return {Integer}
 
-def minimum_depth_of_binary_tree(treeNode)
-  treeNode.nil? ? 0 : 1 + [minimum_depth_of_binary_tree(treeNode.left), minimum_depth_of_binary_tree(treeNode.right)].min
+def minimum_depth_of_binary_tree(tree_node)
+  tree_node.nil? ?
+    0 :
+    1 + [minimum_depth_of_binary_tree(tree_node.left), minimum_depth_of_binary_tree(tree_node.right)].min
 end

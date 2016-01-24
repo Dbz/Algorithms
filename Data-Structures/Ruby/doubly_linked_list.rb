@@ -20,7 +20,6 @@ class LinkedList
   end
 
   def []=(pos, data)
-
     return if pos < 0               # bounds check
     create_head if index == -1
     delta = pos > @index ? 1 : -1   # set direction

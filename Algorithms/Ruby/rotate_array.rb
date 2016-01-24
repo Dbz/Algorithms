@@ -4,7 +4,8 @@ end
 
 
 def reverse(arr)
-  i, j = 0, arr.length - 1
+  i = 0
+  j = arr.length - 1
 
   while i < j
     temp = arr[i]
@@ -13,6 +14,5 @@ def reverse(arr)
     i += 1
     j -= 1
   end
-
   arr
 end

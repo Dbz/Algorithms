@@ -1,5 +1,4 @@
 class BFS
-
   attr_accessor :graph, :s, :visited, :edge_to
 
   def initialize(graph, s)
@@ -17,16 +16,15 @@ class BFS
     while queue.length > 0
       node = queue.shift
       @graph[node].each do |child_node|
-        unless @visited.include?(child_node)
-          queue.push(child_node)
-          @visited << child_node
-          @edge_to[child_node] = node
-        end
+        next if @visited.include?(child_node)
+        queue.push(child_node)
+        @visited << child_node
+        @edge_to[child_node] = node
       end
     end
   end
 
-  def has_path_to?(v)
+  def path_to?(v)
     @visited.include?(v)
   end
 

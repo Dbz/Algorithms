@@ -5,7 +5,7 @@ require 'Set'
 
 def remove_duplicate_characters(text)
   visited_characters = Set.new
-  new_text           = ""
+  new_text           = ''
 
   text.each_char do |character|
     new_text += character unless visited_characters.include? character

@@ -26,15 +26,15 @@ def current_binary_search_tree(root)
   valid_children = []
 
   loop do
-    if is_valid_node? root
+    if valid_node? root
       current_tree << root
-      if is_valid_node? root.left
+      if valid_node? root.left
         valid_children << root.left
       elsif !root.left.nil?
         unvisited_nodes << root.left
       end
 
-      if is_valid_node? root.right
+      if valid_node? root.right
         valid_children << root.right
       elsif !root.right.nil?
         unvisited_nodes << root.right
@@ -53,10 +53,13 @@ def current_binary_search_tree(root)
   [current_tree, unvisited_nodes]
 end
 
-def is_valid_node? node
+def valid_node?(node)
   # The binary search tree property states that the key in each node must be greater than all
   # keys stored in the left sub-tree, and smaller than all keys in right sub-tree.
 
-  !node || (node.left && node.data <= node.left.data) || (node.right && node.data >= node.right.data) ? false : true
+  if !node || (node.left && node.data <= node.left.data) || (node.right && node.data >= node.right.data)
+    false
+  else
+    true
+  end
 end
-

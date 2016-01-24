@@ -3,21 +3,21 @@ def compress_string(str)
   prev = str[0]
   count = 0
 
-  for char in str.chars
+  str.each_char do |char|
     if char == prev
       count += 1
     else
-      result << "#{char count}"
+      result << char + count.to_s
       prev = char
       count = 0
     end
   end
 
-  result << "#{char count}"
-  result = result.join("")
+  result << char + count.to_s
+  result = result.join('')
   if result.length < str.length
-    return result
+    result
   else
-    return str
+    str
   end
 end

@@ -1,19 +1,19 @@
 # dynamic programming version
 def make_change(amount, coins)
- result = Array.new(amount + 1, 0)
- result[0] = 1
+  result = Array.new(amount + 1, 0)
+  result[0] = 1
 
- coins.each do |coin|
-  (coin..amount).each do |higher_amount|
-    remainder = higher_amount - coin
-    result[higher_amount] += result[remainder]
+  coins.each do |coin|
+    (coin..amount).each do |higher_amount|
+      remainder = higher_amount - coin
+      result[higher_amount] += result[remainder]
+    end
   end
- end
 
- result[amount]
+  result[amount]
 end
 
-# recursive version: 
+# recursive version:
 def make_change2(target, coins = [25, 10, 5, 1])
   return [] if target == 0
   return nil if coins.none? { |coin| coin <= target }
@@ -50,9 +50,7 @@ def make_change2(target, coins = [25, 10, 5, 1])
     this_change = [coin] + best_remainder
 
     # Is this better than anything we've seen so far?
-    if (best_change.nil? || (this_change.count < best_change.count))
-      best_change = this_change
-    end
+    best_change = this_changeif best_change.nil? || this_change.count < best_change.count
   end
 
   best_change

@@ -1,28 +1,24 @@
 class Node
-
   attr_accessor :value, :next
 
-  def initialize(val,next_in_line)
+  def initialize(val, next_in_line)
     @value = val
-    @next = next_in_line
+    @next  = next_in_line
   end
 end
 
 class LinkedList
-
   attr_accessor :head
   def initialize(val)
     # Initialize a new node at the head
     @head = Node.new(val, nil)
   end
-  
+
   def add(value)
     # Traverse to the end of the list
     # And insert a new node over there with the specified value
     current = @head
-    while current.next != nil
-        current = current.next
-    end 
+    current = current.next until current.next.nil?
     current.next = Node.new(value, nil)
     self
   end
@@ -32,7 +28,7 @@ class LinkedList
     if current.value == val
       @head = @head.next
     else
-      while current.next != nil
+      until current.next.nil?
         current = current.next
         if current.value == val
           current.value = current.next.value || nil
@@ -48,11 +44,11 @@ def print_list(temp)
   current = temp.head
   i = 1
   while current.next
-    puts "#{current.value}"
+    puts current.value.to_s
     current = current.next
     i += 1
   end
-  puts "#{current.value}"
+  puts current.value.to_s
 end
 
 def partition_linked_temp(list, n)
@@ -61,12 +57,12 @@ def partition_linked_temp(list, n)
   g_start = greater = Node.new(0, nil)
 
   current = list.head
-  while (current)
+  while current
     temp = Node.new(current.value, nil)
     if current.value <= n
       lower.next = temp
       lower = lower.next
-    else 
+    else
       greater.next = temp
       greater = greater.next
     end
@@ -74,9 +70,8 @@ def partition_linked_temp(list, n)
   end
 
   current = l_start
-  while current.next
-    current = current.next
-  end
+  current = current.next while current.next
+
   current.next = g_start.next
 
   l_start.next

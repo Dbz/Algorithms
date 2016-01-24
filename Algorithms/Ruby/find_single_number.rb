@@ -1,4 +1,6 @@
-# Given an array of integers, every element appears twice except for one. Find that single one.
+# Given an array of integers, every element appears twice except for one.
+# Find that single one.
+
 # @param {Integer[]} nums
 # @return {Integer}
 

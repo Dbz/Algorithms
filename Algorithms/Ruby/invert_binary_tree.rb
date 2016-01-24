@@ -14,4 +14,3 @@ def invert_binary_tree(root)
   root.right, root.left = invert_binary_tree(root.left), invert_binary_tree(root.right) unless root.nil?
   root
 end
-
