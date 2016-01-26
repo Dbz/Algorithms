@@ -9,10 +9,10 @@
 # that that area has already been traced
 
 def traverse_spiral(matrix)
-  l = 0
-  r = matrix[0].length - 1
-  b = matrix.length - 1
-  t = 0
+  l   = 0
+  r   = matrix[0].length - 1
+  b   = matrix.length - 1
+  t   = 0
   dir = 0
 
   # loop until top bound equals bottom bounds and left bounds equals right

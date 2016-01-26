@@ -30,14 +30,14 @@ class BinaryTree
   def delete(data)
     dfs.each do |node|
       if node.data == data
-        @length -= 1
+        @length  -= 1
         node.data = nil
       end
     end
   end
 
   def traverse_dfs(node = @root, &block)
-    block.call(node.data) unless node.data.nil?
+    yield node.data unless node.data.nil?
     traverse_dfs(node.left, &block) if node.left
     traverse_dfs(node.right, &block) if node.right
   end

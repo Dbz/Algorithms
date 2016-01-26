@@ -14,8 +14,8 @@ class LinkedStack < LinkedList
 
   def pop
     return nil if empty?
-    data    = @head.data
-    @head   = @head.next
+    data     = @head.data
+    @head    = @head.next
     @length -= 1
     data
   end

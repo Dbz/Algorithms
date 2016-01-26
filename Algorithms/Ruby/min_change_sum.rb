@@ -2,7 +2,7 @@
 # ex coins = [1, 3, 5] total = 11
 
 def min_change_sum(coins, total)
-  totals = Array.new(total + 1, 1_000_000_000_000)
+  totals    = Array.new(total + 1, 1_000_000_000_000)
   totals[0] = 0
 
   (1..total).each do |i|

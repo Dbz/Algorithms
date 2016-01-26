@@ -10,7 +10,7 @@ describe 'LinkedList' do
   end
 
   it 'enumerates with each' do
-    values = [1, 2, 3]
+    values         = [1, 2, 3]
     linked_list[0] = 1
     linked_list[1] = 2
     linked_list[2] = 3

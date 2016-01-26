@@ -2,9 +2,8 @@
 # https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Using_a_priority_queue
 
 def dijkstra(graph, source_node)
-  priority_queue = PriorityQueue.new
-
-  distance = Hash.new(Float::INFINITY)
+  priority_queue        = PriorityQueue.new
+  distance              = Hash.new(Float::INFINITY)
   distance[source_node] = 0
 
   path = {}
@@ -17,7 +16,7 @@ def dijkstra(graph, source_node)
       current_distance = distance[current_node] + 1
       if current_distance < distance[node]
         distance[node] = current_distance
-        path[node] = current_node
+        path[node]     = current_node
         priority_queue.decrease_priority(node, current_distance)
       end
     end

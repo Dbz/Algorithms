@@ -1,5 +1,5 @@
 def palindrome?(head)
-  stack = []
+  stack       = []
   slow_runner = fast_runner = head
 
   while !fast_runner.nil? && !fast_runner.next.nil?

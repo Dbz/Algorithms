@@ -22,6 +22,6 @@ def binary_tree_to_linked_list(root)
     queue << next_node.left if next_node.left
     queue << next_node.right if next_node.right
     current_node.right, next_node.left = next_node, current_node
-    current_node = next_node
+    current_node                       = next_node
   end
 end

@@ -2,8 +2,8 @@ def add_reversed_digits(list1, list2)
   return false unless list1 && list2
   current1 = list1.head
   current2 = list2.head
-  stack1 = []
-  stack2 = []
+  stack1   = []
+  stack2   = []
 
   while current1.next
     stack1 << current1.value.to_i

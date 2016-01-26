@@ -1,8 +1,8 @@
 class DFS
   attr_reader :graph
   def initialize(graph, s)
-    @graph = graph
-    @s = s
+    @graph   = graph
+    @s       = s
     @visited = []
     @edge_to = {}
 

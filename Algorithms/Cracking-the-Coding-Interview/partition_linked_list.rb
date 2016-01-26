@@ -17,8 +17,8 @@ class LinkedList
   def add(value)
     # Traverse to the end of the list
     # And insert a new node over there with the specified value
-    current = @head
-    current = current.next until current.next.nil?
+    current      = @head
+    current      = current.next until current.next.nil?
     current.next = Node.new(value, nil)
     self
   end
@@ -32,7 +32,7 @@ class LinkedList
         current = current.next
         if current.value == val
           current.value = current.next.value || nil
-          current.next = current.next.next
+          current.next  = current.next.next
         end
       end
     end
@@ -42,11 +42,11 @@ end
 
 def print_list(temp)
   current = temp.head
-  i = 1
+  i       = 1
   while current.next
     puts current.value.to_s
     current = current.next
-    i += 1
+    i      += 1
   end
   puts current.value.to_s
 end
@@ -61,10 +61,10 @@ def partition_linked_temp(list, n)
     temp = Node.new(current.value, nil)
     if current.value <= n
       lower.next = temp
-      lower = lower.next
+      lower      = lower.next
     else
       greater.next = temp
-      greater = greater.next
+      greater      = greater.next
     end
     current = current.next
   end

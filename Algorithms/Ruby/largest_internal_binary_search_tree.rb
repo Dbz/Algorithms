@@ -7,9 +7,9 @@ require_relative '../../Data-Structures/Ruby/tree_node'
 
 def largest_internal_binary_search_tree(root)
   binary_search_trees = []
-  nodes_to_visit = [root]
+  nodes_to_visit      = [root]
   while nodes_to_visit.count > 0
-    current_root = nodes_to_visit.pop
+    current_root                            = nodes_to_visit.pop
     current_tree, additional_nodes_to_visit = current_binary_search_tree(current_root)
     binary_search_trees << current_tree unless current_tree.count == 1
     nodes_to_visit += additional_nodes_to_visit
@@ -21,9 +21,9 @@ end
 # @return {[TreeNode[], TreeNode[]]}
 
 def current_binary_search_tree(root)
-  current_tree = []
+  current_tree    = []
   unvisited_nodes = [] # Nodes to call current_binary_search_tree on from largest_internal_binary_search_tree
-  valid_children = []
+  valid_children  = []
 
   loop do
     if valid_node? root

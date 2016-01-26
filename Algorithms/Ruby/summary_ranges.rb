@@ -5,15 +5,15 @@
 # @return {String[]}
 
 def summary_ranges(numbers)
-  ranges = []
-  last_number = numbers.shift
+  ranges        = []
+  last_number   = numbers.shift
   current_range = [last_number]
 
   (0..numbers.length).each do |index|
     if last_number + 1 == numbers[index]
       current_range << numbers[index]
     elsif current_range.length == 1
-      ranges += current_range
+      ranges       += current_range
       current_range = [numbers[index]]
     else
       ranges << "#{current_range.first}->#{current_range.last}"

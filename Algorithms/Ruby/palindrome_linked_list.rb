@@ -5,7 +5,7 @@ class Node
 
   def initialize(val, next_in_line)
     @value = val
-    @next = next_in_line
+    @next  = next_in_line
   end
 end
 
@@ -18,8 +18,8 @@ class LinkedList
   def add(value)
     # Traverse to the end of the list
     # And insert a new node over there with the specified value
-    current = @head
-    current = current.next until current.next.nil?
+    current      = @head
+    current      = current.next until current.next.nil?
     current.next = Node.new(value, nil)
     self
   end
@@ -33,7 +33,7 @@ class LinkedList
         current = current.next
         if current.value == val
           current.value = current.next.value || nil
-          current.next = current.next.next
+          current.next  = current.next.next
         end
       end
     end
@@ -41,9 +41,8 @@ class LinkedList
   end
 end
 
-
 def list_palindrome(list)
-  stack = []
+  stack   = []
   current = list.head
 
   while current
@@ -65,7 +64,7 @@ def list_check(list)
   return false unless list
 
   stack = []
-  slow = fast = list.head
+  slow  = fast = list.head
 
   while fast && !fast.next.nil?
     fast = fast.next.next

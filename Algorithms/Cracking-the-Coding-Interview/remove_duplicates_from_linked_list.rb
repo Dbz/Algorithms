@@ -8,12 +8,12 @@ def remove_ll_duplicates(root)
       remove_node(current)
     else
       seen[current.val] = true
-      current = current.next
+      current           = current.next
     end
   end
 end
 
 def remove_node(node)
-  node.val = node.next.val || nil
+  node.val  = node.next.val || nil
   node.next = node.next.next
 end

@@ -11,12 +11,12 @@ class LinkedList
   def [](pos)
     return nil if pos >= @length || pos < 0 # bounds check
 
-    index         = 0
-    current_node  = @head
+    index        = 0
+    current_node = @head
     
     while index < pos
       current_node = current_node.next
-      index += 1
+      index       += 1
     end
     current_node.data
   end
@@ -25,8 +25,8 @@ class LinkedList
     return if index < 0
     create_head if @head.nil?
 
-    i             = 0
-    current_node  = @head
+    i            = 0
+    current_node = @head
     while i < index
       create_next_node if i == @length - 1
       current_node = current_node.next
@@ -54,8 +54,8 @@ class LinkedList
   private
 
   def create_head
-    @head = Node.new
-    @tail = @head
+    @head   = Node.new
+    @tail   = @head
     @length = 1
   end
 

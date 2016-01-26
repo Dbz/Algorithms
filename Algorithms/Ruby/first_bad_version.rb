@@ -22,7 +22,7 @@
 
 def first_bad_version(versions)
   # binary search
-  midpoint = (versions.length - 1) / 2
+  midpoint       = (versions.length - 1) / 2
   middle_version = versions[midpoint]
   return 1 if middle_version == versions.first
 

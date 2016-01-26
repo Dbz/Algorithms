@@ -1,8 +1,8 @@
 # needs refactoring
 class BFS
   def initialize(graph, s)
-    @graph = graph
-    @s = s
+    @graph   = graph
+    @s       = s
     @visited = [@s]
     @edge_to = {}
   end

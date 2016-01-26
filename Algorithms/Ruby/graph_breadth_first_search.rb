@@ -2,8 +2,8 @@ class BFS
   attr_accessor :graph, :s, :visited, :edge_to
 
   def initialize(graph, s)
-    @graph = graph
-    @s = s
+    @graph   = graph
+    @s       = s
     @visited = [@s]
     @edge_to = {}
 

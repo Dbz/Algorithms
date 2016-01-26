@@ -5,4 +5,3 @@ def eratosthenes(n)
   end
   nums.compact
 end
- 

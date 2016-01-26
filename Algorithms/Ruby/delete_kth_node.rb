@@ -2,10 +2,10 @@ def delete_kth_node(head, k)
   return false unless head
 
   current = head
-  count = 1
+  count   = 1
   while current.next
     current = current.next
-    count += 1
+    count  += 1
   end
 
   return false if count - k < 0
@@ -15,7 +15,7 @@ def delete_kth_node(head, k)
   end
 
   current.value = current.next.value || nil
-  current.next = current.next.next || nil
+  current.next  = current.next.next || nil
 
   head
 end

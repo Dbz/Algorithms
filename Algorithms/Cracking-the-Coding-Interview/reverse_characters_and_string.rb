@@ -15,8 +15,8 @@ end
 def reverse_in_place(str, start, len)
   while start < len
     str[start], str[len] = str[len], str[start]
-    start += 1
-    len -= 1
+    start               += 1
+    len                 -= 1
   end
 
   str
