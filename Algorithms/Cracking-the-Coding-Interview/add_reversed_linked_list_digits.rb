@@ -1,3 +1,11 @@
+# Add two numbers represented by linked lists
+
+# Input:
+#   First List: 7->5->9->4->6  // represents number 64957
+#   Second List: 8->4 //  represents number 48
+# Output
+#   Resultant list: 5->0->0->5->6  // represents number 65005
+
 def add_reversed_digits(list1, list2)
   return false unless list1 && list2
   current1 = list1.head
