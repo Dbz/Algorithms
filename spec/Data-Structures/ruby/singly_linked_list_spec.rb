@@ -1,4 +1,4 @@
-require_relative '../../../Data-Structures/Ruby/singly-linked-list'
+require_relative '../../../Data-Structures/Ruby/singly_linked_list'
 
 describe 'LinkedList' do
   let!(:linked_list) { LinkedList.new }
@@ -10,7 +10,7 @@ describe 'LinkedList' do
   end
 
   it 'enumerates with each' do
-    values = [1, 2, 3]
+    values         = [1, 2, 3]
     linked_list[0] = 1
     linked_list[1] = 2
     linked_list[2] = 3
@@ -32,7 +32,7 @@ describe 'LinkedList' do
     linked_list[1] = 2
 
     expect(linked_list.first).to eq(1)
-    end
+  end
 
   specify 'last returns the last value' do
     linked_list[0] = 1

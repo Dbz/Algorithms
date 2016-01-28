@@ -1,3 +1,5 @@
+
+
 function BinaryTree() {
   this._root = null;
   this.left = null;

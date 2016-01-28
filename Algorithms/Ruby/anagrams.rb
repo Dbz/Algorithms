@@ -11,8 +11,8 @@ def anagrams(word)
   all_anagrams = Set.new
 
   (0...word.length).each do |i|
-    current_letter = word[i]
-    partial_anagram = anagrams(word[0...i] + word[i+1..-1])
+    current_letter  = word[i]
+    partial_anagram = anagrams(word[0...i] + word[i + 1..-1])
     (0...partial_anagram.length).each do |j|
       full_anagram = current_letter + partial_anagram[j]
       all_anagrams << full_anagram

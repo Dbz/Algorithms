@@ -1,4 +1,4 @@
-require_relative '../../../Algorithms/Ruby/pascals-triangle'
+require_relative '../../../Algorithms/Ruby/pascals_triangle'
 
 describe 'PascalsTriangle' do
   it 'returns the first four rows' do

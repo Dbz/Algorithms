@@ -1,4 +1,4 @@
-require_relative '../../../Data-Structures/Ruby/doubly-linked-list'
+require_relative '../../../Data-Structures/Ruby/doubly_linked_list'
 
 describe 'LinkedList' do
   let!(:linked_list) { LinkedList.new }
@@ -10,7 +10,7 @@ describe 'LinkedList' do
   end
 
   it 'enumerates with each' do
-    values = [1, 2, 3]
+    values         = [1, 2, 3]
     linked_list[0] = 1
     linked_list[1] = 2
     linked_list[2] = 3

@@ -1,0 +1,17 @@
+Metrics/LineLength:
+  Max: 120
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+
+Metrics/MethodLength:
+  CountComments: false  # count full line comments?
+  Max: 20
+
+Style/ExtraSpacing:
+  ForceEqualSignAlignment: true
+
+AllCops:
+  TargetRubyVersion: 2.3
