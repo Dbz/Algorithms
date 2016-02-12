@@ -5,17 +5,17 @@ def one_edit_away(str1, str2)
   str2 = str2.chars
 
   if str1.length == str2.length
-    is_replace(str1, str2)
+    replace?(str1, str2)
   elsif str1.length == str2.length + 1 || str1.length + 1 == str2.length
-    is_delete(str1, str2)
+    delete?(str1, str2)
   elsif str1.length == str2.length - 1 || str1.length - 1 == str2.length
-    is_add(str1, str2)
+    add?(str1, str2)
   else
     false
   end 
 end
 
-def is_replace(str1, str2)
+def replace?(str1, str2)
   i = 0
   for a, b in str1.zip(str2)
     unless b == a
@@ -31,7 +31,7 @@ def is_replace(str1, str2)
   true
 end
 
-def is_add(str1, str2)
+def add?(str1, str2)
   i = 0
   j = 0
   while i < str2.length
@@ -49,7 +49,7 @@ def is_add(str1, str2)
   end
 end
 
-def is_delete(str1, str2)
+def delete?(str1, str2)
   i = 0
   str2.each_char do |char|
     if i == str1.length

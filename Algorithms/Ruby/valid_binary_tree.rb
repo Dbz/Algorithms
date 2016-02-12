@@ -1,6 +1,7 @@
+MAX_INT = 99999999999999999999
+LOW_INT = -99999999999999999999
+
 def valid_binary_tree(root)
-  MAX_INT = 99999999999999999999
-  LOW_INT = -99999999999999999999
   stack = [[root, LOW_INT, MAX_INT]]
 
   while stack.length > 0

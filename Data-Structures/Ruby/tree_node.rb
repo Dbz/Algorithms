@@ -9,7 +9,7 @@ class Node
     "(Data: #{@data}) : (Left: #{@left&.data}) : (Right: #{@right&.data})"
   end
 
-  def ==(node)
-    self.data == node.data
+  def ==(other)
+    data == other.data
   end
 end

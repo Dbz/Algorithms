@@ -34,10 +34,13 @@ class Search
   def search_node(node, location, str, index)
     # location is the location in the text
     # index is the location in the string
-    return nil if node[location].last.char != str[index + 1]
-    str.length == index + 2 ?
-      location - str.length + 2 :
+    if node[location].last.char != str[index + 1]
+      nil
+    elsif str.length == index + 2
+      location - str.length + 2
+    else
       search_node(node[location].last, location + 1, str, index + 1)
+    end
   end
     
   def search(str)
