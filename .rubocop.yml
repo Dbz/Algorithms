@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 Metrics/LineLength:
   Max: 120
   AllowHeredoc: true
@@ -11,7 +13,13 @@ Metrics/MethodLength:
   Max: 20
 
 Style/ExtraSpacing:
+  AllowForAlignment: true
   ForceEqualSignAlignment: true
 
 AllCops:
   TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  ExtraDetails: true
+
+Documentation:
+  Enabled: false
