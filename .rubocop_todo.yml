@@ -73,11 +73,6 @@ Style/Next:
     - 'Algorithms/Cracking-the-Coding-Interview/one_edit_away.rb'
     - 'Algorithms/Ruby/dijkstras.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-Style/NumericLiterals:
-  MinDigits: 21
-
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/ParallelAssignment:
