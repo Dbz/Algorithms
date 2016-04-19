@@ -12,7 +12,7 @@ def one_edit_away(str1, str2)
     add?(str1, str2)
   else
     false
-  end 
+  end
 end
 
 def replace?(str1, str2)

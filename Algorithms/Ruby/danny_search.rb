@@ -42,7 +42,7 @@ class Search
       search_node(node[location].last, location + 1, str, index + 1)
     end
   end
-    
+
   def search(str)
     node = self.chars[str[0]]
     return node.occurrences if str.length == 1

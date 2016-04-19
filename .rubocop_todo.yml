@@ -89,13 +89,3 @@ Style/ParallelAssignment:
 Style/RedundantSelf:
   Exclude:
     - 'Algorithms/Ruby/danny_search.rb'
-
-# Offense count: 5
-# Cop supports --auto-correct.
-Style/TrailingWhitespace:
-  Exclude:
-    - 'Algorithms/Cracking-the-Coding-Interview/linked_list_palindrome.rb'
-    - 'Algorithms/Cracking-the-Coding-Interview/one_edit_away.rb'
-    - 'Algorithms/Ruby/danny_search.rb'
-    - 'Algorithms/Ruby/palindrome_linked_list.rb'
-    - 'Data-Structures/Ruby/singly_linked_list.rb'

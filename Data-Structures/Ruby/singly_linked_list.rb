@@ -13,7 +13,7 @@ class LinkedList
 
     index        = 0
     current_node = @head
-    
+
     while index < pos
       current_node = current_node.next
       index       += 1
