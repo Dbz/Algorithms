@@ -11,10 +11,11 @@ end
 
 class LinkedList
   attr_accessor :head
+
   def initialize(val)
     @head = Node.new(val, nil)
   end
-  
+
   def add(value)
     # Traverse to the end of the list
     # And insert a new node over there with the specified value

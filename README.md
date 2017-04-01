@@ -6,7 +6,7 @@ This is repository of data structures and algorithms written in JavaScript and R
 (http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
 .
  
-#Contributing
+# Contributing
  
 I explicitly welcome contributions from people who have never contributed to open-source before: we were all beginners once! I can help build on a partially working pull request with the aim of getting it merged. I am also actively seeking to diversify our contributors and especially welcome contributions from women from all backgrounds and people of color. <sup>[1](#References)</sup>
 
@@ -23,18 +23,18 @@ If you're looking for inspiration, I'd love to have a:
  + [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
  + [Or refactor one of these files!](/REFACTOR.md)
  
-##Ruby Instructions:
+## Ruby Instructions:
  
  To run Ruby specs, execute the `rspec` command in the terminal
  
-##JavaScript Instructions:
+## JavaScript Instructions:
  
  To run JavaScript specs, execute the `rake jasmine` command in the terminal. Then open a web browser to
  http://localhost:8888/
 
-#Data Structures
+# Data Structures
 
-###JavaScript:
+### JavaScript:
 
 * [Binary Tree](/Data-Structures/JavaScript/binary-tree.js)
 * [Hash Table](/Data-Structures/JavaScript/hash-table.js)
@@ -43,16 +43,16 @@ If you're looking for inspiration, I'd love to have a:
 * [Tree](/Data-Structures/JavaScript/tree.js)
 * [Trie](/Data-Structures/JavaScript/trie.js)
 
-###Ruby:
+### Ruby:
 
 * [Binary Tree](/Data-Structures/Ruby/binary_tree.rb)
 * [Doubly Linked List](/Data-Structures/Ruby/doubly_linked_list.rb)
 * [Singly Linked List](/Data-Structures/Ruby/singly_linked_list.rb)
 * [Linked Stack](/Data-Structures/Ruby/linked_stack.rb)
 
-#Algorithms
+# Algorithms
 
-###JavaScript:
+### JavaScript:
 
 * [Anagrams](/Algorithms/JavaScript/anagrams.js)
 * [Balanced Parens](/Algorithms/JavaScript/balanced-parens.js)
@@ -89,7 +89,7 @@ If you're looking for inspiration, I'd love to have a:
 * [Transpose](/Algorithms/JavaScript/transpose.js)
 * [Valid Anagram](/Algorithms/JavaScript/valid-anagram.js)
 
-###Ruby:
+### Ruby:
 
 * [Add Binary](/Algorithms/Ruby/add_binary.rb)
 * [Anagrams](/Algorithms/Ruby/anagrams.rb)
@@ -132,18 +132,18 @@ If you're looking for inspiration, I'd love to have a:
 * [Two Sum](/Algorithms/Ruby/two_sum.rb)
 * [Valid Binary Tree](/Algorithms/Ruby/valid_binary_tree.rb)
 
-#Cracking the Coding Interview
+# Cracking the Coding Interview
 
-##Data Structures:
+## Data Structures:
 
-###JavaScript:
+### JavaScript:
 
 * [Queue with Two Stacks](/Data-Structures/Cracking-the-Coding-Interview/queue-with-two-stacks.js)
 * [Stack with Two Queues](/Data-Structures/Cracking-the-Coding-Interview/stack-with-two-queues.js)
 
-##Algorithms:
+## Algorithms:
 
-###Ruby:
+### Ruby:
 
 * [Add Reverse Linked List Digits](/Algorithms/Cracking-the-Coding-Interview/add_reversed_linked_list_digits.rb)
 * [Basic String Compression](/Algorithms/Cracking-the-Coding-Interview/basic_string_compression.rb)
@@ -163,7 +163,7 @@ If you're looking for inspiration, I'd love to have a:
 * [Tree Path Equals Sum](/Algorithms/Cracking-the-Coding-Interview/tree_path_equals_sum.rb)
 * [Unique Characters](/Algorithms/Cracking-the-Coding-Interview/unique_characters.rb)
 
-###Dynamic Programming:
+### Dynamic Programming:
 
 * [Maxiumum Subsequence](/Algorithms/Dynamic-Programming/max_subsequence.rb)
 * [Minimum Change Sum](/Algorithms/Dynamic-Programming/min_change-sum.rb)

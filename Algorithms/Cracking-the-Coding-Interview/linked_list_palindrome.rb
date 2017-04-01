@@ -7,7 +7,7 @@ def palindrome?(head)
     fast_runner = fast_runner.next.next
     slow_runner = slow_runner.next
   end
-  
+
   unless fast_runner.nil?
     slow_runner = slow_runner.next
   end
