@@ -2,8 +2,7 @@ Data Structures & Algorithms Repository
 ==========
 
 This is repository of data structures and algorithms written in JavaScript and Ruby. Some of the algorithms are from
-[Cracking the Coding Interview by Gayle Laakmann McDowell]
-(http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
+[Cracking the Coding Interview by Gayle Laakmann McDowell](http://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0984782850&linkCode=as2&tag=dbz03-20&linkId=LVVF6HDIDG3XQICI)
 .
  
 # Contributing
@@ -169,6 +168,6 @@ If you're looking for inspiration, I'd love to have a:
 * [Minimum Change Sum](/Algorithms/Dynamic-Programming/min_change-sum.rb)
 
 
-##References
+## References
 
   1. I used and modified [Homebrew's](https://github.com/Homebrew/brew#contributing) welcoming contributing section.
