@@ -11,9 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
-  - Algorithms/JavaScript/*.js
-  - Data-Structures/Cracking-the-Coding-Interview/*.js
-  - Data-Structures/Javascript/*.js
+  - Algorithms/*.js
+  - Data-Structures/*.js
 
 # stylesheets
 #

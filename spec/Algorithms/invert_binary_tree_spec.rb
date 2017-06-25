@@ -1,5 +1,5 @@
-require_relative '../../../Algorithms/Ruby/invert_binary_tree'
-require_relative '../../../Data-Structures/Ruby/tree_node'
+require_relative '../../Algorithms/invert_binary_tree'
+require_relative '../../Data-Structures/tree_node'
 
 describe 'invert_binary_tree' do
   it 'inverts a binary tree' do
