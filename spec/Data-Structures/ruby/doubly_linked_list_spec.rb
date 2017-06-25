@@ -1,4 +1,4 @@
-require_relative '../../../Data-Structures/Ruby/doubly_linked_list'
+require_relative '../../../Data-Structures/Ruby/y_linked_list'
 
 describe 'LinkedList' do
   let!(:linked_list) { LinkedList.new }

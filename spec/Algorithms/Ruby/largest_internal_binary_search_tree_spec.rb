@@ -1,4 +1,4 @@
-require_relative '../../../Algorithms/Ruby/largest_internal_binary_search_tree'
+require_relative '../../../Algorithms/Ruby/st_internal_binary_search_tree'
 
 describe 'largest_internal_binary_search_tree' do
   it 'returns the entire binary tree' do

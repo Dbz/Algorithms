@@ -1,4 +1,4 @@
-require_relative '../../Data-Structures/Ruby/tree_node'
+require_relative '../../Data-Structures/Ruby/e_node'
 
 # Given a binary tree, return its largest internal binary search tree.
 
