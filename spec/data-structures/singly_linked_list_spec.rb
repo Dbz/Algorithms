@@ -1,4 +1,4 @@
-require_relative '../../Data-Structures/doubly_linked_list'
+require_relative '../../data-structures/singly_linked_list'
 
 describe 'LinkedList' do
   let!(:linked_list) { LinkedList.new }
@@ -39,20 +39,5 @@ describe 'LinkedList' do
     linked_list[1] = 2
 
     expect(linked_list.last).to eq(2)
-  end
-
-  specify '[] returns the value at the given position' do
-    linked_list[0] = 1
-    linked_list[1] = 2
-
-    expect(linked_list[0]).to eq(1)
-  end
-
-  specify '<< appends a value to the linked list' do
-    linked_list[0] = 1
-    linked_list[1] = 2
-    linked_list << 3
-
-    expect(linked_list.last).to eq(3)
   end
 end
