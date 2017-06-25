@@ -23,8 +23,8 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 25
   Exclude:
-    - 'Algorithms/Ruby/largest_internal_binary_search_tree.rb'
-    - 'Algorithms/Ruby/traverse_spiral_matrix.rb'
+    - 'algorithms/largest_internal_binary_search_tree.rb'
+    - 'algorithms/traverse_spiral_matrix.rb'
 
 # Offense count: 4
 Metrics/PerceivedComplexity:
@@ -46,23 +46,23 @@ Style/For:
 # Configuration parameters: MinBodyLength.
 Style/GuardClause:
   Exclude:
-    - 'Algorithms/Cracking-the-Coding-Interview/one_edit_away.rb'
+    - 'algorithms/one_edit_away.rb'
 
 # Offense count: 5
 # Cop supports --auto-correct.
 # Configuration parameters: MaxLineLength.
 Style/IfUnlessModifier:
   Exclude:
-    - 'Algorithms/Cracking-the-Coding-Interview/find_linked_list_cycle.rb'
-    - 'Algorithms/Cracking-the-Coding-Interview/linked_list_palindrome.rb'
-    - 'Algorithms/Ruby/valid_binary_tree.rb'
+    - 'algorithms/find_linked_list_cycle.rb'
+    - 'algorithms/linked_list_palindrome.rb'
+    - 'algorithms/valid_binary_tree.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: Width.
 Style/IndentationWidth:
   Exclude:
-    - 'Algorithms/Ruby/palindrome_linked_list.rb'
+    - 'algorithms/palindrome_linked_list.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
@@ -70,17 +70,17 @@ Style/IndentationWidth:
 # SupportedStyles: skip_modifier_ifs, always
 Style/Next:
   Exclude:
-    - 'Algorithms/Cracking-the-Coding-Interview/one_edit_away.rb'
-    - 'Algorithms/Ruby/dijkstras.rb'
+    - 'algorithms/one_edit_away.rb'
+    - 'algorithms/dijkstras.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/ParallelAssignment:
   Exclude:
-    - 'Algorithms/Ruby/binary_tree_to_linked_list.rb'
+    - 'algorithms/binary_tree_to_linked_list.rb'
 
 # Offense count: 7
 # Cop supports --auto-correct.
 Style/RedundantSelf:
   Exclude:
-    - 'Algorithms/Ruby/danny_search.rb'
+    - 'algorithms/danny_search.rb'

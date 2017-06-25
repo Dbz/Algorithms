@@ -8,4 +8,4 @@ Here is an example of what the graph looks like for "hello world", and also what
 
 [Graph Example](http://i.imgur.com/CbzuDcP.png)
 
-[Danny Search Code](/Algorithms/danny_search.rb)
+[Danny Search Code](/algorithms/danny_search.rb)
