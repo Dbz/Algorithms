@@ -1,4 +1,4 @@
-require_relative '../../../Data-Structures/Ruby/y_tree'
+require_relative '../../Data-Structures/binary_tree'
 
 describe 'BinaryTree' do
   let(:tree) { BinaryTree.new }

@@ -1,4 +1,4 @@
-require_relative '../../../Algorithms/Ruby/limiter'
+require_relative '../../Algorithms/rate_limiter'
 
 describe 'RateLimiter' do
   let(:rate_limitor) { RateLimiter.new }
