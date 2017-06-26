@@ -1,4 +1,4 @@
-require_relative '../../Algorithms/remove_duplicates'
+require_relative '../../algorithms/remove_duplicates'
 
 describe 'remove_duplicate_characters' do
   it 'removes all the duplicate letters in "Hello, World!!"' do
