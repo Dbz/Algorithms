@@ -11,8 +11,8 @@
 #   - dist/**/*.js
 #
 src_files:
-  - Algorithms/*.js
-  - Data-Structures/*.js
+  - algorithms/*.js
+  - data-structures/*.js
 
 # stylesheets
 #
