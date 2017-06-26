@@ -1,4 +1,4 @@
-require_relative '../Data-Structures/tree_node'
+require_relative '../data-structures/tree_node'
 
 # Given a binary tree, return its largest internal binary search tree.
 

@@ -1,4 +1,4 @@
-require_relative '../../Data-Structures/linked_stack'
+require_relative '../../data-structures/linked_stack'
 
 describe LinkedStack do
   let(:linked_stack) { LinkedStack.new }
