@@ -79,6 +79,7 @@ If you're looking for inspiration, I'd love to have a:
 * Invert Binary Tree ([JS](/algorithms/invert-binary-tree.js))([R](/algorithms/invert_binary_tree.rb))
 * Isomorphic Strings ([R](/algorithms/isomorphic_strings.rb))
 * Is Same Tree ([JS](/algorithms/is-same-tree.js))
+* Is Unique (CtCI)([R](/algorithms/is_unique.rb))
 * Largest Internal Binary Search Tree ([R](/algorithms/largest_internal_binary_search_tree.rb))
 * Linked List Palindrome (CtCI)([R](/algorithms/linked_list_palindrome.rb))
 * Longest Common Prefix ([R](/algorithms/longest_common_prefix.rb))
@@ -125,7 +126,6 @@ If you're looking for inspiration, I'd love to have a:
 * Tree Breadth First Search ([R](/algorithms/tree_breadth_first_search.rb))
 * Tree Path Equals Sum (CtCI)([R](/algorithms/tree_path_equals_sum.rb))
 * Two Sum ([R](/algorithms/two_sum.rb))
-* Unique Characters (CtCI)([R](/algorithms/unique_characters.rb))
 * Valid Anagram ([JS](/algorithms/valid-anagram.js))
 * Valid Binary Tree ([R](/algorithms/valid_binary_tree.rb))
 
