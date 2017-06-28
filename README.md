@@ -97,7 +97,7 @@ If you're looking for inspiration, I'd love to have a:
 * Pascal's Triangle ([R](/algorithms/pascals_triangle.rb))
 * Path Between Two Nodes (CtCI)([R](/algorithms/path_between_two_nodes.rb))
 * Permutation Palindrome ([JS](/algorithms/permutation-palindrome.js))([R](/algorithms/permutation_palindrome.rb))
-* Permutation Strings (CtCI)([R](/algorithms/permutations_strings.rb))([P](/algorithms/check_permutation.py))
+* Permutation Strings (CtCI)([R](/algorithms/permutations_strings.rb))
 * Power of 2 ([JS](/algorithms/power-of-two.js))
 * Product of All Ints Except @ Index ([JS](/algorithms/product-of-ints.js))
 * Quicksort ([JS](/algorithms/quicksort.js))
