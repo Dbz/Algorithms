@@ -12,9 +12,10 @@
 # From the example it seems that spaces and case are ignored.
 # Strategy to solve: If there is more than one character that appears in the
 # string an odd number of times, then the string can't be palindrome permutation
+
 import collections
 
-
+# Loops through the string which is O(n)
 def is_palindrome_permutation(string):
     cha_counts = collections.Counter(string.lower().replace(" ", ""))
     odd_chars = [cha for cha, count in cha_counts.items() if count % 2 == 1]
@@ -25,5 +26,3 @@ nonpalindrome_string = "reddit"
 
 print(is_palindrome_permutation(palindrome_string))
 print(is_palindrome_permutation(nonpalindrome_string))
-
-
