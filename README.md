@@ -125,7 +125,7 @@ If you're looking for inspiration, I'd love to have a:
 * Tree Breadth First Search ([R](/algorithms/tree_breadth_first_search.rb))
 * Tree Path Equals Sum (CtCI)([R](/algorithms/tree_path_equals_sum.rb))
 * Two Sum ([R](/algorithms/two_sum.rb))
-* Unique Characters (CtCI)([R](/algorithms/unique_characters.rb))
+* Unique Characters (CtCI)([R](/algorithms/unique_characters.rb))([P](/algorithms/is_unique.py))
 * Valid Anagram ([JS](/algorithms/valid-anagram.js))
 * Valid Binary Tree ([R](/algorithms/valid_binary_tree.rb))
 
