@@ -132,6 +132,7 @@ If you're looking for inspiration, I'd love to have a:
 ## Key
 - (R) means Ruby
 - (JS) means JavaScript
+- (P) means Python
 - (CtCI) means Cracking the Coding Interview
 - (DP) means Dynamic Programming
 
