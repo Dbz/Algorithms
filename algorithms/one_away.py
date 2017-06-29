@@ -17,7 +17,7 @@ def is_one_away(string1, string2):
                        else [string2, string1])
     edits_away = 0
     if len(longer) == len(shorter):
-        for i in range(len(shorter)):
+        for i in range(len(longer)):
             if longer[i] != shorter[i]:
                 edits_away += 1
             if edits_away == 2:
@@ -25,12 +25,10 @@ def is_one_away(string1, string2):
         return True
     elif len(longer) - len(shorter) == 1:
         for i in range(len(longer)):
-            try:
-                if longer[i] != shorter[i - edits_away]:
-                    edits_away += 1
-            # IndexError thrown after reaching end of shorter string
-            except IndexError:
-                    edits_away += 1
+            if i - edits_away >= len(shorter):
+                edits_away += 1
+            elif longer[i] != shorter[i - edits_away]:
+                edits_away += 1
             if edits_away == 2:
                 return False
         return True
