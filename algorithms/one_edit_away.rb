@@ -9,7 +9,7 @@ def one_edit_away?(str1, str2)
   edits_away = 0
   maximum_index = larger_str.length - 1
   (0..maximum_index).each do |i|
-    edits_away += 1 if larger_str.length != smaller_str.length && larger_str[[i + edits_away, maximum_index].min] != smaller_str[i]
+    edits_away += 1 if larger_str.length != smaller_str.length && larger_str[i] != smaller_str[i - edits_away]
     edits_away += 1 if larger_str.length == smaller_str.length && larger_str[i] != smaller_str[i]
     return false if edits_away >= 2
   end
