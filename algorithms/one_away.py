@@ -47,9 +47,3 @@ print(is_one_away("held", "hello"))
 print(is_one_away("hello", "hellooooo"))
 print(is_one_away("hello", "ohell"))
 print(is_one_away("hello", "hoell"))
-
-
-
-
-
-
