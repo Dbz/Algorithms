@@ -20,6 +20,3 @@ def rotation_2?(str1, str2)
   (str1 + str1).include? str2
 end
 
-p rotation_1?('waterbottle', 'terbottlewa')
-p rotation_2?('waterbottle', 'terbottlewa')
-

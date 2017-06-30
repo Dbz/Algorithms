@@ -5,7 +5,7 @@
 
 # Loops through the largest string, so it is O(n)
 def one_edit_away?(str1, str2)
-  larger_str, smaller_str = str1.length > str2.length ? [str1, str2] : [str2 , str1]
+  larger_str, smaller_str = str1.length > str2.length ? [str1, str2] : [str2, str1]
   edits_away = 0
   maximum_index = larger_str.length - 1
   (0..maximum_index).each do |i|
@@ -16,10 +16,3 @@ def one_edit_away?(str1, str2)
   true
 end
 
-puts one_edit_away? "hello", "hello2"
-puts one_edit_away? "hello", "hell"
-puts one_edit_away? "hello", "bello"
-
-puts one_edit_away? "2hello", "hello2"
-puts one_edit_away? "hello", "held"
-puts one_edit_away? "hello", "hel"

@@ -25,12 +25,3 @@ def unique_3?(str)
   true
 end
 
-puts unique_1? 'meow'
-puts unique_1? 'meowm'
-
-puts unique_2? 'meow'
-puts unique_2? 'meowm'
-
-puts unique_3? 'meow'
-puts unique_3? 'meowm'
-

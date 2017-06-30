@@ -16,10 +16,3 @@ def permutation_2?(str1, str2)
   visited_chars.values.count(&:odd?) <= 1
 end
 
-
-puts permutation_1?('meowiamacat', 'meowiamadog')
-puts permutation_1?('meowiamacat', 'catmeowiama')
-
-puts permutation_2?('meowiamacat', 'meowiamadog')
-puts permutation_2?('meowiamacat', 'catmeowiama')
-

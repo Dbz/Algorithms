@@ -4,38 +4,46 @@
 
 require 'Set'
 
-def zero_matrix(matrix)
-  rows, cols = matrix.length - 1, matrix[0].length - 1
-  zeroed_rows = Set.new
-  zeroed_cols = Set.new
-  0.upto(rows).each do |row|
-    0.upto(cols).each do |col|
-      if matrix[row][col] == 0
-        zeroed_rows << row
-        zeroed_cols << col
+# Matrix is NxM
+class Matrix
+  def initialize(matrix_array)
+    @matrix = matrix_array
+  end
+
+  # returns a new zeroed Matrix
+  def zero_matrix
+    rows = @matrix.length - 1
+    cols = @matrix[0].length - 1
+    matrix = @matrix.dup
+    zeroed_rows = Set.new
+    zeroed_cols = Set.new
+    0.upto(rows).each do |row|
+      0.upto(cols).each do |col|
+        if (@matrix[row][col]).zero?
+          zeroed_rows << row
+          zeroed_cols << col
+        end
       end
     end
-  end
-  zeroed_rows.each do |row|
-    0.upto(cols).each do |col|
-      matrix[row][col] = 0
+    zeroed_rows.each do |row|
+      0.upto(cols).each do |col|
+        matrix[row][col] = 0
+      end
     end
-  end
-  zeroed_cols.each do |col|
-    0.upto(rows).each do |row|
-      matrix[row][col] = 0
+    zeroed_cols.each do |col|
+      0.upto(rows).each do |row|
+        matrix[row][col] = 0
+      end
     end
+    Matrix.new matrix
   end
-  matrix
+
+  def ==(other)
+    self.class == other.class && to_a == other.to_a
+  end
+
+  def to_a
+    @matrix
+  end
 end
-
-matrix = [[0, 1, 2, 3, 4],
-          [5, 6, 7, 8, 9],
-          [1, 0, 3, 4, 5]]
-
-zeroed_matrix = [[0, 0, 0, 0, 0],
-                 [0, 0, 7, 8, 9],
-                 [0, 0, 0, 0, 0]]
-
-puts zero_matrix(matrix) == zeroed_matrix
 
