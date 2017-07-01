@@ -4,10 +4,13 @@
 
 require 'Set'
 
+# O(n) solution
+# The string length will be the same as the set length if it is all unique characters
 def unique_1?(str)
   str.split('').to_set.length == str.length
 end
 
+# O(n) solution
 def unique_2?(str)
   visited_chars = Set.new
   str.each_char do |char|

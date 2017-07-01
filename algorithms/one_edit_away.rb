@@ -9,7 +9,11 @@ def one_edit_away?(str1, str2)
   edits_away = 0
   maximum_index = larger_str.length - 1
   (0..maximum_index).each do |i|
+    # if the strings are different sizes, then you check to make sure the longer_str char is equal to
+    # the smaller char moved left for each extra longer_str char
+    # e.g. ls = 'a1bcd' and s = 'abcd'. At ls[1] edits_away = 1. As ls[2] = b and s[2 - 1 = 1] = b. 
     edits_away += 1 if larger_str.length != smaller_str.length && larger_str[i] != smaller_str[i - edits_away]
+    # if the strings are the same size, then each character that is different will count as one edit
     edits_away += 1 if larger_str.length == smaller_str.length && larger_str[i] != smaller_str[i]
     return false if edits_away >= 2
   end

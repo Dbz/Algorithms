@@ -25,7 +25,6 @@ Metrics/MethodLength:
   Exclude:
     - 'algorithms/largest_internal_binary_search_tree.rb'
     - 'algorithms/traverse_spiral_matrix.rb'
-    - 'algorithms/zero_matrix.rb'
 
 Metrics/LineLength:
   Exclude:

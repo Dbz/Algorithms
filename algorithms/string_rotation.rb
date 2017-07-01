@@ -8,6 +8,7 @@ require 'Set'
 def rotation_1?(str1, str2)
   return false unless str1.size == str2.size
 
+  # Check if every possible rotation of str1 is equal to str2
   0.upto(str1.size) do |x|
     return true if str1[x..str1.size] + str1[0...x] == str2
   end
@@ -17,6 +18,8 @@ end
 # Concatinating arrays is O(n) and checking for a substring is O(n) making this O(n)
 def rotation_2?(str1, str2)
   return false unless str1.size == str2.size
+  # if you add two rotations together, every possible rotation will be contained with it.
+  # e.g. aterbottlew + aterbottlew contains every rotation of waterbottle
   (str1 + str1).include? str2
 end
 

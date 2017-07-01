@@ -5,8 +5,10 @@
 
 # Loops through each char so it is O(n)
 def permutation_of_palindrome?(str)
+  # Count all of the characters
   character_count = Hash.new { |h, k| h[k] = 0 }
   str.each_char { |char| character_count[char] += 1 unless char == ' ' }
+  # Only zero or one character count can be odd if the string is a palindrome
   character_count.values.count(&:odd?) <= 1
 end
 

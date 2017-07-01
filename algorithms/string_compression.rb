@@ -10,12 +10,14 @@ def compress_string(str)
   last_char         = ''
 
   str.each_char do |char|
-    if char == last_char
-      # Increment last character/number
-      compressed_string[-1] = (compressed_string[-1].to_i + 1).to_s
-    else
+    unless char == last_char
+      # Add two characters to compressed_string: char + number.
+      # We will increase the number if the next character is the same as this one
       compressed_string << char + '1'
       last_char = char
+    else
+      # Character is the same as the last character, so increment the counter
+      compressed_string[-1] = (compressed_string[-1].to_i + 1).to_s
     end
   end
   compressed_string.length < str.length ? compressed_string : str
