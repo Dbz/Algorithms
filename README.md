@@ -98,7 +98,7 @@ If you're looking for inspiration, I'd love to have a:
 * Linked List - Linked List Palindrome (CtCI)([R](/algorithms/linked_list_palindrome.rb))
 * Linked List - Palindrome ([JS](/algorithms/palindrome.js))([R](/algorithms/palindrome_linked_list.rb))
 * Linked List - Partition Linked List (CtCI)([R](/algorithms/partition_linked_list.rb))
-* Linked List - Remove Duplicates in Linked List (CtCI)([R](/algorithms/remove_duplicates_from_linked_list.rb))
+* Linked List - Remove Duplicates in Linked List (CtCI)([R](/algorithms/remove_duplicates_in_linked_list.rb))
 * Linked List - Reverse Linked List ([JS](/algorithms/reverse-linked-list.js))
 * Misc - Climbing Stairs ([JS](/algorithms/climbing-stairs.js))
 * Misc - Count Primes ([R](/algorithms/count_primes.rb))
