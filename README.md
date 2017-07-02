@@ -119,7 +119,7 @@ If you're looking for inspiration, I'd love to have a:
 * String - Encode URL (CtCI)([R](/algorithms/encode_url.rb))
 * String - Is Substring (CtCI)([R](/algorithms/string_is_substring.rb))
 * String - Isomorphic Strings ([R](/algorithms/isomorphic_strings.rb))
-* String - One Edit Away (CtCI)([R](/algorithms/one_edit_away.rb))
+* String - One Edit Away (CtCI)([R](/algorithms/one_edit_away.rb))([P](/algorithms/one_away.py))
 * String - Permutation Palindrome ([JS](/algorithms/permutation-palindrome.js))([R](/algorithms/permutation_palindrome.rb))([P](/algorithms/palindrome_permutation.py))
 * String - Permutation Strings (CtCI)([R](/algorithms/permutations_strings.rb))([P](/algorithms/check_permutation.py))
 * String - Remove Duplicates in Text ([R](/algorithms/remove_duplicates.rb))
