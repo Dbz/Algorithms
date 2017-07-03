@@ -1,78 +1,66 @@
-class Node
-  attr_accessor :value, :next
+# CtCI 6th Edition Problem 2.4
+# Partition: Write code to partition a linked list around a value x, such that all nodes less than x come
+# before all nodes greater than or equal to x. lf x is contained within the list, the values of x only need
+# to be after the elements less than x (see below). The partition element x can appear anywhere in the
+# "right partition"; it does not need to appear between the left and right partitions.
+# EXAMPLE
+# Input: 3 -> 5 -> 8 -> 5 - > 10 -> 2 -> 1 [partition = 5)
+# Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 
-  def initialize(val, next_in_line)
-    @value = val
-    @next  = next_in_line
+class Node
+  attr_accessor :data, :next
+  def initialize(data)
+    @data = data
+    @next = nil
+  end
+
+  def to_s
+    data_str = ''
+    current = self
+    until current.nil?
+      data_str << "->#{current.data}"
+      current = current.next
+    end
+    data_str[2..data_str.size]
+  end
+
+  def to_a
+    @next.nil? ? [data] : [data] + @next.to_a
   end
 end
 
-class LinkedList
-  attr_accessor :head
-  def initialize(val)
-    # Initialize a new node at the head
-    @head = Node.new(val, nil)
-  end
+# Loops through all the nodes so it is O(n)
+def partition_linked_list(head, partition)
+  # Plan is to have a left and right side. Go through the list and add the node to the left side or right side.
+  left_head     = nil
+  left_tail     = nil
+  right_head    = nil
+  right_tail    = nil
+  current_node  = head
 
-  def add(value)
-    # Traverse to the end of the list
-    # And insert a new node over there with the specified value
-    current      = @head
-    current      = current.next until current.next.nil?
-    current.next = Node.new(value, nil)
-    self
-  end
-
-  def delete(val)
-    current = @head
-    if current.value == val
-      @head = @head.next
-    else
-      until current.next.nil?
-        current = current.next
-        if current.value == val
-          current.value = current.next.value || nil
-          current.next  = current.next.next
-        end
+  until current_node.nil?
+    if current_node.data < partition # Add to left partition
+      if left_head.nil? # Create left head and tail on the first run
+        left_head = current_node
+        left_tail = current_node
+      else # Add to the left tail
+        left_tail.next = current_node
+        left_tail = left_tail.next
+      end
+    else # Add to right partition
+      if right_head.nil? # Create right head and tail on the first run
+        right_head = current_node
+        right_tail = current_node
+      else # Add to the right tail
+        right_tail.next = current_node
+        right_tail = right_tail.next
       end
     end
-    @head
+    current_node = current_node.next
   end
+  # Attach the two partitions and return the left head
+  left_tail.next = right_head
+  right_tail.next = nil
+  left_head
 end
 
-def print_list(temp)
-  current = temp.head
-  i       = 1
-  while current.next
-    puts current.value.to_s
-    current = current.next
-    i      += 1
-  end
-  puts current.value.to_s
-end
-
-def partition_linked_temp(list, n)
-  return false unless list || n
-  l_start = lower = Node.new(0, nil)
-  g_start = greater = Node.new(0, nil)
-
-  current = list.head
-  while current
-    temp = Node.new(current.value, nil)
-    if current.value <= n
-      lower.next = temp
-      lower      = lower.next
-    else
-      greater.next = temp
-      greater      = greater.next
-    end
-    current = current.next
-  end
-
-  current = l_start
-  current = current.next while current.next
-
-  current.next = g_start.next
-
-  l_start.next
-end
