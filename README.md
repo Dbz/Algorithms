@@ -97,7 +97,7 @@ If you're looking for inspiration, I'd love to have a:
 * Linked List - Delete Middle Node in Linked List (CtCI)([R](/algorithms/delete_middle_node.rb))
 * Linked List - Find Linked List Cycle (CtCI)([R](/algorithms/find_linked_list_cycle.rb))
 * Linked List - Linked List Palindrome (CtCI)([R](/algorithms/linked_list_palindrome.rb))
-* Linked List - Palindrome ([JS](/algorithms/palindrome.js))([R](/algorithms/palindrome_linked_list.rb))
+* Linked List - Palindrome (CtCI)([JS](/algorithms/palindrome.js))([R](/algorithms/palindrome_linked_list.rb))([R2](/algorithms/palindrome.rb))
 * Linked List - Partition Linked List (CtCI)([R](/algorithms/partition_linked_list.rb))
 * Linked List - Return Kth to last node (CtCI)([R](/algorithms/return_kth_to_last_element.rb))
 * Linked List - Remove Duplicates in Linked List (CtCI)([R](/algorithms/remove_duplicates_in_linked_list.rb))
