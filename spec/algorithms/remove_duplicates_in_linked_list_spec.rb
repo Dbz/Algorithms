@@ -1,4 +1,4 @@
-require_relative '../../algorithms/remove_duplicates_from_linked_list'
+require_relative '../../algorithms/remove_duplicates_in_linked_list'
 
 describe 'remove_duplicates' do
   let!(:a) { Node.new('a') }
