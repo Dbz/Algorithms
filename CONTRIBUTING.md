@@ -23,6 +23,6 @@ If you're looking for inspiration, I'd love to have a:
  + [Or refactor one of these files!](/REFACTOR.md)
 
 
-## References
+## Attribution
 
   1. I used and modified [Homebrew's](https://github.com/Homebrew/brew#contributing) welcoming contributing section.
