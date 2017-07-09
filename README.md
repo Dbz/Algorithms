@@ -8,6 +8,7 @@ This is repository of data structures and algorithms written in JavaScript and R
 # Contributing
 
 Contributions are welcome! Please read the [ Contributing guidelines](/CONTRIBUTING.md) and the [Code of Conduct](/CODE_OF_CONDUCT.md) on how to contribute.
+This project is Licensed under the [MIT License](/LICENSE.md).
  
 ## Ruby Instructions:
  
