@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Python solution for CtCI 6th Edition Problem 1.4
+"""Python solution for CtCI 6th Edition Problem 1.6
 
 Implement a method to perform basic string compression using the counts of
 repeated characters. For example, the string aabcccccaaa would become a2b1c5a3.
