@@ -18,10 +18,9 @@ Even sized matrix
 
 # Solution looks at each element once making it O(n)
 def rotate_matrix(matrix):
-    # Initialize rotated matrix
     rotated_matrix = []
     # Working from back to front, for each list in the matrix, take each
-    # element and append it the list in rotated_matrix that matches it's
+    # element and append it to the list in rotated_matrix that matches it's
     # position number.
     for row in range(len(matrix)):
         for position, element in enumerate(matrix[-(row + 1)]):
