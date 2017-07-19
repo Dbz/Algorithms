@@ -25,7 +25,7 @@ original string and just return the original string.
 'abcde'
 """
 
-
+# Loops through the string which is O(n)
 def compress_string(string):
     char_count = 1
     compressed_string = ""
