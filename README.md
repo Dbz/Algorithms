@@ -29,6 +29,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Singly Linked List ([R](/data-structures/singly_linked_list.rb))
 * Stack ([JS](/data-structures/stack.js))([R](/data-structures/linked_stack.rb))
 * Stack Min (CtCI)([R](/data-structures/stack_min.rb))
+* Stack of Stacks (CtCI)([R](/data-structures/stack_of_stacks.rb))
 * Stack with Two Queues (CtCI)([JS](/data-structures/stack-with-two-queues.js))
 * Tree ([JS](/data-structures/tree.js))
 * Trie ([JS](/data-structures/trie.js))
