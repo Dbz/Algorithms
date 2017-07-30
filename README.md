@@ -25,7 +25,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Doubly Linked List ([R](/data-structures/doubly_linked_list.rb))
 * Hash Table ([JS](/data-structures/hash-table.js))
 * Queue ([JS](/data-structures/queue.js))
-* Queue with Two Stacks (CtCI)([JS](/data-structures/queue-with-two-stacks.js))
+* Queue using Two Stacks (CtCI)([JS](/data-structures/queue-with-two-stacks.js))([R](/data-structures/queue_using_two_stacks.rb))
 * Singly Linked List ([R](/data-structures/singly_linked_list.rb))
 * Set of Stacks (CtCI)([R](/data-structures/set_of_stacks.rb))
 * Stack ([JS](/data-structures/stack.js))([R](/data-structures/linked_stack.rb))
