@@ -1,4 +1,4 @@
-require_relative '../../data-structures/stack_of_stacks'
+require_relative '../../data-structures/set_of_stacks'
 
 describe 'SetOfStacks' do
   let(:stack) { SetOfStacks.new(3) }
