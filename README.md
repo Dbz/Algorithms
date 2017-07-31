@@ -101,6 +101,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Misc - Power of 2 ([JS](/algorithms/power-of-two.js))
 * Misc - Rate Limiter ([R](/algorithms/rate_limiter.rb))
 * Misc - Seive of Erastenous ([R](/algorithms/seive_of_erastenous.rb))
+* Stack - Sort Stack ([R](/algorithms/sort_stack.rb))
 * String - Add Binary ([R](/algorithms/add_binary.rb))
 * String - Anagrams ([JS](/algorithms/JavaScript/anagrams.js))([R](/algorithms/anagrams.rb))
 * String - Balanced Parens ([JS](/algorithms/balanced-parens.js))
