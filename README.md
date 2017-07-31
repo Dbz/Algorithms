@@ -82,6 +82,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Graph - Tree Path Equals Sum (CtCI)([R](/algorithms/tree_path_equals_sum.rb))
 * Graph - Valid Binary Tree ([R](/algorithms/valid_binary_tree.rb))
 * Linked List - Add Reverse Linked List Digits (CtCI)([R](/algorithms/add_reversed_linked_list_digits.rb))
+* Linked List - Animal Shelter (CtCI)([R](/data-structures/animal_shelter.rb))
 * Linked List - Delete Kth Node in Linked List ([R](/algorithms/delete_kth_node.rb))
 * Linked List - Delete Node in linked list ([JS](/algorithms/delete-node-in-linked-list.js))
 * Linked List - Find Linked List Cycle (CtCI)([R](/algorithms/find_linked_list_cycle.rb))
