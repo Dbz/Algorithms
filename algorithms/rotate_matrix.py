@@ -13,21 +13,16 @@ Even sized matrix
 >>> rotate_matrix([['1','2','3','4'],['q','w','e','r'],['a','s','d','f'],['z','x','c','v']])
 [['z', 'a', 'q', '1'], ['x', 's', 'w', '2'], ['c', 'd', 'e', '3'], ['v', 'f', 'r', '4']]
 
-
+Solution looks at each element in each list making it O(E*L)
 """
 
-# Solution looks at each element once making it O(n)
 def rotate_matrix(matrix):
-    rotated_matrix = []
-    # Working from back to front, for each list in the matrix, take each
-    # element and append it to the list in rotated_matrix that matches it's
-    # position number.
-    for row in range(len(matrix)):
-        for position, element in enumerate(matrix[-(row + 1)]):
-            # Add lists as needed to rotated_matrix
-            if position >= len(rotated_matrix):
-                rotated_matrix.append([])
-            rotated_matrix[position].append(element)
-    return rotated_matrix
+    """combine the elements of each list with zip and then iterate through the
+    lists in reverse using a slice with a step of -1.
+    """
+    return list(list(x)[::-1] for x in zip(*matrix))
+
+
+
 
 
