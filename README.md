@@ -102,7 +102,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * String - Add Binary ([R](/algorithms/add_binary.rb))
 * String - Anagrams ([JS](/algorithms/JavaScript/anagrams.js))([R](/algorithms/anagrams.rb))
 * String - Balanced Parens ([JS](/algorithms/balanced-parens.js))
-* String - Basic String Compression (CtCI)([R](/algorithms/basic_string_compression.rb))
+* String - Basic String Compression (CtCI)([R](/algorithms/basic_string_compression.rb))([P](/algorithms/string_compression.py))
 * String - Caeser Cipher ([R](/algorithms/caesar_cipher.rb))
 * String - Encode URL (CtCI)([R](/algorithms/encode_url.rb))
 * String - Is Substring (CtCI)([R](/algorithms/string_is_substring.rb))
