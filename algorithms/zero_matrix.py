@@ -23,21 +23,14 @@ Two elements are 0 in the same column
 """
 
 def zero_matrix(matrix):
-    zeroed_matrix = []
     zero_coordinates = find_zeros(matrix)
     if len(zero_coordinates['rows']) > 0:
         for list_number, list in enumerate(matrix):
-            zeroed_list = []
             for element_number, element in enumerate(list):
                 if (   list_number    in zero_coordinates['rows']
                     or element_number in zero_coordinates['columns']):
-                        zeroed_list.append('0')
-                else:
-                        zeroed_list.append(element)
-            zeroed_matrix.append(zeroed_list)
-        return zeroed_matrix
-    else:
-        return matrix
+                        matrix[list_number][element_number] = '0'
+    return matrix
 
 
 def find_zeros(matrix):
