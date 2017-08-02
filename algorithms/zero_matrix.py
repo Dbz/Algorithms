@@ -20,6 +20,7 @@ Two elements are 0 in the same column
 >>> zero_matrix([['1', '0', '3', '4'], ['q', 'w', 'e', 'r'], ['a', '0', 'd', 'f'], ['z', 'x', 'c', 'v']])
 [['0', '0', '0', '0'], ['q', '0', 'e', 'r'], ['0', '0', '0', '0'], ['z', '0', 'c', 'v']]
 
+Solution looks at each element in each list, more than one, making it O(E*L)
 """
 
 def zero_matrix(matrix):
