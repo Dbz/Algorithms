@@ -50,6 +50,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Array - Quicksort ([JS](/algorithms/quicksort.js))
 * Array - Remove Value ([JS](/algorithms/remove-value.js))
 * Array - Rotate Array ([R](/algorithms/rotate_array.rb))
+* Array - Rotate Matrix (CtCI)([P](/algorithms/rotate_matrix.py))
 * Array - Shuffle in Place ([R](/algorithms/shuffle_array_in_place.rb))
 * Array - Stock Picker ([JS](/algorithms/stock-picker.js))
 * Array - Subsets ([JS](/algorithms/subsets.js))
