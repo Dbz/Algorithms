@@ -26,6 +26,10 @@ Metrics/MethodLength:
     - 'algorithms/largest_internal_binary_search_tree.rb'
     - 'algorithms/traverse_spiral_matrix.rb'
 
+Metrics/LineLength:
+  Exclude:
+    - 'algorithms/rotate_matrix.rb'
+
 # Offense count: 4
 Metrics/PerceivedComplexity:
   Max: 12
