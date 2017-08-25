@@ -6,21 +6,9 @@ This is repository of data structures and algorithms written in JavaScript and R
 .
  
 # Contributing
- 
-I explicitly welcome contributions from people who have never contributed to open-source before: we were all beginners once! I can help build on a partially working pull request with the aim of getting it merged. I am also actively seeking to diversify our contributors and especially welcome contributions from women from all backgrounds and people of color. <sup>[1](#References)</sup>
 
-If you're interested in contributing, fork this repo and create a pull request. Please include a short descriptive link to your code in the readme, and order the link alphpabetically by file name. Include a description of each data structure or algorithm at the top of the file, and if you feel that your code needs further explanation, you can include a more detailed summary in the Data Structures or Algorithms subfolder's readme. Please follow the [Ruby](https://github.com/bbatsov/ruby-style-guide) and [JavaScript](https://github.com/airbnb/javascript) Style Guides. Tests are recommended, but optional.
- 
-If you're looking for inspiration, I'd love to have a:
- 
- + [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
- + [Valid Sudoku Board](https://en.wikipedia.org/wiki/Sudoku_solving_algorithms)
- + [Sorting Algorithms](https://en.wikipedia.org/wiki/Sorting_algorithm#Popular_sorting_algorithms)
- + [A* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
- + [Knuth-Morris-Pratt Algorithm](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
- + [Heap](https://en.wikipedia.org/wiki/Heap_\(data_structure\))
- + [Bloom Filter](https://en.wikipedia.org/wiki/Bloom_filter)
- + [Or refactor one of these files!](/REFACTOR.md)
+Contributions are welcome! Please read the [ Contributing guidelines](/CONTRIBUTING.md) and the [Code of Conduct](/CODE_OF_CONDUCT.md) on how to contribute.
+This project is Licensed under the [MIT License](/LICENSE.md).
  
 ## Ruby Instructions:
  
@@ -62,6 +50,7 @@ If you're looking for inspiration, I'd love to have a:
 * Array - Quicksort ([JS](/algorithms/quicksort.js))
 * Array - Remove Value ([JS](/algorithms/remove-value.js))
 * Array - Rotate Array ([R](/algorithms/rotate_array.rb))
+* Array - Rotate Matrix (CtCI)([R](/algorithms/rotate_matrix.rb))([P](/algorithms/rotate_matrix.py))
 * Array - Shuffle in Place ([R](/algorithms/shuffle_array_in_place.rb))
 * Array - Stock Picker ([JS](/algorithms/stock-picker.js))
 * Array - Subsets ([JS](/algorithms/subsets.js))
@@ -69,6 +58,7 @@ If you're looking for inspiration, I'd love to have a:
 * Array - Transpose ([JS](/algorithms/transpose.js))
 * Array - Traverse Spiral Matrix ([R](/algorithms/traverse_spiral_matrix.rb))
 * Array - Two Sum ([R](/algorithms/two_sum.rb))
+* Array - Zero Matrix (CtCI)([R](/algorithms/zero_matrix.rb))
 * Graph - Balanced Binary Tree ([R](/algorithms/balanced_binary_tree.rb))
 * Graph - Binary Tree Inorder Traversal ([R](/algorithms/binary_tree_inorder_traversal.rb))
 * Graph - Binary Tree Preorder Traversal ([R](/algorithms/binary_tree_preorder_traversal.rb))
@@ -119,7 +109,7 @@ If you're looking for inspiration, I'd love to have a:
 * String - Add Binary ([R](/algorithms/add_binary.rb))
 * String - Anagrams ([JS](/algorithms/JavaScript/anagrams.js))([R](/algorithms/anagrams.rb))
 * String - Balanced Parens ([JS](/algorithms/balanced-parens.js))
-* String - Basic String Compression (CtCI)([R](/algorithms/basic_string_compression.rb))
+* String - String Compression (CtCI)([R](/algorithms/string_compression.rb))([P](/algorithms/string_compression.py))
 * String - Caeser Cipher ([R](/algorithms/caesar_cipher.rb))
 * String - Encode URL (CtCI)([R](/algorithms/encode_url.rb))
 * String - Is Substring (CtCI)([R](/algorithms/string_is_substring.rb))
@@ -130,8 +120,9 @@ If you're looking for inspiration, I'd love to have a:
 * String - Remove Duplicates in Text ([R](/algorithms/remove_duplicates.rb))
 * String - Reverse Characters and String (CtCI)([R](/algorithms/reverse_characters_and_string.rb))
 * String - Roman Numeral -> Integer ([JS](/algorithms/roman-numeral-to-integer.js))
+* String - String Rotation (CtCI)([R](/algorithms/string_rotation.rb))
 * String - Substrings ([JS](/algorithms/substrings.js))
-* String - Unique Characters (CtCI)([R](/algorithms/unique_characters.rb))([P](/algorithms/is_unique.py))
+* String - Unique Characters (CtCI)([R](/algorithms/is_unique.rb))([P](/algorithms/is_unique.py))
 * String - Valid Anagram ([JS](/algorithms/valid-anagram.js))
 
 ## Key
@@ -141,7 +132,3 @@ If you're looking for inspiration, I'd love to have a:
 - (CtCI) means Cracking the Coding Interview
 - (DP) means Dynamic Programming
 
-
-## References
-
-  1. I used and modified [Homebrew's](https://github.com/Homebrew/brew#contributing) welcoming contributing section.
