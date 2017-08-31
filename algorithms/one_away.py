@@ -1,15 +1,32 @@
 #!/usr/bin/env python3
-# CtCI 6th Edition Problem 1.5
-# There are three types of edits that can be performed on strings:
-# insert a character, remove a character, or replace a character.
-# Given two strings, write a function to check if they are one edit
-# (or zero edits) away.
-#
-# EXAMPLE
-# pale, ple -> true
-# pales, pale -> true
-# pale, bale -> true
-# pale, bake -> false
+""" Python solution for CtCI 6th Edition Problem 1.5
+
+There are three types of edits that can be performed on strings:
+insert a character, remove a character, or replace a character.
+Given two strings, write a function to check if they are one edit
+(or zero edits) away.
+
+>>> is_one_away("pale", "ple")
+True
+>>> is_one_away("pales", "pale")
+True
+>>> is_one_away("pale", "bale")
+True
+>>> is_one_away("pale", "bake")
+False
+>>> is_one_away("long", "short")
+False
+>>> is_one_away("toolong", "short")
+False
+>>> is_one_away("held", "hello")
+False
+>>> is_one_away("hello", "hellooooo")
+False
+>>> is_one_away("hello", "ohell")
+False
+>>> is_one_away("hello", "hoell")
+False
+"""
 
 
 def is_one_away(string1, string2):
@@ -35,13 +52,10 @@ def is_one_away(string1, string2):
     else:
         return False
 
-print(is_one_away("pale", "ple"))
-print(is_one_away("pales", "pale"))
-print(is_one_away("pale", "bale"))
-print(is_one_away("pale", "bake"))
-print(is_one_away("long", "short"))
-print(is_one_away("toolong", "short"))
-print(is_one_away("held", "hello"))
-print(is_one_away("hello", "hellooooo"))
-print(is_one_away("hello", "ohell"))
-print(is_one_away("hello", "hoell"))
+if __name__ == "__main__":
+    first_word = input("First Word? ")
+    second_word = input("Second Word? ")
+    if is_one_away(first_word, second_word):
+        print("{} is one away from {}.".format(first_word, second_word))
+    else:
+        print("{} is not one away from {}.".format(first_word, second_word))
