@@ -58,7 +58,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Array - Transpose ([JS](/algorithms/transpose.js))
 * Array - Traverse Spiral Matrix ([R](/algorithms/traverse_spiral_matrix.rb))
 * Array - Two Sum ([R](/algorithms/two_sum.rb))
-* Array - Zero Matrix (CtCI 1.8)([R](/algorithms/zero_matrix.rb))
+* Array - Zero Matrix (CtCI 1.8)([R](/algorithms/zero_matrix.rb))([P](/algorithms/zero_matrix.py))
 * Graph - Balanced Binary Tree ([R](/algorithms/balanced_binary_tree.rb))
 * Graph - Binary Tree Inorder Traversal ([R](/algorithms/binary_tree_inorder_traversal.rb))
 * Graph - Binary Tree Preorder Traversal ([R](/algorithms/binary_tree_preorder_traversal.rb))
