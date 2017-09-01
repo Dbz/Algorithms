@@ -1,68 +1,22 @@
-# needs refactoring
-def one_edit_away(str1, str2)
-  return true if str1 == str2
-  str1 = str1.chars
-  str2 = str2.chars
+# CtCI Edition 6 Problem 1.5
+# One Away: There are three types of edits that can be performed on strings: insert a character,
+# remove a character, or replace a character. Given two strings, write a function to check if they are
+# one edit (or zero edits) away.
 
-  if str1.length == str2.length
-    replace?(str1, str2)
-  elsif str1.length == str2.length + 1 || str1.length + 1 == str2.length
-    delete?(str1, str2)
-  elsif str1.length == str2.length - 1 || str1.length - 1 == str2.length
-    add?(str1, str2)
-  else
-    false
-  end
-end
-
-def replace?(str1, str2)
-  i = 0
-  for a, b in str1.zip(str2)
-    unless b == a
-      str2[i] = a
-      if str2.join == str1.join
-        return true
-      else
-        return false
-      end
-      i += 1
-    end
+# Loops through the largest string, so it is O(n)
+def one_edit_away?(str1, str2)
+  larger_str, smaller_str = str1.length > str2.length ? [str1, str2] : [str2, str1]
+  edits_away = 0
+  maximum_index = larger_str.length - 1
+  (0..maximum_index).each do |i|
+    # if the strings are different sizes, then you check to make sure the longer_str char is equal to
+    # the smaller char moved left for each extra longer_str char
+    # e.g. ls = 'a1bcd' and s = 'abcd'. At ls[1] edits_away = 1. As ls[2] = b and s[2 - 1 = 1] = b. 
+    edits_away += 1 if larger_str.length != smaller_str.length && larger_str[i] != smaller_str[i - edits_away]
+    # if the strings are the same size, then each character that is different will count as one edit
+    edits_away += 1 if larger_str.length == smaller_str.length && larger_str[i] != smaller_str[i]
+    return false if edits_away >= 2
   end
   true
 end
 
-def add?(str1, str2)
-  i = 0
-  j = 0
-  while i < str2.length
-    if str1[i] != str2[j]
-      if i != j
-        return false
-      else
-        i += 1
-      end
-    else
-      i += 1
-      j += 1
-    end
-    true
-  end
-end
-
-def delete?(str1, str2)
-  i = 0
-  str2.each_char do |char|
-    if i == str1.length
-      str2.delete_at(i)
-      return true
-    elsif char != str1[i]
-      str2.delete_at(i)
-      if str1 == str2
-        return true
-      else
-        return false
-      end
-      i += 1
-    end
-  end
-end

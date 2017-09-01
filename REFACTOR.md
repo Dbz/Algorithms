@@ -1,10 +1,8 @@
- + one_edit_away.rb
  + valid_binary_tree.rb
  + binary_tree.rb (needs to actually delete nodes)
  + encode_url.rb
  + traverse_spiral_matrix.rb
  + rotate_array.rb
- + permutation_palindrome.rb
  + palindrome_linked_list.rb
  + min_change_sum.rb
  + merge_sorted_arrays.rb
