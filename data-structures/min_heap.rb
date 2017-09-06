@@ -5,12 +5,13 @@ class MinHeap
     @nodes = []
   end
 
+  # Peek the minimum element
   def min
     @nodes.first
   end
 
+  # Remove and return the root
   def extract_min
-    # Remove and return the root
     @nodes.shift.tap do
       # Move the last node to the root position and then heapify down
       @nodes.unshift @nodes.pop unless @nodes.size.zero?
@@ -18,8 +19,8 @@ class MinHeap
     end
   end
 
+  # Add a node to the bottom of the tree and heapify it up into position
   def insert(data)
-    # Add a node to the bottom of the tree and heapify it up into position
     @nodes << data
     heapify_up
   end
@@ -27,9 +28,13 @@ class MinHeap
   private
 
   # The children of node n are: 2n + 1 and 2n + 2
-  # returns [left_child, right_child]
-  def children(index)
-    [index * 2 + 1, index * 2 + 2]
+  def left_child_node(index)
+    index * 2 + 1
+  end
+
+  # The children of node n are: 2n + 1 and 2n + 2
+  def right_child_node(index)
+    index * 2 + 2
   end
 
   # The parent of node n is: ceil(n / 2) - 1
@@ -65,8 +70,9 @@ class MinHeap
     current_node          = 0
     # When the current_node is not changing, then it has swapped as many times as it can
     until previous_current_node == current_node
-      previous_current_node   = current_node
-      left_child, right_child = children(current_node)
+      previous_current_node = current_node
+      right_child           = right_child_node current_node
+      left_child            = left_child_node current_node
 
       # Bounds check for when current_node is one of the last two nodes
       # Or if there are only two nodes total
