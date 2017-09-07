@@ -19,21 +19,14 @@ This project is Licensed under the [MIT License](/LICENSE.md).
  To run JavaScript specs, execute the `rake jasmine` command in the terminal. Then open a web browser to
  http://localhost:8888/
 
-# Data Structures
+# Algorithms & Data Structures
 
-* Binary Tree ([JS](/data-structures/binary-tree.js))([R](/data-structures/binary_tree.rb))
-* Doubly Linked List ([R](/data-structures/doubly_linked_list.rb))
-* Hash Table ([JS](/data-structures/hash-table.js))
-* Min Heap (CtCI)([R](/data-structures/min_heap.rb))
-* Queue ([JS](/data-structures/queue.js))
-* Queue with Two Stacks (CtCI)([JS](/data-structures/queue-with-two-stacks.js))
-* Singly Linked List ([R](/data-structures/singly_linked_list.rb))
-* Stack ([JS](/data-structures/stack.js))([R](/data-structures/linked_stack.rb))
-* Stack with Two Queues (CtCI)([JS](/data-structures/stack-with-two-queues.js))
-* Tree ([JS](/data-structures/tree.js))
-* Trie ([JS](/data-structures/trie.js))
-
-# Algorithms
+## Key
+- (R) means Ruby
+- (JS) means JavaScript
+- (P) means Python
+- (CtCI) means Cracking the Coding Interview
+- (DP) means Dynamic Programming
 
 * Array - Binary Search Tree From Array ([R](/algorithms/binary_search_tree_from_array.rb))
 * Array - Contains Duplicate ([JS](/algorithms/contains-duplicate.js))
@@ -60,6 +53,17 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Array - Traverse Spiral Matrix ([R](/algorithms/traverse_spiral_matrix.rb))
 * Array - Two Sum ([R](/algorithms/two_sum.rb))
 * Array - Zero Matrix (CtCI 1.8)([R](/algorithms/zero_matrix.rb))
+* Data Structure - Binary Tree ([JS](/data-structures/binary-tree.js))([R](/data-structures/binary_tree.rb))
+* Data Structure - Doubly Linked List ([R](/data-structures/doubly_linked_list.rb))
+* Data Structure - Hash Table ([JS](/data-structures/hash-table.js))
+* Data Structure - Min Heap ([R](/data-structures/min_heap.rb))
+* Data Structure - Queue ([JS](/data-structures/queue.js))
+* Data Structure - Queue with Two Stacks (CtCI)([JS](/data-structures/queue-with-two-stacks.js))
+* Data Structure - Singly Linked List ([R](/data-structures/singly_linked_list.rb))
+* Data Structure - Stack ([JS](/data-structures/stack.js))([R](/data-structures/linked_stack.rb))
+* Data Structure - Stack with Two Queues (CtCI)([JS](/data-structures/stack-with-two-queues.js))
+* Data Structure - Tree ([JS](/data-structures/tree.js))
+* Data Structure - Trie ([JS](/data-structures/trie.js))
 * Graph - Balanced Binary Tree ([R](/algorithms/balanced_binary_tree.rb))
 * Graph - Binary Tree Inorder Traversal ([R](/algorithms/binary_tree_inorder_traversal.rb))
 * Graph - Binary Tree Preorder Traversal ([R](/algorithms/binary_tree_preorder_traversal.rb))
@@ -125,11 +129,4 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * String - Substrings ([JS](/algorithms/substrings.js))
 * String - Unique Characters (CtCI 1.1)([R](/algorithms/is_unique.rb))([P](/algorithms/is_unique.py))
 * String - Valid Anagram ([JS](/algorithms/valid-anagram.js))
-
-## Key
-- (R) means Ruby
-- (JS) means JavaScript
-- (P) means Python
-- (CtCI) means Cracking the Coding Interview
-- (DP) means Dynamic Programming
 
