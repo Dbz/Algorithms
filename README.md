@@ -24,6 +24,7 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 * Binary Tree ([JS](/data-structures/binary-tree.js))([R](/data-structures/binary_tree.rb))
 * Doubly Linked List ([R](/data-structures/doubly_linked_list.rb))
 * Hash Table ([JS](/data-structures/hash-table.js))
+* Min Heap (CtCI)([R](/data-structures/min_heap.rb))
 * Queue ([JS](/data-structures/queue.js))
 * Queue with Two Stacks (CtCI)([JS](/data-structures/queue-with-two-stacks.js))
 * Singly Linked List ([R](/data-structures/singly_linked_list.rb))
