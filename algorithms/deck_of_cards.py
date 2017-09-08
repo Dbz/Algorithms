@@ -4,8 +4,9 @@
 Design the data structures for a generic deck of cards.
 
 Deck of cards will be a typical deck of cards with 52 cards including four
-suits clubs, spades, diamonds & hearts. Each Suit will have an 2 - ace.
+suits spades, diamonds, clubs & hearts. Each Suit will have an ace - king.
 """
+import random
 import unittest
 
 
@@ -43,6 +44,39 @@ class Card:
 
     def __repr__(self):
         return "Card('" + self.suit + "', '" + self.value + "')"
+
+    def __str__(self):
+        return "{} of {}".format(self.value, self.suit)
+
+class Deck:
+    """Deck of cards
+
+    Initially contains 52. Deck can be shuffled and cards can be dealt.
+    """
+
+    def __init__(self):
+        self.cards_in_deck = []
+        values = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                  "jack", "queen", "king"]
+        for suit in ["hearts", "clubs"]:
+            for value in values:
+                self.cards_in_deck.append(Card(suit, value))
+        for suit in ["diamonds", "spades"]:
+            for value in reversed(values):
+                self.cards_in_deck.append(Card(suit, value))
+
+    def deal_card(self):
+        if len(self.cards_in_deck) > 0:
+            return self.cards_in_deck.pop(0)
+        else:
+            return None
+
+    def shuffle(self):
+        random.shuffle(self.cards_in_deck)
+
+    def card_count(self):
+        return len(self.cards_in_deck)
+
 
 class TestCard(unittest.TestCase):
 
