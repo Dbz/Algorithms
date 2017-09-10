@@ -21,12 +21,14 @@ This project is Licensed under the [MIT License](/LICENSE.md).
 
 # Algorithms & Data Structures
 
-## Key
+```
+Key
 - (R) means Ruby
 - (JS) means JavaScript
 - (P) means Python
 - (CtCI) means Cracking the Coding Interview
 - (DP) means Dynamic Programming
+```
 
 * Array - Binary Search Tree From Array ([R](/algorithms/binary_search_tree_from_array.rb))
 * Array - Contains Duplicate ([JS](/algorithms/contains-duplicate.js))
