@@ -31,6 +31,7 @@ class AnimalShelter
   def dequeue_any
     return @dog_queue.pop if @cat_queue.last.nil?
     return @cat_queue.pop if @dog_queue.last.nil?
+
     @cat_queue.first.shelter_number < @dog_queue.first.shelter_number ? @cat_queue.shift : @dog_queue.shift
   end
 

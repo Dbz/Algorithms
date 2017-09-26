@@ -12,6 +12,11 @@ Metrics/MethodLength:
   CountComments: false  # count full line comments?
   Max: 20
 
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+
 Style/ExtraSpacing:
   AllowForAlignment: true
   ForceEqualSignAlignment: true
@@ -20,6 +25,9 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/TrailingBlankLines:
+  Enabled: false
+
+Style/TernaryParentheses:
   Enabled: false
 
 AllCops:

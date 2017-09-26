@@ -6,7 +6,7 @@
 # SetOfStacks. push () and SetOfStacks. pop () should behave identically to a single stack
 # (that is, pop ( ) should return the same values as it would if there were just a single stack).
 # FOLLOW UP
-# Implement a function popAt (int index) which performs a pop operation on a specific sub-stack. 
+# Implement a function popAt (int index) which performs a pop operation on a specific sub-stack.
 
 class Stack
   def initialize
@@ -39,8 +39,9 @@ class SetOfStacks
   end
 
   def pop
-    return nil if @stacks.size == 1 && @last_size.last == 0
-    if @last_size.last == 0
+    return nil if @stacks.size == 1 && @last_size.last.zero?
+
+    if @last_size.last.zero?
       @stacks.pop
       @last_size.pop
     end
@@ -50,6 +51,7 @@ class SetOfStacks
 
   def pop_at(index)
     return nil if @last_size[index].zero?
+
     @last_size[index] -= 1
     @stacks[index].pop
   end
