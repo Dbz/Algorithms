@@ -1,5 +1,3 @@
-
-
 function BinaryTree() {
   this._root = null;
   this.left = null;
@@ -55,7 +53,8 @@ BinaryTree.prototype.contains = function(value) {
       found = true;
     }
 
-  return found;
+    return found;
+  }
 }
 
 BinaryTree.prototype.traverse = function(process) {
@@ -91,3 +90,4 @@ BinaryTree.prototype.toString = function() {
 BinaryTree.prototype.getSize = function() {
   return this.size;
 }
+
