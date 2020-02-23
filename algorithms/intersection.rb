@@ -4,8 +4,6 @@
 # node of the first linked list is the exact same node (by reference) as the jth node of the second
 # linked list, then they are intersecting.
 
-require 'Set'
-
 class Node
   attr_accessor :data, :next, :prev
   def initialize(data)

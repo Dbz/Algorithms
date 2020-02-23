@@ -8,8 +8,6 @@
 # Input: A -) B -) C -) D -) E -) C
 # Output: C
 
-require 'Set'
-
 class Node
   attr_accessor :data, :next, :prev
   def initialize(data)

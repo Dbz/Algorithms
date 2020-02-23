@@ -3,8 +3,6 @@
 # of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one
 # call to isSubstring (e.g., "waterbottle" is a rotation of"erbottlewat").
 
-require 'Set'
-
 # Looping is O(n), concatination is O(n), and comparision is also O(n) making this O(n^2)
 def rotation_1?(str1, str2)
   return false unless str1.size == str2.size

@@ -1,5 +1,3 @@
-require 'Set'
-
 # @param {String} text
 # @return {String}
 

@@ -2,8 +2,6 @@
 # Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you
 # cannot use additional data structures?
 
-require 'Set'
-
 # O(n) solution
 # The string length will be the same as the set length if it is all unique characters
 def unique_1?(str)
