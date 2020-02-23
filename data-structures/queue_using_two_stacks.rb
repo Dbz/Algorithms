@@ -1,7 +1,7 @@
 # CtCI 6th Edition Problem 3.4
 # Queue via Stacks: Implement a MyQueue class which implements a queue using two stacks.
 
-class Stack
+class MyStack
   attr_reader :size
 
   def initialize
@@ -15,6 +15,7 @@ class Stack
   end
 
   def pop
+    return if @size.zero?
     @size -= 1
     @stack.pop
   end
@@ -22,8 +23,8 @@ end
 
 class MyQueue
   def initialize
-    @push_stack = Stack.new
-    @pop_stack  = Stack.new
+    @push_stack = MyStack.new
+    @pop_stack  = MyStack.new
   end
 
   def add(item)

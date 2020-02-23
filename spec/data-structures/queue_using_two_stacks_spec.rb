@@ -1,4 +1,4 @@
-require_relative '../../data-structures/queue_using_two_stacks'
+require './data-structures/queue_using_two_stacks'
 
 describe 'Queue using two stacks' do
   it 'adds items and removes them in the order they were added (FIFO)' do

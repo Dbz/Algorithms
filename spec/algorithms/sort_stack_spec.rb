@@ -1,8 +1,8 @@
-require_relative '../../algorithms/sort_stack'
+require './algorithms/sort_stack'
 
 describe 'Stack#sort' do
-  it 'sorts elements of a stack so that the smallest elements on on top' do
-    stack = Stack.new
+  it 'sorts elements of a stack so that the smallest elements is on top' do
+    stack = SortStack.new
     first_ten = (0..9).to_a
     first_ten.each { |n| stack.push n }
     sorted_stack = stack.sort

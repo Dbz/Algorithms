@@ -3,7 +3,7 @@
 # an additional temporary stack, but you may not copy the elements into any other data structure
 # (such as an array). The stack supports the following operations: push, pop, peek, and isEmpty.
 
-class Stack
+class SortStack
   attr_reader :size
 
   def initialize
@@ -36,7 +36,7 @@ class Stack
   def sort
     return self if empty?
 
-    temp = Stack.new
+    temp = SortStack.new
     temp.push pop
 
     until empty?
